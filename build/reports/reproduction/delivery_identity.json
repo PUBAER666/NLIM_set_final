@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "board/release/sd_card/BOOT.BIN",
+      "source": "outputs/NILM_set_v4_4/sd_card/BOOT.BIN",
+      "sha256": "756fe8eca024974d0047d38c5d76557bdbccd5df7e80311ec96fe304c481089f",
+      "identical": true
+    },
+    {
+      "path": "board/release/NILM_System.exe",
+      "source": "outputs/NILM_set_v4_4/NILM_System.exe",
+      "sha256": "a1579af2c6ce1c8c0dbd1fc77bc4fb13e0c742cbdfac4e7543be9ae222ffbaad",
+      "identical": true
+    },
+    {
+      "path": "board/release/fsbl.elf",
+      "source": "validation/v4_4/fsbl.elf",
+      "sha256": "a5113bff41b1051843b4169627756df309d9d17c6558ef87e847d9a6397d2a93",
+      "identical": true
+    },
+    {
+      "path": "board/release/nilm_board.elf",
+      "source": "validation/v4_4/nilm_board.elf",
+      "sha256": "72acc521fa8c8571fdbc5895c7b7579d313e58d088aa95ce10f04cdc9e737f42",
+      "identical": true
+    }
+  ]
+}

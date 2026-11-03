@@ -1,0 +1,92 @@
+[
+  {
+    "id": "h01_hardware_overview",
+    "title": "H01  NLIM_set_fianl 系统顶层硬件框图",
+    "caption": "图 H01：AXI 连线按数据、地址、控制语义拆色；采样 BRAM → DDR 由 PS 复制，未配置独立 AXI DMA / CDMA。",
+    "sources": [
+      "src/hardware/system_bd.tcl",
+      "src/rtl/nilm_stream_axi.v",
+      "src/ps/nilm_pl.c"
+    ]
+  },
+  {
+    "id": "h02_analog_frontend",
+    "title": "H02  双通道模拟前端硬件框图",
+    "caption": "图 H02：传感器与 AFE 为板外电路；XADC 为 Zynq 片上硬核。此图仅表达模块关系与实际信号归属。",
+    "sources": [
+      "用户提供的传感器、运放与 PCB 参数",
+      "共享技术文档第5–9页",
+      "src/ps/nilm_board.c"
+    ]
+  },
+  {
+    "id": "h03_capture_buffers",
+    "title": "H03  XADC 采集、跨时钟传递与四缓存模块",
+    "caption": "图 H03：样本经握手邮箱跨域；数据字与样本编号分两次 32 位写入 BRAM，块描述符用于连续性检查。",
+    "sources": [
+      "src/rtl/nilm_xadc_top.v",
+      "src/rtl/nilm_sample_mailbox.v",
+      "src/rtl/nilm_stream_engine.v"
+    ]
+  },
+  {
+    "id": "h04_cnn_accelerator",
+    "title": "H04  CNN 硬件加速器内部框图",
+    "caption": "图 H04：层间张量尺寸来自 HLS 源码；BN 使用推理仿射参数。图中没有训练、反向传播或在线更新权重电路。",
+    "sources": [
+      "src/hls/cnn.cpp",
+      "src/ps/nilm_pl.c"
+    ]
+  },
+  {
+    "id": "h05_ps_pl_interfaces",
+    "title": "H05  PS–PL 地址、数据与控制接口框图",
+    "caption": "图 H05：右侧红色支路为访问关系概括；中部、下部三色信号列分别展开 GP0 与 CNN AXI 主通路。",
+    "sources": [
+      "src/hardware/system_bd.tcl",
+      "src/ps/nilm_pl.c",
+      "src/ps/nilm_stream.c"
+    ]
+  },
+  {
+    "id": "s01_software_overview",
+    "title": "S01  NLIM_set_fianl 系统软件总体框图",
+    "caption": "图 S01：功能模块按软件职责分组；并排布局不表示独立线程、双核任务或 RTOS 并行执行。",
+    "sources": [
+      "src/ps/main.c",
+      "src/ps/nilm_board.c",
+      "src/ps/nilm_control.c"
+    ]
+  },
+  {
+    "id": "s02_event_recognition",
+    "title": "S02  事件提取、未知判断与多窗口确认",
+    "caption": "图 S02：展示当前事件识别流程；“未知”是已有特征与门限下的拒识结果，不等于已证明属于全新电器。",
+    "sources": [
+      "src/ps/nilm_board.c",
+      "src/ps/nilm_event.c",
+      "src/ps/nilm_open.c"
+    ]
+  },
+  {
+    "id": "s03_registration_storage",
+    "title": "S03  新电器登记、匹配与持久化软件框图",
+    "caption": "图 S03：此处“学习”指参考库增量登记；没有反向传播、神经网络在线训练或新增类别权重重训练。",
+    "sources": [
+      "src/ps/nilm_learn.c",
+      "src/ps/nilm_store.c",
+      "src/ps/nilm_dynamic.c"
+    ]
+  },
+  {
+    "id": "s04_metering_communication",
+    "title": "S04  状态跟踪、计量、规则与通信软件框图",
+    "caption": "图 S04：规则结果与测量有效性一并发布；网页不重新计算模型类别、功率、电能或碳排。",
+    "sources": [
+      "src/ps/nilm_board.c",
+      "src/ps/nilm_dorm.c",
+      "src/ps/nilm_status.c",
+      "src/ps/nilm_control.c"
+    ]
+  }
+]

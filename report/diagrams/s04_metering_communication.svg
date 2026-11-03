@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>S04  状态跟踪、计量、规则与通信软件框图</title>
+<rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">S04  状态跟踪、计量、规则与通信软件框图</text>
+<text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">总量与分项分开管理；计量和规则在 PS 执行，电脑负责展示、操作与留档</text>
+<polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="100,145 89.0,140.5 89.0,149.5" fill="#1676AD"/>
+<text x="114" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#1676AD">DATA · 数据</text>
+<polyline points="452,145 500,145" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="500,145 489.0,140.5 489.0,149.5" fill="#C13E49"/>
+<text x="514" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#C13E49">CONTROL · 控制 / 状态</text>
+<rect x="45" y="215" width="1210" height="855" fill="#EDF5FA" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="63" y="247.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">Zynq PS</text>
+<rect x="1315" y="215" width="440" height="855" fill="#FCF3E6" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="1333" y="247.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">电脑端</text>
+<rect x="80" y="290" width="330" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="245.0" y="333.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">物理量与数据质量</text>
+<text x="245.0" y="361.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">V / I / Δt</text>
+<text x="245.0" y="391.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">采样连续性与有效性</text>
+<rect x="480" y="290" width="340" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="650.0" y="333.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">总功率与总电能</text>
+<text x="650.0" y="361.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">P = mean(v × i)</text>
+<text x="650.0" y="391.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">E = Σ PΔt / 3.6×10⁶</text>
+<rect x="890" y="290" width="330" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1055.0" y="333.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">碳排估算</text>
+<text x="1055.0" y="361.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">CO₂ = E × 排放因子</text>
+<text x="1055.0" y="391.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">未设置因子则待设置</text>
+<polyline points="410,355 480,355" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="480,355 469.0,350.5 469.0,359.5" fill="#1676AD"/>
+<polyline points="820,355 890,355" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="890,355 879.0,350.5 879.0,359.5" fill="#1676AD"/>
+<rect x="80" y="565" width="330" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="245.0" y="618.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">已确认开关事件</text>
+<text x="245.0" y="646.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">ON / OFF · 电器名称</text>
+<text x="245.0" y="676.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">事件质量 / 归因依据</text>
+<rect x="480" y="565" width="340" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="650.0" y="618.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">运行跟踪与恢复</text>
+<text x="650.0" y="646.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">电器运行集合</text>
+<text x="650.0" y="676.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">不确定状态 / 恢复候选</text>
+<rect x="890" y="565" width="330" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1055.0" y="618.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">分项计量与规则</text>
+<text x="1055.0" y="646.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">功率归因 / 电器电能</text>
+<text x="1055.0" y="676.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">超限 / 名单 / 未知提示</text>
+<polyline points="410,640 480,640" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="480,640 469.0,635.5 469.0,644.5" fill="#1676AD"/>
+<polyline points="820,640 890,640" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="890,640 879.0,635.5 879.0,644.5" fill="#1676AD"/>
+<polyline points="650,420 650,565" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="650,565 654.5,554.0 645.5,554.0" fill="#1676AD"/>
+<rect x="579.0" y="478.3" width="142.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="650" y="496.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">总量与质量约束</text>
+<polyline points="1055,420 1055,565" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1055,565 1059.5,554.0 1050.5,554.0" fill="#1676AD"/>
+<rect x="80" y="855" width="330" height="135" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="245.0" y="901.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">用户设置 / SD 持久化</text>
+<text x="245.0" y="929.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">功率上限 / 电器名单</text>
+<text x="245.0" y="959.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">排放因子 / 登记库</text>
+<rect x="480" y="855" width="740" height="135" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="850.0" y="901.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">状态发布与网络协议</text>
+<text x="850.0" y="929.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">9000：采样数据 · 9001：状态 / 版本 · 9002：事件 / 控制</text>
+<text x="850.0" y="959.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">运行时长、事件原因、识别结果及计量有效性</text>
+<polyline points="1055,715 1055,855" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1055,855 1059.5,844.0 1050.5,844.0" fill="#1676AD"/>
+<polyline points="410,920 480,920" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="480,920 469.0,915.5 469.0,924.5" fill="#C13E49"/>
+<polygon points="410,920 421.0,924.5 421.0,915.5" fill="#C13E49"/>
+<polyline points="245,855 245,770 1055,770 1055,715" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1055,715 1050.5,726.0 1059.5,726.0" fill="#C13E49"/>
+<rect x="579.0" y="758.3" width="142.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="650" y="776.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">规则 / 因子配置</text>
+<rect x="1350" y="300" width="370" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1535.0" y="353.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">本地接收服务</text>
+<text x="1535.0" y="381.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">TCP 状态接收 / 命令转发</text>
+<text x="1535.0" y="411.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">recordings / JSONL 日志</text>
+<rect x="1350" y="600" width="370" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1535.0" y="653.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">实时网页</text>
+<text x="1535.0" y="681.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">电器 / 功率 / 电能 / 碳排</text>
+<text x="1535.0" y="711.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">告警 / 运行时长 / 事件</text>
+<rect x="1350" y="875" width="370" height="115" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1535.0" y="926.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">用户交互</text>
+<text x="1535.0" y="954.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">设置 / 登记 / 删除 / 清空</text>
+<polyline points="1220,890 1285,890 1285,350 1350,350" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1350,350 1339.0,345.5 1339.0,354.5" fill="#1676AD"/>
+<rect x="1241.0" y="513.3" width="88.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1285" y="531.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">板端结果</text>
+<polyline points="1535,450 1535,600" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1535,600 1539.5,589.0 1530.5,589.0" fill="#1676AD"/>
+<polyline points="1535,875 1535,750" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1535,750 1530.5,761.0 1539.5,761.0" fill="#C13E49"/>
+<polyline points="1720,930 1778,930 1778,255 1280,255 1280,960 1220,960" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1220,960 1231.0,964.5 1231.0,955.5" fill="#C13E49"/>
+<text x="50" y="1101.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">分项计量依赖事件与运行跟踪可信度；排放因子由用户配置。当前提供告警提示，未包含自动断电执行器。</text>
+<polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 S04：规则结果与测量有效性一并发布；网页不重新计算模型类别、功率、电能或碳排。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+</svg>

@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>S01  NLIM_set_fianl 系统软件总体框图</title>
+<rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">S01  NLIM_set_fianl 系统软件总体框图</text>
+<text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">PS 裸机主循环协作调度；PL 执行 CNN 运算；电脑端展示与记录，不承担现场推理</text>
+<polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="100,145 89.0,140.5 89.0,149.5" fill="#1676AD"/>
+<text x="114" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#1676AD">DATA · 数据</text>
+<polyline points="452,145 500,145" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="500,145 489.0,140.5 489.0,149.5" fill="#C13E49"/>
+<text x="514" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#C13E49">CONTROL · 控制 / 状态</text>
+<rect x="45" y="210" width="1240" height="860" fill="#EDF5FA" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="63" y="242.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">Zynq PS · Standalone / lwIP</text>
+<rect x="1330" y="210" width="425" height="360" fill="#EDF5EC" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="1348" y="242.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">Zynq PL</text>
+<rect x="1330" y="620" width="425" height="450" fill="#FCF3E6" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="1348" y="652.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">电脑接收端</text>
+<rect x="85" y="280" width="1155" height="100" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="662.5" y="323.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">初始化 / 版本检查 / 自检 / 配置加载</text>
+<text x="662.5" y="351.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">main.c · 平台与网络初始化 · 模型接口检查 · SD 登记库及设置加载</text>
+<rect x="85" y="470" width="280" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="225.0" y="513.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">采集服务</text>
+<text x="225.0" y="541.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">取块 / 连续性检查</text>
+<text x="225.0" y="571.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">64 块 DDR 历史</text>
+<rect x="430" y="470" width="340" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="600.0" y="513.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">事件检测与窗口准备</text>
+<text x="600.0" y="541.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">标定 / 变化触发</text>
+<text x="600.0" y="571.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">前后窗口 / 背景分离</text>
+<rect x="840" y="470" width="400" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1040.0" y="513.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">模型执行与判决</text>
+<text x="1040.0" y="541.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">5 维特征 / KNN</text>
+<text x="1040.0" y="571.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">CNN 驱动 / 拒识 / 登记匹配</text>
+<polyline points="365,535 430,535" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="430,535 419.0,530.5 419.0,539.5" fill="#1676AD"/>
+<polyline points="770,535 840,535" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="840,535 829.0,530.5 829.0,539.5" fill="#1676AD"/>
+<rect x="1370" y="300" width="345" height="160" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1542.5" y="343.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">CNN 加速器</text>
+<text x="1542.5" y="371.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">4096 点输入</text>
+<text x="1542.5" y="401.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">14 logits + 64 embedding</text>
+<text x="1542.5" y="431.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">nilm_pl：提交 / 轮询</text>
+<polyline points="1240,510 1300,510 1300,350 1370,350" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1370,350 1359.0,345.5 1359.0,354.5" fill="#1676AD"/>
+<rect x="1274.0" y="473.3" width="52.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1300" y="491.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">输入</text>
+<polyline points="1370,420 1315,420 1315,570 1240,570" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1240,570 1251.0,574.5 1251.0,565.5" fill="#1676AD"/>
+<rect x="1289.0" y="583.3" width="52.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1315" y="601.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">输出</text>
+<rect x="85" y="755" width="280" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="225.0" y="793.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">持久化与用户设置</text>
+<text x="225.0" y="821.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">登记 / 删除 / 清空</text>
+<text x="225.0" y="851.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">功率上限 / 名单</text>
+<text x="225.0" y="881.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">SD 双槽 + CRC</text>
+<rect x="430" y="755" width="340" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="600.0" y="793.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">正式状态与计量</text>
+<text x="600.0" y="821.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">多窗口确认 / 跟踪恢复</text>
+<text x="600.0" y="851.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">设备状态 / 总量与分项</text>
+<text x="600.0" y="881.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">电能 / 碳排 / 规则</text>
+<rect x="840" y="755" width="400" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1040.0" y="793.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">网络服务与状态输出</text>
+<text x="1040.0" y="821.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">9000：RAW1 · 9001：状态</text>
+<text x="1040.0" y="851.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">9002：命令 / 事件状态</text>
+<text x="1040.0" y="881.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">lwIP / JSON / 诊断</text>
+<polyline points="1040,600 1040,680 600,680 600,755" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="600,755 604.5,744.0 595.5,744.0" fill="#1676AD"/>
+<rect x="746.0" y="668.3" width="88.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="790" y="686.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">确认结果</text>
+<polyline points="770,830 840,830" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="840,830 829.0,825.5 829.0,834.5" fill="#1676AD"/>
+<polyline points="365,800 430,800" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="430,800 419.0,795.5 419.0,804.5" fill="#C13E49"/>
+<rect x="372.0" y="765.3" width="52.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="398" y="783.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">配置</text>
+<polyline points="225,755 225,695 1040,695 1040,600" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1040,600 1035.5,611.0 1044.5,611.0" fill="#C13E49"/>
+<rect x="359.0" y="683.3" width="142.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="430" y="701.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">登记库版本更新</text>
+<rect x="1370" y="700" width="345" height="110" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1542.5" y="733.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">本地接收服务</text>
+<text x="1542.5" y="761.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">TCP 接收 / 命令转发</text>
+<text x="1542.5" y="791.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">recordings 日志</text>
+<rect x="1370" y="900" width="345" height="110" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1542.5" y="933.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">浏览器页面</text>
+<text x="1542.5" y="961.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">localhost:8765</text>
+<text x="1542.5" y="991.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">结果 / 告警 / 登记操作</text>
+<polyline points="1240,795 1370,755" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1370,755 1358.1630445842898,753.933938797964 1360.8098172238274,762.5359498764615" fill="#1676AD"/>
+<rect x="1247.0" y="723.3" width="106.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1300" y="741.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">状态 / 事件</text>
+<polyline points="1370,795 1240,870" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1240,870 1251.7767924872378,868.4008881488334 1247.2792904058315,860.6052178743959" fill="#C13E49"/>
+<rect x="1256.0" y="878.3" width="88.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1300" y="896.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">用户命令</text>
+<polyline points="1540,810 1540,900" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1540,900 1544.5,889.0 1535.5,889.0" fill="#1676AD"/>
+<polygon points="1540,810 1535.5,821.0 1544.5,821.0" fill="#1676AD"/>
+<polyline points="600,380 600,430" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="600,430 604.5,419.0 595.5,419.0" fill="#C13E49"/>
+<rect x="464.5" y="408.3" width="451.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="690" y="426.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">进入 while(1)：各服务短步 poll，网络定时器协同处理</text>
+<text x="660" y="1022.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#64748B">采集、识别、通信共享主循环调度；候选结果与正式运行状态分离。</text>
+<polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 S01：功能模块按软件职责分组；并排布局不表示独立线程、双核任务或 RTOS 并行执行。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "archive": "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\NILM_set_v4_4.zip",
+  "bytes": 13982438,
+  "sha256": "668922e630310e13a2648778c600eaaa2659500b949da18229c8913ea01cf9ff",
+  "boot_sha256": "756fe8eca024974d0047d38c5d76557bdbccd5df7e80311ec96fe304c481089f",
+  "powershell_package_check_passed": true,
+  "hardware_tested": false
+}

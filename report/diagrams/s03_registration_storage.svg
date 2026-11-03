@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>S03  新电器登记、匹配与持久化软件框图</title>
+<rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">S03  新电器登记、匹配与持久化软件框图</text>
+<text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">人工确认 + 成对特征参考；支持删除和清空，不修改 CNN 权重</text>
+<polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="100,145 89.0,140.5 89.0,149.5" fill="#1676AD"/>
+<text x="114" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#1676AD">DATA · 数据</text>
+<polyline points="452,145 500,145" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="500,145 489.0,140.5 489.0,149.5" fill="#C13E49"/>
+<text x="514" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#C13E49">CONTROL · 控制 / 状态</text>
+<rect x="45" y="215" width="1710" height="400" fill="#FCF3E6" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="63" y="247.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">登记写入路径</text>
+<rect x="80" y="310" width="320" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="240.0" y="363.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">网页用户操作</text>
+<text x="240.0" y="391.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">选取有效事件 / 输入名称</text>
+<text x="240.0" y="421.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">登记 · 删除 · 清空</text>
+<rect x="470" y="310" width="340" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="640.0" y="363.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">PS 命令与有效性检查</text>
+<text x="640.0" y="391.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">事件可用性 / 名称 / 版本</text>
+<text x="640.0" y="421.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">5D + 64D 同一事件配对</text>
+<rect x="880" y="310" width="350" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1055.0" y="363.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">候选登记库</text>
+<text x="1055.0" y="391.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">增加参考或移除条目</text>
+<text x="1055.0" y="421.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">更新 revision / 数据校验</text>
+<rect x="1300" y="310" width="410" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1505.0" y="363.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">SD 双槽持久保存</text>
+<text x="1505.0" y="391.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">NILM430.BIN / NILM431.BIN</text>
+<text x="1505.0" y="421.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">版本 / CRC / 有效记录选择</text>
+<polyline points="400,385 470,385" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="470,385 459.0,380.5 459.0,389.5" fill="#C13E49"/>
+<polyline points="810,385 880,385" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="880,385 869.0,380.5 869.0,389.5" fill="#C13E49"/>
+<polyline points="1230,385 1300,385" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1300,385 1289.0,380.5 1289.0,389.5" fill="#C13E49"/>
+<polyline points="1510,460 1510,550 640,550 640,460" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="640,460 635.5,471.0 644.5,471.0" fill="#C13E49"/>
+<rect x="910.0" y="538.3" width="340.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1080" y="556.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">保存成功后发布新库；失败返回明确错误</text>
+<rect x="45" y="665" width="1710" height="385" fill="#EDF5FA" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="63" y="697.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">运行匹配与重启恢复路径</text>
+<rect x="80" y="775" width="320" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="240.0" y="828.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">待匹配事件</text>
+<text x="240.0" y="856.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">基础判决为未知</text>
+<text x="240.0" y="886.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">当前窗口 5D + 64D</text>
+<rect x="470" y="775" width="340" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="640.0" y="828.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">登记参考缓存</text>
+<text x="640.0" y="856.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">加载当前有效登记库</text>
+<text x="640.0" y="886.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">绑定 revision / 模型口径</text>
+<rect x="880" y="775" width="350" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1055.0" y="828.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">参考距离与拒绝检查</text>
+<text x="1055.0" y="856.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">接受门限 / 名称间隔</text>
+<text x="1055.0" y="886.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">已知类别保护</text>
+<rect x="1300" y="775" width="410" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1505.0" y="828.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">匹配结果与原因</text>
+<text x="1505.0" y="856.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">候选登记名称 / 未匹配</text>
+<text x="1505.0" y="886.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">送入多窗口事件确认</text>
+<polyline points="400,850 470,850" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="470,850 459.0,845.5 459.0,854.5" fill="#1676AD"/>
+<polyline points="810,850 880,850" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="880,850 869.0,845.5 869.0,854.5" fill="#1676AD"/>
+<polyline points="1230,850 1300,850" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1300,850 1289.0,845.5 1289.0,854.5" fill="#1676AD"/>
+<polyline points="1650,460 1650,705 640,705 640,775" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="640,775 644.5,764.0 635.5,764.0" fill="#1676AD"/>
+<rect x="948.0" y="693.3" width="304.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1100" y="711.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">启动加载：校验双槽并选择有效记录</text>
+<polyline points="1050,460 1050,650 835,650 835,745 640,745 640,775" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="640,775 644.5,764.0 635.5,764.0" fill="#C13E49"/>
+<rect x="893.0" y="638.3" width="314.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1050" y="656.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">库更新 → 取消旧任务 / 清理过期引用</text>
+<text x="50" y="1096.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">页面“命令已接收”与“保存成功”分别表示；未确认事件不能绕过质量检查直接作为有效参考。</text>
+<polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 S03：此处“学习”指参考库增量登记；没有反向传播、神经网络在线训练或新增类别权重重训练。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+</svg>

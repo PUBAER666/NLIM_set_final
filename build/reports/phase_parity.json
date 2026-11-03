@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "on_off_cases": 2,
+  "max_abs_error": 1.5681900222830336e-15,
+  "missing_crossings_rejected": true,
+  "source": "C:\\Users\\ASUS\\Downloads\\\u591a\u7535\u5668+\u7535\u80fd+\u78b3\u6392\\\u591a\u7535\u5668+\u7535\u80fd+\u78b3\u6392\\extract_event_change_from_detector_v1.py"
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "file": "evidence/cnn_csynth.rpt",
+    "original": ".build/dorm_cnn_component/hls/syn/report/nilm_cnn_csynth.rpt",
+    "sha256": "f6e992eb8d7595b0fd7f40b65dd3c8d3348442c061d7128907a1010fd126bdbd"
+  },
+  {
+    "file": "evidence/cnn_cosim.rpt",
+    "original": ".build/dorm_cnn_component/hls/sim/report/nilm_cnn_cosim.rpt",
+    "sha256": "0f73945c806a9e300a38b01b25deaf227b794eb514576ff3bab1bb21f6d0b98e"
+  },
+  {
+    "file": "evidence/conv1_pipeline.rpt",
+    "original": ".build/dorm_cnn_component/hls/syn/report/layer_4096_1_8_9_true_Pipeline_VITIS_LOOP_27_6_VITIS_LOOP_28_7_csynth.rpt",
+    "sha256": "d902f3f9f19a8147a911e8f17468214c875e66f7c1840c3592f676a4cc9559d3"
+  },
+  {
+    "file": "evidence/conv2_pipeline.rpt",
+    "original": ".build/dorm_cnn_component/hls/syn/report/layer_Pipeline_VITIS_LOOP_27_5_VITIS_LOOP_27_6_VITIS_LOOP_28_7_csynth.rpt",
+    "sha256": "6b5de1aadcc2cbcb5501a1fcd7eb589f4b7a2e193a1635f1c922f7f69cc2b421"
+  },
+  {
+    "file": "evidence/conv3_pipeline.rpt",
+    "original": ".build/dorm_cnn_component/hls/syn/report/layer_Pipeline_VITIS_LOOP_27_5_VITIS_LOOP_27_6_VITIS_LOOP_28_7_1_csynth.rpt",
+    "sha256": "bf6427ce7f22984dce2e1ece14d32a0cf79f5662af25af1498925aa8e9cafbeb"
+  },
+  {
+    "file": "evidence/utilization.rpt",
+    "original": "validation/v4/utilization.rpt",
+    "sha256": "0bc2fd4e231883df90387a1b561e81ff6aef5dab6fb37c18f5be43b43677f86f"
+  },
+  {
+    "file": "evidence/timing_summary.rpt",
+    "original": "validation/v4/timing_summary.rpt",
+    "sha256": "fd1e690fa3f1f3fbaa29b4e3c5febc23c4dcfd02f0afff3337d9e8ce9a493e5e"
+  },
+  {
+    "file": "evidence/cnn.cpp",
+    "original": "hls/cnn_dorm/cnn.cpp",
+    "sha256": "6b18159a261e8ce56425a8225830c4d3ee7f4f10d48a742196b1ae06b935b8b4"
+  },
+  {
+    "file": "evidence/test_cnn.cpp",
+    "original": "scripts/dorm/test_cnn.cpp",
+    "sha256": "f536c910415328489721f473a7468cbb19cf2b7ee2c82dce44cd9e566a0942da"
+  },
+  {
+    "file": "evidence/weights_manifest.json",
+    "original": "hls/cnn_dorm/weights_manifest.json",
+    "sha256": "d3ea3d0b7aa15196b24c6d815002f81401b4f4aa1a8d636855d340a3b2eb74cf"
+  },
+  {
+    "file": "evidence/release_manifest.json",
+    "original": "validation/v4_4/manifest.json",
+    "sha256": "254ba8a015d690148b1b3987d8fcc3d7424ddd6d2e06806d374699254cf8c8e0"
+  },
+  {
+    "file": "evidence/cosim_case0.log",
+    "original": "validation/v4/cosim_case0.log",
+    "sha256": "5030db633547e5d2e49598271a18e81ca0527fbb85ba64b8a0493e975b70d581"
+  },
+  {
+    "file": "evidence/cosim_case1.log",
+    "original": "validation/v4/cosim_case1.log",
+    "sha256": "d0ba4b986570f280e4a4ac688b25ebf24565f2e0b5686c8b69eef2ea1a0f0b31"
+  },
+  {
+    "file": "evidence/cosim_case2.log",
+    "original": "validation/v4/cosim_case2.log",
+    "sha256": "ac5350fb2b3167dd77c1e4f16fe76cdee0351345592ff0a3a4a85bf58975d006"
+  },
+  {
+    "file": "evidence/cosim_case3.log",
+    "original": "validation/v4/cosim_case3.log",
+    "sha256": "8156049057e5decb573c5a5e6867dedcbb72d4a0f0cc3d9f52966491cfd460bc"
+  }
+]

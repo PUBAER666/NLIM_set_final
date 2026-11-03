@@ -1,0 +1,15 @@
+{
+  "note": "Rebuilt for compilation verification only; delivered BOOT remains the original paired release. Debug paths may make rebuilt binaries differ. Generated work is excluded from archive.",
+  "artifacts": [
+    {
+      "path": "work/ps/nilm_echo.elf",
+      "bytes": 7553764,
+      "sha256": "abb160d4f0cc70aa0910b99bf982bd442721b53e018ef8224a6f9ec5252ebf0b"
+    },
+    {
+      "path": "work/boot/BOOT.BIN",
+      "bytes": 10362424,
+      "sha256": "c38e8bc90d80c41d7e9c7091884c70a15921277ba74e47a5b5ba209e206063c2"
+    }
+  ]
+}

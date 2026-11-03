@@ -1,0 +1,104 @@
+
+
+****** Bootgen v2025.2
+  **** Build date : Oct 23 2025-12:54:55
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+--------------------------------------------------------------------------------
+   BOOT HEADER
+--------------------------------------------------------------------------------
+        boot_vectors (0x00) : 0xeafffffeeafffffeeafffffeeafffffeeafffffeeafffffeeafffffeeafffffe
+     width_detection (0x20) : 0xaa995566
+            image_id (0x24) : 0x584c4e58
+ encryption_keystore (0x28) : 0x00000000
+      header_version (0x2c) : 0x01010000
+   fsbl_sourceoffset (0x30) : 0x00001700
+         fsbl_length (0x34) : 0x0001a6a0
+   fsbl_load_address (0x38) : 0x00000000
+   fsbl_exec_address (0x3C) : 0x00000000
+   fsbl_total_length (0x40) : 0x0001a6a0
+    qspi_config-word (0x44) : 0x00000001
+            checksum (0x48) : 0xfc15f800
+          iht_offset (0x98) : 0x000008c0
+          pht_offset (0x9c) : 0x00000c80
+--------------------------------------------------------------------------------
+   IMAGE HEADER TABLE
+--------------------------------------------------------------------------------
+             version (0x00) : 0x01020000        total_images (0x04) : 0x00000004
+          pht_offset (0x08) : 0x00000c80           ih_offset (0x0c) : 0x00000900
+       hdr_ac_offset (0x10) : 0x00000000
+--------------------------------------------------------------------------------
+   IMAGE HEADER (fsbl.elf)
+--------------------------------------------------------------------------------
+          next_ih(W) (0x00) : 0x00000250
+         next_pht(W) (0x04) : 0x00000320
+    total_partitions (0x0c) : 0x00000001
+                name (0x10) : fsbl.elf
+--------------------------------------------------------------------------------
+   IMAGE HEADER (system_wrapper.bit)
+--------------------------------------------------------------------------------
+          next_ih(W) (0x00) : 0x00000260
+         next_pht(W) (0x04) : 0x00000330
+    total_partitions (0x0c) : 0x00000001
+                name (0x10) : system_wrapper.bit
+--------------------------------------------------------------------------------
+   IMAGE HEADER (NLIM_set_fianl.elf)
+--------------------------------------------------------------------------------
+          next_ih(W) (0x00) : 0x00000000
+         next_pht(W) (0x04) : 0x00000340
+    total_partitions (0x0c) : 0x00000002
+                name (0x10) : NLIM_set_fianl.elf
+--------------------------------------------------------------------------------
+   PARTITION HEADER TABLE (fsbl.elf.0)
+--------------------------------------------------------------------------------
+    encrypted_length (0x00) : 0x000069a8  unencrypted_length (0x04) : 0x000069a8
+        total_length (0x08) : 0x000069a8           load_addr (0x0c) : 0x00000000
+           exec_addr (0x10) : 0x00000000    partition_offset (0x14) : 0x000005c0
+          attributes (0x18) : 0x00000010       section_count (0x1C) : 0x00000001
+     checksum_offset (0x20) : 0x00000000          iht_offset (0x24) : 0x00000240
+           ac_offset (0x28) : 0x00000000            checksum (0x3c) : 0xfffebaf6
+ attribute list -
+               trustzone [non-secure]            el [el-0]         
+              exec_state [aarch-32]     dest_device [none]         
+              encryption [no]                  core [none]         
+--------------------------------------------------------------------------------
+   PARTITION HEADER TABLE (system_wrapper.bit.0)
+--------------------------------------------------------------------------------
+    encrypted_length (0x00) : 0x000f6ec0  unencrypted_length (0x04) : 0x000f6ec0
+        total_length (0x08) : 0x000f6ec0           load_addr (0x0c) : 0x00000000
+           exec_addr (0x10) : 0x00000000    partition_offset (0x14) : 0x00006f70
+          attributes (0x18) : 0x00000020       section_count (0x1C) : 0x00000001
+     checksum_offset (0x20) : 0x00000000          iht_offset (0x24) : 0x00000250
+           ac_offset (0x28) : 0x00000000            checksum (0x3c) : 0xffd141de
+ attribute list -
+               trustzone [non-secure]            el [el-0]         
+              exec_state [el-0]         dest_device [none]         
+              encryption [no]                  core [none]         
+--------------------------------------------------------------------------------
+   PARTITION HEADER TABLE (NLIM_set_fianl.elf.0)
+--------------------------------------------------------------------------------
+    encrypted_length (0x00) : 0x00179772  unencrypted_length (0x04) : 0x00179772
+        total_length (0x08) : 0x00179772           load_addr (0x0c) : 0x00100000
+           exec_addr (0x10) : 0x00100000    partition_offset (0x14) : 0x000fde30
+          attributes (0x18) : 0x00000010       section_count (0x1C) : 0x00000002
+     checksum_offset (0x20) : 0x00000000          iht_offset (0x24) : 0x00000260
+           ac_offset (0x28) : 0x00000000            checksum (0x3c) : 0xff895907
+ attribute list -
+               trustzone [non-secure]            el [el-0]         
+              exec_state [aarch-32]     dest_device [none]         
+              encryption [no]                  core [none]         
+--------------------------------------------------------------------------------
+   PARTITION HEADER TABLE (NLIM_set_fianl.elf.1)
+--------------------------------------------------------------------------------
+    encrypted_length (0x00) : 0x000011de  unencrypted_length (0x04) : 0x000011de
+        total_length (0x08) : 0x000011de           load_addr (0x0c) : 0x006e8000
+           exec_addr (0x10) : 0x00000000    partition_offset (0x14) : 0x002775b0
+          attributes (0x18) : 0x00000010       section_count (0x1C) : 0x00000000
+     checksum_offset (0x20) : 0x00000000          iht_offset (0x24) : 0x00000260
+           ac_offset (0x28) : 0x00000000            checksum (0x3c) : 0xff69d245
+ attribute list -
+               trustzone [non-secure]            el [el-0]         
+              exec_state [aarch-32]     dest_device [none]         
+              encryption [no]                  core [none]         
+--------------------------------------------------------------------------------

@@ -1,0 +1,310 @@
+﻿[
+    {
+        "sha256":  "CFA1EE2E8FE7C0B9BA60EDA6325F1F2E6A6F10B6DCE56750E47E33D110BFEEAA",
+        "name":  ".clangd"
+    },
+    {
+        "sha256":  "E5030C5AB4CF929685946A009D6256CEC1950473AC7BC79DAFE3D148E6633CFE",
+        "name":  "app.yaml"
+    },
+    {
+        "sha256":  "7A284C88271EAFF900A95C24DBA17A0429F72FF71C026C849F88D97D54726F6A",
+        "name":  "CMakeLists.txt"
+    },
+    {
+        "sha256":  "B177A1C460D2751A8BFE0C519CC1B24FE1FC82AEAA15A65C2B1D34B2C04FC0E0",
+        "name":  "compile_commands.json"
+    },
+    {
+        "sha256":  "E1A7583C6AD4D01B38F5F3E940D00FBDA8689E6D4075ED19EBC3B84DE3ED79FA",
+        "name":  "echo.c"
+    },
+    {
+        "sha256":  "38B3B571B06186CC6B16B840E2E5DB530AEC4596B484C364A1BBFA6FD22B475D",
+        "name":  "i2c_access.c"
+    },
+    {
+        "sha256":  "9827E56562BD75CFC74180E138CAE61252F3146236852808079EFAB82F901F15",
+        "name":  "iic_phyreset.c"
+    },
+    {
+        "sha256":  "2AC6D5D0CAAA6973259925B3E92A46CE308E8F2C5E7EF05096D77367558F2962",
+        "name":  "lscript.ld"
+    },
+    {
+        "sha256":  "8C6AA1CC9F76894EC7D481021CD6409F8F591CDA584CCA74BBBDE1901F4D87EC",
+        "name":  "lwip_echo_server.cmake"
+    },
+    {
+        "sha256":  "A22D6080DA4A4C844FF605F5A4785E06B2E77087ED6C9A7AFC3265C7195DDFAE",
+        "name":  "Lwip_echo_serverExample.cmake"
+    },
+    {
+        "sha256":  "839AABB775274638A1CA675BD00C237A626F6B21A24AEAD536D45E147CFD9878",
+        "name":  "main.c"
+    },
+    {
+        "sha256":  "37DED17F8E17881F162F26436114A7283ACFC29228FF26CCB7D16EED49A71CE2",
+        "name":  "nilm_assets.c"
+    },
+    {
+        "sha256":  "CBA66933F155775923D442611AFD7EC5E6897B2C1D36C09DE9F89E6472837CD2",
+        "name":  "nilm_assets.h"
+    },
+    {
+        "sha256":  "753BE0ACF9127AA22557A14B8C208FD8B693B79298B264F34265C9F1B362EF30",
+        "name":  "nilm_board.c"
+    },
+    {
+        "sha256":  "821B888D49AB5DD87F476FE56A2952AE00573FCF35901A6E5E9F9E5BD3193678",
+        "name":  "nilm_board.h"
+    },
+    {
+        "sha256":  "CE08436100324C89DF44AC8DEC4070367A6F59F98F7EA30BD5DD9B2A12C62652",
+        "name":  "nilm_capture.c"
+    },
+    {
+        "sha256":  "CE67EC654B3073831D5D9C06107836AF3CEAC4109C563D1EC36102FCF0689420",
+        "name":  "nilm_capture.h"
+    },
+    {
+        "sha256":  "70E55E38FC583559ED42597D293F952DD92A33F0D26F7BBA2FC576DDB27FEE32",
+        "name":  "nilm_capture_service.c"
+    },
+    {
+        "sha256":  "97787DB2919D98CA7D9572B345918D8CF30E768E04E84AAA401B8B7052D43602",
+        "name":  "nilm_capture_service.h"
+    },
+    {
+        "sha256":  "CE6E97CAC020BE88D4C9CB21FFD586EEA51471D3C78449C2E60294085A165B4B",
+        "name":  "nilm_control.c"
+    },
+    {
+        "sha256":  "96FD98AC9A963133A49D70E8B50AD1EF7154C28CD077671923687432379C057E",
+        "name":  "nilm_control.h"
+    },
+    {
+        "sha256":  "48A484F22F9CDB47B2098EFE25EA84E3D8387EAABCE18EA90B7DA0A5E03FBB85",
+        "name":  "nilm_dorm.c"
+    },
+    {
+        "sha256":  "9B484913C11DE3571145720E9A943635DA1085D8BB5283CD052874BB172B0B54",
+        "name":  "nilm_dorm.h"
+    },
+    {
+        "sha256":  "2764C5EC6A6693EC89932E77EBA76EB155B9827A70C48ADBD33CF270CC8ECB5F",
+        "name":  "nilm_dorm_assets.c"
+    },
+    {
+        "sha256":  "50AE39A8F017DF71AF28047D26FEC4354FCFE0A87CE9360677DF47182F658F2D",
+        "name":  "nilm_dorm_assets.h"
+    },
+    {
+        "sha256":  "DCFDE5F3867820DEDCA2B8F114433546F40F6015F4551B152634FC2A17AA91AB",
+        "name":  "nilm_dynamic.c"
+    },
+    {
+        "sha256":  "9344EE2C0398783BF143ABA3EA41F287B19F34271938854A5C6DB564A45800DA",
+        "name":  "nilm_dynamic.h"
+    },
+    {
+        "sha256":  "675E792597BFF477FD4483E47BB465B0A0D16D72484979E48F97EBFEBC2A56B1",
+        "name":  "nilm_event.c"
+    },
+    {
+        "sha256":  "DF21350EA285AB4B9C0488C01C8AE1616A3741D8466348DADE3D68579B08EEBC",
+        "name":  "nilm_event.h"
+    },
+    {
+        "sha256":  "1697670861DF5C8BBF283FDDA42D24B166213DCC403A69B112016B5B267AB54B",
+        "name":  "nilm_golden.h"
+    },
+    {
+        "sha256":  "71FC15FE0F671C52422263B9581C64FF655ED0E25728C83316F676FCD8846859",
+        "name":  "nilm_infer.c"
+    },
+    {
+        "sha256":  "932132C043B5B782652DED76A6FC7E6649F5DBEA95D3E33CAFFFA2FCED07C9B4",
+        "name":  "nilm_infer.h"
+    },
+    {
+        "sha256":  "FB4732733E7D735F4ECF71D7E64AB1EBBBFFA045C4C1E2A22A5A9AA818ADD5CB",
+        "name":  "nilm_knn.c"
+    },
+    {
+        "sha256":  "657EC1DFC968D19459E94302F6BF6F9497ADEC7A67822C4FB7F624721138941E",
+        "name":  "nilm_knn.h"
+    },
+    {
+        "sha256":  "4ADE5130EA4C9AC93D506DDBA897D689CAAB0243356A81CBFB662C1453881CD1",
+        "name":  "nilm_lag.c"
+    },
+    {
+        "sha256":  "699A36AAA3273814EAB97FCD32169725F767385F1653BB52C39B74B16B5319B7",
+        "name":  "nilm_lag.h"
+    },
+    {
+        "sha256":  "864C65A4C6862A1F989D5498662579657CC8E65BA5241C24814303DF67FDB65E",
+        "name":  "nilm_lag_assets.c"
+    },
+    {
+        "sha256":  "545907BA0FD7EDED598EC4C52E6C2349235F1FD52D2025CEB7CEA5223F7D8250",
+        "name":  "nilm_lag_assets.h"
+    },
+    {
+        "sha256":  "478038308151A16AFB1E6D511ECB204575A7202B62BC933D122C390051760145",
+        "name":  "nilm_learn.c"
+    },
+    {
+        "sha256":  "F970782875F0593F736E9C04A6B00868183F710CB184AFD5B60B3EC59C56FDAF",
+        "name":  "nilm_learn.h"
+    },
+    {
+        "sha256":  "D18D824E50B9E72484C8BA97985DEB34AC2821767DC5DB8221522F75851C0FEE",
+        "name":  "nilm_legacy.c"
+    },
+    {
+        "sha256":  "937CBA5C08E131A273C9553AA42D22E2A275A5A6CA2CCB420EA2061DBCACEC98",
+        "name":  "nilm_legacy.h"
+    },
+    {
+        "sha256":  "4DF0E9D2FD08890BEE4074E65CF85F4561E42D237F351D23174D9F9E2A15DA1E",
+        "name":  "nilm_model.c"
+    },
+    {
+        "sha256":  "330EE6F20512EADE3B989E5F90C51E1BCBE48982507DBCB7FC3D729176EE95D5",
+        "name":  "nilm_model.h"
+    },
+    {
+        "sha256":  "CAACCB6D27737C9BF59DF8FDBA53A4C185BBC04E88DCB21DC01CE979E95DE5DC",
+        "name":  "nilm_net.c"
+    },
+    {
+        "sha256":  "807A94CB63DE6D6E129111F08D85F171F78628AE6DEC2E87BCF0F5FA48A2E982",
+        "name":  "nilm_net.h"
+    },
+    {
+        "sha256":  "F17E50DAE0504F78E53BD992508108D7709ECFC7427742A2E8B67E901313987A",
+        "name":  "nilm_open.c"
+    },
+    {
+        "sha256":  "72D2D3674ABA0A53B3C1C6D2426FF44089CE4A9F638FE2940BC3476DED27859A",
+        "name":  "nilm_open.h"
+    },
+    {
+        "sha256":  "5C41E87E0D21F8014CEBE30E0C9A76D3AD7B7C10671C0868D0CFD27E4737BA9E",
+        "name":  "nilm_open_assets.c"
+    },
+    {
+        "sha256":  "CB2639E2C32A37F2F6DE358E3BEEEF4CA67C20510D911EEEA67BFC0E06FD5F10",
+        "name":  "nilm_open_assets.h"
+    },
+    {
+        "sha256":  "7805025B41AF8F153506EFD123404355A149580E31F713439294B6DE5A0B7300",
+        "name":  "nilm_phase.c"
+    },
+    {
+        "sha256":  "CBC18EE10A086ED1EC2F0D9E0106029905C6FA512C3903963DC1A1A965023A80",
+        "name":  "nilm_phase.h"
+    },
+    {
+        "sha256":  "6D6463A63BAA1FE730A8F78872C1CD970B25EBC44DABB0117DEC7AFA9AF6B672",
+        "name":  "nilm_physpeed.c"
+    },
+    {
+        "sha256":  "BCEA6D13E57FDE3FCDFB97B5D9C1F3A3D6805A786F54B4E61DCF888D95823A6B",
+        "name":  "nilm_pl.c"
+    },
+    {
+        "sha256":  "908048DD5A6973A5A96533EE29375A2A4F5A3011BCD1C1D4BE0DB800D0911E94",
+        "name":  "nilm_pl.h"
+    },
+    {
+        "sha256":  "F30909FFF53A5052C68CF4757524307EB48379FC1AED5D79119AE81F31C857FB",
+        "name":  "nilm_status.c"
+    },
+    {
+        "sha256":  "E65AA629C481D2683A53BA0ED4C75B3B779BD7E19518ABA3CE1CCB78706A26C2",
+        "name":  "nilm_status.h"
+    },
+    {
+        "sha256":  "09559788BFFB04F34421E9ACF26047461D8D2A8C709A8B7C76FAA197A0C55897",
+        "name":  "nilm_store.c"
+    },
+    {
+        "sha256":  "D4BEEA40BFDC17406A40B96D594FAF87CA1324C50841BC1D1F32613B14C8986B",
+        "name":  "nilm_store.h"
+    },
+    {
+        "sha256":  "BA34E2F48C09852A10458E12CAC08B1B5666489FE14F2024D69FE338321B27B1",
+        "name":  "nilm_stream.c"
+    },
+    {
+        "sha256":  "070CB12DA9358EAAE6E791A6AE359D783ADCC68FC27728425D7C2208C9E7FBEE",
+        "name":  "nilm_stream.h"
+    },
+    {
+        "sha256":  "17C5848910C03164F8773EB2AA7D203711C20053C79092B1F9B03B47E9CA607B",
+        "name":  "nilm_stream_service.c"
+    },
+    {
+        "sha256":  "B7C2CF1DB05A0BA270240F427F140115251A18689A55294D37B20E34BDFB9276",
+        "name":  "nilm_stream_service.h"
+    },
+    {
+        "sha256":  "F0FE823647368F8716BAC7A5A5AD529DE4010CCF42DED57F6A90FA2428E2874A",
+        "name":  "nilm_unknown_assets.h"
+    },
+    {
+        "sha256":  "2523C35CE2C149640474EE47D7D4EEB0F05B4BD2266568DDFA4348305463E61A",
+        "name":  "nilm_wire.c"
+    },
+    {
+        "sha256":  "B46A4C58777C8E86A780DAA160DADA2A24C604A3C1E03518527A10A2A983D5FE",
+        "name":  "nilm_wire.h"
+    },
+    {
+        "sha256":  "CD08AF4DC92C4BE2D6EC0CF1B30EA6F1AEE1D7D8F5C4539D862AA4EC65E7CA9E",
+        "name":  "nilm_xadapter.c"
+    },
+    {
+        "sha256":  "B2A5185524650B712501A413944E56A6D05C530641C72FE9BB0D92B9CC0AF981",
+        "name":  "platform.c"
+    },
+    {
+        "sha256":  "1AA7EA6489214B6FAA89DC196BF13485A5425E3E79E6442CEE7CC82E99B395BA",
+        "name":  "platform.h"
+    },
+    {
+        "sha256":  "384DAB5E84698C7915B1F9E6A3AE81F2A71EFE904A4E2C1BF1222E8D057686D5",
+        "name":  "platform_config.h.in"
+    },
+    {
+        "sha256":  "F6AC190EC0CBE15D29C13E0969D95B1A33E9C786E56FAB859265E8C0BCAFFFA7",
+        "name":  "platform_mb.c"
+    },
+    {
+        "sha256":  "ED6A0FAABE9F4B99040B12868F0ED73D5CC221BE5A99AFFB57DE4FE260F188B7",
+        "name":  "platform_zynq.c"
+    },
+    {
+        "sha256":  "32A76347AFB94C981193ACB7A35617FF6B96343BEA38DD530F942714E73E3527",
+        "name":  "platform_zynqmp.c"
+    },
+    {
+        "sha256":  "F19D94FCB29C24A5BB53269BFCE2F24604CD6105FDAE7B900693743378C675C1",
+        "name":  "README.txt"
+    },
+    {
+        "sha256":  "CA6799FA4CF56A6374CC780AE4DF579CA752DC802098D097D2FA72E30C22F249",
+        "name":  "sfp.c"
+    },
+    {
+        "sha256":  "FA4EB7C2E57D6299F751B4EBB503A7B1F457CA255B22A8A4ED691D4A6C4A13A2",
+        "name":  "si5324.c"
+    },
+    {
+        "sha256":  "6FC6A09C73E37D0DBF87267B8128AB9A31E9ABA990B8BC8F6E385D5C0B5A9A8C",
+        "name":  "UserConfig.cmake"
+    }
+]

@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>H03  XADC 采集、跨时钟传递与四缓存模块</title>
+<rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">H03  XADC 采集、跨时钟传递与四缓存模块</text>
+<text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">nilm_sample_source → nilm_sample_mailbox → nilm_stream_engine → 双口 BRAM</text>
+<polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="100,145 89.0,140.5 89.0,149.5" fill="#1676AD"/>
+<text x="114" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#1676AD">DATA · 数据</text>
+<polyline points="417,145 465,145" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="465,145 454.0,140.5 454.0,149.5" fill="#B96B13"/>
+<text x="479" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#B96B13">ADDRESS · 地址</text>
+<polyline points="782,145 830,145" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="830,145 819.0,140.5 819.0,149.5" fill="#C13E49"/>
+<text x="844" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#C13E49">CONTROL · 控制</text>
+<polyline points="1147,145 1195,145" fill="none" stroke="#64748B" stroke-width="2.8"/>
+<polygon points="1195,145 1184.0,140.5 1184.0,149.5" fill="#64748B"/>
+<text x="1209" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">CLOCK / RESET · 时钟 / 复位</text>
+<rect x="50" y="210" width="780" height="785" fill="#EDF5EC" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="68" y="242.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">采样时钟域 · 25.6 MHz</text>
+<rect x="875" y="210" width="875" height="785" fill="#EDF5FA" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="893" y="242.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">AXI 时钟域 · 100 MHz</text>
+<rect x="90" y="280" width="260" height="100" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="220.0" y="323.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">时钟与复位</text>
+<text x="220.0" y="351.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">Clock Wizard / reset 同步</text>
+<rect x="455" y="280" width="310" height="100" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="610.0" y="323.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">采样定时器</text>
+<text x="610.0" y="351.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">每 1000 周期触发一次</text>
+<polyline points="350,330 455,330" fill="none" stroke="#64748B" stroke-width="2.8"/>
+<polygon points="455,330 444.0,325.5 444.0,334.5" fill="#64748B"/>
+<rect x="347.0" y="298.3" width="110.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="402" y="316.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#64748B">sample_clk</text>
+<rect x="90" y="480" width="260" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="220.0" y="518.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">XADC 硬核</text>
+<text x="220.0" y="546.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">VAUX2 + VAUX10</text>
+<text x="220.0" y="576.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">12 bit / 通道</text>
+<text x="220.0" y="606.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">DRP 读出接口</text>
+<rect x="455" y="480" width="310" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="610.0" y="533.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">xadc_reader</text>
+<text x="610.0" y="561.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">读出 V / I 并配对</text>
+<text x="610.0" y="591.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">sample_id / valid</text>
+<polyline points="610,380 610,425 220,425 220,480" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="220,480 224.5,469.0 215.5,469.0" fill="#C13E49"/>
+<rect x="370.0" y="413.3" width="90.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="415" y="431.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">CONVST</text>
+<polyline points="350,515 455,515" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="455,515 444.0,510.5 444.0,519.5" fill="#1676AD"/>
+<rect x="355.0" y="483.3" width="94.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="402" y="501.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">DO[15:0]</text>
+<polyline points="455,555 350,555" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="350,555 361.0,559.5 361.0,550.5" fill="#B96B13"/>
+<rect x="341.5" y="563.3" width="121.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="402" y="581.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#B96B13">DADDR[6:0]</text>
+<polyline points="350,610 455,610" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="455,610 444.0,605.5 444.0,614.5" fill="#C13E49"/>
+<polygon points="350,610 361.0,614.5 361.0,605.5" fill="#C13E49"/>
+<rect x="358.0" y="636.3" width="94.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="405" y="654.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">DRP 握手</text>
+<rect x="455" y="790" width="310" height="125" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="610.0" y="831.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">跨时钟邮箱 · 发送端</text>
+<text x="610.0" y="859.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">data[31:0] + id[31:0]</text>
+<text x="610.0" y="889.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">请求 / 应答握手</text>
+<polyline points="610,630 610,790" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="610,790 614.5,779.0 605.5,779.0" fill="#1676AD"/>
+<rect x="518.0" y="698.3" width="184.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="610" y="716.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">V[11:0] / I[11:0] / id</text>
+<rect x="925" y="790" width="300" height="125" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1075.0" y="831.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">跨时钟邮箱 · 接收端</text>
+<text x="1075.0" y="859.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">record_data / record_id</text>
+<text x="1075.0" y="889.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">record_valid / faults</text>
+<polyline points="765,825 925,825" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="925,825 914.0,820.5 914.0,829.5" fill="#1676AD"/>
+<rect x="772.5" y="788.3" width="145.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="845" y="806.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">64-bit payload</text>
+<polyline points="765,875 925,875" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="925,875 914.0,870.5 914.0,879.5" fill="#C13E49"/>
+<polygon points="765,875 776.0,879.5 776.0,870.5" fill="#C13E49"/>
+<rect x="799.0" y="888.3" width="92.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="845" y="906.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">req / ack</text>
+<rect x="925" y="480" width="300" height="160" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1075.0" y="523.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">流引擎 / 写入状态机</text>
+<text x="1075.0" y="551.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">空闲 bank 选择</text>
+<text x="1075.0" y="581.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">LOW：数据 / HIGH：编号</text>
+<text x="1075.0" y="611.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">块完成后发布描述符</text>
+<polyline points="1075,790 1075,640" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1075,640 1070.5,651.0 1079.5,651.0" fill="#1676AD"/>
+<rect x="1013.0" y="703.3" width="124.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1075" y="721.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">完整样本记录</text>
+<rect x="1325" y="480" width="365" height="160" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1507.5" y="523.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">双口 BRAM · Port B</text>
+<text x="1507.5" y="551.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">4 × 1024 对 × 8 B</text>
+<text x="1507.5" y="581.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">bank0 / bank1 / bank2 / bank3</text>
+<text x="1507.5" y="611.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">Port A 供 PS 经 AXI 读取</text>
+<polyline points="1225,515 1325,515" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1325,515 1314.0,510.5 1314.0,519.5" fill="#1676AD"/>
+<rect x="1212.5" y="478.3" width="125.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1275" y="496.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">wrdata[31:0]</text>
+<polyline points="1225,560 1325,560" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="1325,560 1314.0,555.5 1314.0,564.5" fill="#B96B13"/>
+<rect x="1219.5" y="530.3" width="111.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1275" y="548.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#B96B13">bram_addr</text>
+<polyline points="1225,605 1325,605" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1325,605 1314.0,600.5 1314.0,609.5" fill="#C13E49"/>
+<rect x="1216.5" y="618.3" width="117.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1275" y="636.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">en / we[3:0]</text>
+<rect x="925" y="280" width="765" height="100" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1307.5" y="323.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">AXI-Lite 寄存器与缓存所有权</text>
+<text x="1307.5" y="351.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">START / STOP / RELEASE · ready / epoch / block_seq / faults</text>
+<polyline points="1050,380 1050,480" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1050,480 1054.5,469.0 1045.5,469.0" fill="#C13E49"/>
+<polygon points="1050,380 1045.5,391.0 1054.5,391.0" fill="#C13E49"/>
+<rect x="997.0" y="418.3" width="106.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1050" y="436.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">命令 / 状态</text>
+<polyline points="1505,640 1505,790" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1505,790 1509.5,779.0 1500.5,779.0" fill="#1676AD"/>
+<rect x="1324.5078125" y="713.3" width="340.984375" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1495" y="731.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">Port A → AXI BRAM Controller → GP0</text>
+<rect x="1325" y="790" width="365" height="125" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1507.5" y="831.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">PS 取块与释放</text>
+<text x="1507.5" y="859.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">复制至 DDR 后校验</text>
+<text x="1507.5" y="889.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">验证描述符后 RELEASE</text>
+<polyline points="1690,850 1720,850 1720,330 1690,330" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1690,330 1701.0,334.5 1701.0,325.5" fill="#C13E49"/>
+<text x="50" y="1056.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">不覆盖 READY bank；无空闲 bank 时记录丢块。采样编号是成功样本计数，不能替代物理采样时间戳。</text>
+<polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 H03：样本经握手邮箱跨域；数据字与样本编号分两次 32 位写入 BRAM，块描述符用于连续性检查。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+</svg>

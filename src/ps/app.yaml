@@ -1,0 +1,4 @@
+domain_path: C:\Users\ASUS\Desktop\project\nilm_eth_vitis\nilm_platform\export\nilm_platform\sw\standalone_ps7_cortexa9_0
+app_src_dir: C:\AMDDesignTools\2025.2\Vitis\data\embeddedsw\lib\sw_apps\lwip_echo_server
+template: lwip_echo_server
+lang: c

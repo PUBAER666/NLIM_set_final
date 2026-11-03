@@ -1,0 +1,839 @@
+
+****** Xilinx Vitis Development Environment
+****** Vitis v2025.2 (64-bit)
+****** SW Build 6295257 on 2025-11-13-08:29:30
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Vitis Server started on port '63342'.
+Platform p creation started.
+SDT generated successfully.
+[INFO]: Validating inputs
+[INFO]: Starting domain creation
+[INFO]: Found HLS driver within SDT, copying the sources
+[INFO]: Validating inputs
+[INFO]: Starting domain creation
+[INFO]: Found HLS driver within SDT, copying the sources
+[INFO]: Generating Domain-specific DTS for ps7_cortexa9_0
+[INFO]: Generating Domain-specific DTS for ps7_cortexa9_0
+[INFO]: Generating required metadata from domain specific DT
+[INFO]: Generating required metadata from domain specific DT
+[INFO]: Successfully created Domain at C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp
+Domain standalone added successfully.
+[INFO]: Successfully created Domain at C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp
+[INFO]: Validating inputs
+[INFO]: Generating Linker script for zynq_fsbl
+[INFO]: Successfully Created Application sources at C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl
+Platform FSBL Boot domain added successfully.
+Platform creation finished successfully.
+Platform Quick Build initiated.
+Initiating build for the p component.
+Generating Export directory
+Generated platform metadata for creating application(s) based on platform p.
+Initiating build for the p component.
+[INFO]: Building BSP
+[INFO]: Building BSP
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+[0/1] Re-running CMake...
+[1/142] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram.c.obj
+[2/142] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_g.c.obj
+[3/142] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_intr.c.obj
+[4/142] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_sinit.c.obj
+[5/142] Building C object libsrc/coresightps_dcc/src/CMakeFiles/coresightps_dcc.dir/xcoresightpsdcc.c.obj
+[6/142] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_g.c.obj
+[7/142] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_hw.c.obj
+[8/142] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_intr.c.obj
+[9/142] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_selftest.c.obj
+[10/142] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_sinit.c.obj
+[11/142] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_g.c.obj
+[12/142] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_hw.c.obj
+[13/142] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_selftest.c.obj
+[14/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_hw.c.obj
+[15/142] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_selftest.c.obj
+[16/142] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg.c.obj
+[17/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_sinit.c.obj
+[18/142] Linking C static library libsrc\coresightps_dcc\src\libcoresightps_dcc.a
+[19/142] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn_linux.c.obj
+[20/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_pcs.c.obj
+[21/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_g.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_g.c:16:9: warning: missing initializer for field 'S1GDiv0' of 'XEmacPs_Config' [-Wmissing-field-initializers]
+   16 |         },
+      |         ^
+In file included from C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_g.c:1:
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps.h:540:13: note: 'S1GDiv0' declared here
+  540 |         u16 S1GDiv0;    /**< 1Gbps Clock Divider 0 */
+      |             ^~~~~~~
+[22/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_intr.c.obj
+[23/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps.c.obj
+[24/142] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_sinit.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src/xdmaps_sinit.c: In function 'XDmaPs_GetDrvIndex':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src/xdmaps_sinit.c:99:32: warning: unused parameter 'InstancePtr' [-Wunused-parameter]
+   99 | u32 XDmaPs_GetDrvIndex(XDmaPs *InstancePtr, UINTPTR BaseAddress)
+      |                        ~~~~~~~~^~~~~~~~~~~
+[25/142] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn_sinit.c.obj
+[26/142] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn_g.c.obj
+[27/142] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_g.c.obj
+[28/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_bdring.c.obj
+[29/142] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_sinit.c.obj
+[30/142] Linking C static library libsrc\bram\src\libbram.a
+[31/142] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_intr.c.obj
+[32/142] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_selftest.c.obj
+[33/142] Linking C static library libsrc\devcfg\src\libdevcfg.a
+[34/142] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps.c.obj
+[35/142] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_control.c.obj
+[36/142] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn.c.obj
+[37/142] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_hw.c.obj
+[38/142] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer_g.c.obj
+[39/142] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer.c.obj
+[40/142] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer_sinit.c.obj
+[41/142] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer_selftest.c.obj
+[42/142] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt_g.c.obj
+[43/142] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt.c.obj
+[44/142] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt_sinit.c.obj
+[45/142] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt_selftest.c.obj
+[46/142] ========== BSP Build Information ==========
+Compiler PATH: C:/AMDDesignTools/2025.2/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
+Compiler FLAGS:  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/ASUS/D
+esktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spe
+c -IC:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_
+fsbl_bsp/include  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns -DNDEBUG
+===========================================
+** The above flags are BSP level flags. Increase verbosity to see component specific flags **
+===========================================
+[47/142] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_sinit.c.obj
+[48/142] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic.c.obj
+[49/142] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_g.c.obj
+[50/142] Linking C static library libsrc\dmaps\src\libdmaps.a
+[51/142] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_selftest.c.obj
+[52/142] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_options.c.obj
+[53/142] Linking C static library libsrc\nilm_cnn\src\libnilm_cnn.a
+[54/142] Linking C static library libsrc\emacps\src\libemacps.a
+[55/142] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps.c.obj
+[56/142] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_g.c.obj
+[57/142] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_options.c.obj
+[58/142] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_sinit.c.obj
+[59/142] Linking C static library libsrc\scutimer\src\libscutimer.a
+[60/142] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_hw.c.obj
+[61/142] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_g.c.obj
+[62/142] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_selftest.c.obj
+[63/142] Linking C static library libsrc\scuwdt\src\libscuwdt.a
+[64/142] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps.c.obj
+[65/142] Linking C static library libsrc\scugic\src\libscugic.a
+[66/142] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_intr.c.obj
+[67/142] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_card.c.obj
+[68/142] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_sinit.c.obj
+[69/142] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_host.c.obj
+[70/142] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_g.c.obj
+[71/142] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps.c.obj
+[72/142] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_selftest.c.obj
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp
+[0/1] Re-running CMake...
+[1/236] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram.c.obj
+[2/236] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_g.c.obj
+[3/236] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_intr.c.obj
+[4/236] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_sinit.c.obj
+[5/236] Building C object libsrc/coresightps_dcc/src/CMakeFiles/coresightps_dcc.dir/xcoresightpsdcc.c.obj
+[6/236] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_g.c.obj
+[7/236] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_hw.c.obj
+[8/236] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_intr.c.obj
+[9/236] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_selftest.c.obj
+[10/236] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg_sinit.c.obj
+[11/236] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_g.c.obj
+[12/236] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_hw.c.obj
+[13/236] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_selftest.c.obj
+[14/236] Building C object libsrc/bram/src/CMakeFiles/bram.dir/xbram_selftest.c.obj
+[15/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_hw.c.obj
+[16/236] Building C object libsrc/devcfg/src/CMakeFiles/devcfg.dir/xdevcfg.c.obj
+[17/236] Linking C static library libsrc\coresightps_dcc\src\libcoresightps_dcc.a
+[18/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_sinit.c.obj
+[19/236] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn_linux.c.obj
+[20/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_pcs.c.obj
+[21/236] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps_sinit.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/dmaps/src/xdmaps_sinit.c: In function 'XDmaPs_GetDrvIndex':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/dmaps/src/xdmaps_sinit.c:99:32: warning: unused parameter 'InstancePtr' [-Wunused-parameter]
+   99 | u32 XDmaPs_GetDrvIndex(XDmaPs *InstancePtr, UINTPTR BaseAddress)
+      |                        ~~~~~~~~^~~~~~~~~~~
+[22/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_intr.c.obj
+[23/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_g.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/emacps/src/xemacps_g.c:16:9: warning: missing initializer for field 'S1GDiv0' of 'XEmacPs_Config' [-Wmissing-field-initializers]
+   16 |         },
+      |         ^
+In file included from C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/emacps/src/xemacps_g.c:1:
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/emacps/src/xemacps.h:540:13: note: 'S1GDiv0' declared here
+  540 |         u16 S1GDiv0;    /**< 1Gbps Clock Divider 0 */
+      |             ^~~~~~~
+[24/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps.c.obj
+[25/236] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn_sinit.c.obj
+[26/236] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn_g.c.obj
+[27/236] Linking C static library libsrc\bram\src\libbram.a
+[28/236] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_intr.c.obj
+[29/236] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_sinit.c.obj
+[30/236] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_g.c.obj
+[31/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_bdring.c.obj
+[32/236] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_selftest.c.obj
+[33/236] Linking C static library libsrc\devcfg\src\libdevcfg.a
+[34/236] Building C object libsrc/nilm_cnn/src/CMakeFiles/nilm_cnn.dir/xnilm_cnn.c.obj
+[35/236] Building C object libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_control.c.obj
+[36/236] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic_hw.c.obj
+[37/236] Building C object libsrc/dmaps/src/CMakeFiles/dmaps.dir/xdmaps.c.obj
+[38/236] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer_g.c.obj
+[39/236] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer.c.obj
+[40/236] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer_selftest.c.obj
+[41/236] Building C object libsrc/scutimer/src/CMakeFiles/scutimer.dir/xscutimer_sinit.c.obj
+[42/236] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt_g.c.obj
+[43/236] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt.c.obj
+[44/236] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt_selftest.c.obj
+[45/236] Building C object libsrc/scuwdt/src/CMakeFiles/scuwdt.dir/xscuwdt_sinit.c.obj
+[46/236] Building C object libsrc/scugic/src/CMakeFiles/scugic.dir/xscugic.c.obj
+[47/236] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_sinit.c.obj
+[48/236] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_g.c.obj
+[49/236] Linking C static library libsrc\nilm_cnn\src\libnilm_cnn.a
+[50/236] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_selftest.c.obj
+[51/236] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_options.c.obj
+[52/236] Linking C static library libsrc\emacps\src\libemacps.a
+[53/236] Linking C static library libsrc\dmaps\src\libdmaps.a
+[54/236] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps.c.obj
+[55/236] ========== BSP Build Information ==========
+Compiler PATH: C:/AMDDesignTools/2025.2/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
+Compiler FLAGS:  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/ASUS/D
+esktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/Xili
+nx.spec -IC:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_corte
+xa9_0/standalone/bsp/include -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns -DFPU_HARD_FLOA
+T_ABI_ENABLED=1 -DNDEBUG
+===========================================
+** The above flags are BSP level flags. Increase verbosity to see component specific flags **
+===========================================
+[56/236] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_g.c.obj
+[57/236] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_options.c.obj
+[58/236] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps_sinit.c.obj
+[59/236] Linking C static library libsrc\scutimer\src\libscutimer.a
+[60/236] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_hw.c.obj
+[61/236] Linking C static library libsrc\scuwdt\src\libscuwdt.a
+[62/236] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_selftest.c.obj
+[63/236] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_g.c.obj
+[64/236] Building C object libsrc/ttcps/src/CMakeFiles/ttcps.dir/xttcps.c.obj
+[65/236] Linking C static library libsrc\scugic\src\libscugic.a
+[66/236] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_host.c.obj
+[67/236] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_intr.c.obj
+[68/236] Building C object libsrc/sdps/src/CMakeFiles/sdps.dir/xsdps_card.c.obj
+[69/236] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_sinit.c.obj
+[70/236] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_g.c.obj
+[71/236] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps.c.obj
+[72/236] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_sinit.c.obj
+[73/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/print.c.obj[INFO]: Copying headers and built archives
+CMake Warning (dev) at libsrc/cmake_install.cmake:111 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake:112
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:42 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/cmake_install.cmake:119 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake:119
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:42 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/standalone/src/cmake_install.cmake:63 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake:64
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:47 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/standalone/src/cmake_install.cmake:71 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake:71
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:47 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[73/236] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_intr.c.obj
+[74/236] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_selftest.c.obj
+[75/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/print.c.obj
+[76/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/inbyte.c.obj
+[77/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_assert.c.obj
+[78/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_testcache.c.obj
+[79/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_mem.c.obj
+[80/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xpm_init.c.obj
+[81/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/xcortexa9_g.c.obj
+[82/236] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_options.c.obj
+[83/236] Linking C static library libsrc\ttcps\src\libttcps.a
+[84/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/outbyte.c.obj
+[85/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_testio.c.obj
+[86/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_testmem.c.obj
+[87/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/sbrk.c.obj
+[88/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xplatform_info.c.obj
+[89/236] Linking C static library libsrc\sdps\src\libsdps.a
+[90/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_printf.c.obj
+[91/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/close.c.obj
+[92/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_util.c.obj
+[93/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/getpid.c.obj
+[94/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/cpputest_time.c.obj
+[95/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/unlink.c.obj
+[96/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/open.c.obj
+[97/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/read.c.obj
+[98/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/errno.c.obj
+[99/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/_open.c.obj
+[100/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/isatty.c.obj
+[101/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/_sbrk.c.obj
+[102/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/_exit.c.obj
+[103/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/intr/xinterrupt_wrap.c.obj
+[104/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/lseek.c.obj
+[105/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_sutil.c.obj
+[106/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/fcntl.c.obj
+[107/236] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps.c.obj
+[108/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/getentropy.c.obj
+[109/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/gettimeofday.c.obj
+[110/236] Linking C static library libsrc\uartps\src\libuartps.a
+[111/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/time.c.obj
+[112/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/write.c.obj
+[113/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/putnum.c.obj
+[114/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/vectors.c.obj
+[115/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/fstat.c.obj
+[116/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/xil_exception.c.obj
+[117/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/xil_spinlock.c.obj
+[118/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/xpm_counter.c.obj
+[119/236] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/asm_vectors.S.obj
+[120/236] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/translation_table.S.obj
+[121/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/abort.c.obj
+[122/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/kill.c.obj
+[123/236] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/boot.S.obj
+[124/236] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/cpu_init.S.obj
+[125/236] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/xil-crt0.S.obj
+[126/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xil_misc_psreset_api.c.obj
+[127/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xil_mmu.c.obj
+[128/236] Linking C static library libsrc\xadcps\src\libxadcps.a
+[129/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xl2cc_counter.c.obj
+[130/236] Building C object libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/ttcps/ttcps.c.obj
+[131/236] Building C object libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/scutimer/scutimer.c.obj
+[132/236] Building C object libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj
+[133/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/init.c.obj
+[134/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/dns.c.obj
+[135/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ip.c.obj
+[136/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/def.c.obj
+[137/236] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xil_cache.c.obj
+[138/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/raw.c.obj
+[139/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/inet_chksum.c.obj
+[140/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/sys.c.obj
+[141/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/stats.c.obj
+[142/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/memp.c.obj
+[143/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/mem.c.obj
+[144/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/altcp.c.obj
+[145/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/altcp_alloc.c.obj
+[146/236] Linking C static library libsrc\xiltimer\src\libxiltimer.a
+[147/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/altcp_tcp.c.obj
+[148/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/netif.c.obj
+[149/236] Archiving C static library libsrc/build_configs/gen_bsp/libxil.a
+[150/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/autoip.c.obj
+[151/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/timeouts.c.obj
+[152/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/igmp.c.obj
+CMake Warning (dev) at libsrc/xiltimer/src/cmake_install.cmake:53 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake:54
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:52 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xiltimer/src/cmake_install.cmake:61 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake:61
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:52 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xilffs/src/cmake_install.cmake:53 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake:54
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:57 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xilffs/src/cmake_install.cmake:61 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake:61
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:57 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[INFO]: Successfully built BSP. Generated libxil.a, libxilffs.a, libxilrsa.a, libxilstandalone.a, libxiltimer.a
+[74/142] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_sinit.c.obj
+[75/142] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps_intr.c.obj
+[76/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_assert.c.obj
+[77/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_mem.c.obj
+[78/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_testcache.c.obj
+[79/142] Building C object libsrc/uartps/src/CMakeFiles/uartps.dir/xuartps_options.c.obj
+[80/142] Linking C static library libsrc\ttcps\src\libttcps.a
+[81/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_testmem.c.obj
+[82/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/outbyte.c.obj
+[83/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_testio.c.obj
+[84/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/inbyte.c.obj
+[85/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xplatform_info.c.obj
+[86/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xpm_init.c.obj
+[87/142] Linking C static library libsrc\sdps\src\libsdps.a
+[88/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_printf.c.obj
+[89/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/xcortexa9_g.c.obj
+[90/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_util.c.obj
+[91/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/cpputest_time.c.obj
+[92/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/unlink.c.obj
+[93/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/read.c.obj
+[94/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/sbrk.c.obj
+[95/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/isatty.c.obj
+[96/142] Building C object libsrc/xadcps/src/CMakeFiles/xadcps.dir/xadcps.c.obj
+[97/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/_sbrk.c.obj
+[98/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/intr/xinterrupt_wrap.c.obj
+[99/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/_exit.c.obj
+[100/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/common/xil_sutil.c.obj
+[101/142] Linking C static library libsrc\uartps\src\libuartps.a
+[102/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/close.c.obj
+[103/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/fcntl.c.obj
+[104/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/getpid.c.obj
+[105/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/write.c.obj
+[106/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/open.c.obj
+[107/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/fstat.c.obj
+[108/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/errno.c.obj
+[109/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/abort.c.obj
+[110/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/_open.c.obj
+[111/142] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/asm_vectors.S.obj
+[112/142] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/translation_table.S.obj
+[113/142] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/boot.S.obj
+[114/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/kill.c.obj
+[115/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/lseek.c.obj
+[116/142] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/cpu_init.S.obj
+[117/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/getentropy.c.obj
+[118/142] Building ASM object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/gcc/xil-crt0.S.obj
+[119/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/gettimeofday.c.obj
+[120/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/gcc/time.c.obj
+[121/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/putnum.c.obj
+[122/142] Linking C static library libsrc\xadcps\src\libxadcps.a
+[123/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/vectors.c.obj
+[124/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/xil_spinlock.c.obj
+[125/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/xil_exception.c.obj
+[126/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/common/xpm_counter.c.obj
+[127/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xl2cc_counter.c.obj
+[128/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xil_mmu.c.obj
+[129/142] Building C object libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/default_timer/globaltimer_sleep_zynq.c.obj
+[130/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xil_misc_psreset_api.c.obj
+[131/142] Building C object libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/xiltimer.c.obj
+[132/142] Linking C static library libsrc\xilrsa\src\libxilrsa.a
+[133/142] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/ffsystem.c.obj
+[134/142] Building C object libsrc/xiltimer/src/CMakeFiles/xiltimer.dir/core/scutimer/scutimer.c.obj
+[135/142] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/ffunicode.c.obj
+[136/142] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/diskio.c.obj
+[137/142] Archiving C static library libsrc/build_configs/gen_bsp/libxil.a
+[138/142] Building C object libsrc/standalone/src/CMakeFiles/xilstandalone.dir/arm/cortexa9/xil_cache.c.obj
+[139/142] Linking C static library libsrc\xiltimer\src\libxiltimer.a
+[140/142] Linking C static library libsrc\standalone\src\libxilstandalone.a
+[141/142] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/ff.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/ff.c: In function 'get_ldnumber':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/ff.c:4000:13: warning: unused variable 'vol' [-Wunused-variable]
+ 4000 |         int vol = -1;
+      |             ^~~
+[142/142] Linking C static library libsrc\xilffs\src\libxilffs.a
+[153/236] Linking C static library libsrc\standalone\src\libxilstandalone.a
+[154/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/icmp.c.obj
+[155/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/pbuf.c.obj
+[156/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/dhcp6.c.obj
+[157/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/ethip6.c.obj
+[158/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/icmp6.c.obj
+[159/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/inet6.c.obj
+[160/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/ip6.c.obj
+[161/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/udp.c.obj
+[162/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/ip6_addr.c.obj
+[163/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/mld6.c.obj
+[164/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/ip6_frag.c.obj
+[165/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/ip4_addr.c.obj
+[166/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/ip4.c.obj
+[167/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv6/nd6.c.obj
+[168/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/acd.c.obj
+[169/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/etharp.c.obj
+[170/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/tcp_out.c.obj
+[171/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/ip4_frag.c.obj
+[172/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/api_lib.c.obj
+[173/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/tcp.c.obj
+[174/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/if_api.c.obj
+[175/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/api_msg.c.obj
+[176/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/err.c.obj
+[177/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/tcp_in.c.obj
+[178/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/netbuf.c.obj
+[179/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/netdb.c.obj
+[180/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/netifapi.c.obj
+[181/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/sockets.c.obj
+[182/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/api/tcpip.c.obj
+[183/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/core/ipv4/dhcp.c.obj
+[184/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ethernet.c.obj
+[185/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/bridgeif.c.obj
+[186/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/lowpan6_common.c.obj
+[187/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/lowpan6.c.obj
+[188/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/lowpan6_ble.c.obj
+[189/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/zepif.c.obj
+[190/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/slipif.c.obj
+[191/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/auth.c.obj
+[192/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/chap-md5.c.obj
+[193/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/ccp.c.obj
+[194/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/chap_ms.c.obj
+[195/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/bridgeif_fdb.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/lwip220/src/lwip-2.2.0/src/netif/bridgeif_fdb.c: In function 'bridgeif_age_tmr':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/lwip220/src/lwip-2.2.0/src/netif/bridgeif_fdb.c:187:3: warning: implicit declaration of function 'sys_timeout' [-Wimplicit-function-declaration]
+  187 |   sys_timeout(BRIDGEIF_AGE_TIMER_MS, bridgeif_age_tmr, arg);
+      |   ^~~~~~~~~~~
+[196/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/chap-new.c.obj
+[197/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/demand.c.obj
+[198/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/eap.c.obj
+[199/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/ecp.c.obj
+[200/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/eui64.c.obj
+[201/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/fsm.c.obj
+[202/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/ipcp.c.obj
+[203/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/ipv6cp.c.obj
+[204/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/lcp.c.obj
+[205/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/magic.c.obj
+[206/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/mppe.c.obj
+[207/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/multilink.c.obj
+[208/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/ppp.c.obj
+[209/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/pppapi.c.obj
+[210/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/pppcrypt.c.obj
+[211/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/pppoe.c.obj
+[212/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/pppol2tp.c.obj
+[213/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/upap.c.obj
+[214/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/pppos.c.obj
+[215/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/utils.c.obj
+[216/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/vj.c.obj
+[217/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/polarssl/arc4.c.obj
+[218/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/polarssl/des.c.obj
+[219/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/polarssl/md4.c.obj
+[220/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/sys_arch.c.obj
+[221/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/polarssl/md5.c.obj
+[222/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/src/netif/ppp/polarssl/sha1.c.obj
+[223/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/sys_arch_raw.c.obj
+[224/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/xtopology_g.c.obj[INFO]: Copying headers and built archives
+CMake Warning (dev) at libsrc/cmake_install.cmake:111 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake:112
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:42 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/cmake_install.cmake:119 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake:119
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:42 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/standalone/src/cmake_install.cmake:63 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake:64
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:47 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/standalone/src/cmake_install.cmake:71 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake:71
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:47 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xiltimer/src/cmake_install.cmake:53 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake:54
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:52 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xiltimer/src/cmake_install.cmake:61 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake:61
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:52 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/lwip220/src/cmake_install.cmake:53 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/lwip220/src/cmake_install.cmake:54
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:57 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/lwip220/src/cmake_install.cmake:61 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/lwip220/src/cmake_install.cmake:61
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:57 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xilffs/src/cmake_install.cmake:53 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake:54
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:62 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xilffs/src/cmake_install.cmake:61 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake:61
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\ps7_cortexa9_0\standalone\bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:62 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[INFO]: Successfully built BSP. Generated liblwip220.a, libxil.a, libxilffs.a, libxilstandalone.a, libxiltimer.a
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/lwip220/src/xtopology_g.c:11:9: warning: initialization of 'unsigned int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+   11 |         NULL
+      |         ^~~~
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/lwip220/src/xtopology_g.c:11:9: note: (near initialization for 'xtopology[1].emac_baseaddr')
+[225/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/netif/xpqueue.c.obj
+[226/236] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/ffsystem.c.obj
+[227/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/netif/xadapter.c.obj
+[228/236] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/ffunicode.c.obj
+[229/236] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/diskio.c.obj
+[230/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/netif/xemacpsif_hw.c.obj
+[231/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/netif/xemacpsif.c.obj
+[232/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/netif/xemacpsif_dma.c.obj
+[233/236] Building C object libsrc/lwip220/src/CMakeFiles/lwip220.dir/lwip-2.2.0/contrib/ports/xilinx/netif/xemacpsif_physpeed.c.obj
+[234/236] Linking C static library libsrc\lwip220\src\liblwip220.a
+[235/236] Building C object libsrc/xilffs/src/CMakeFiles/xilffs.dir/ff.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/xilffs/src/ff.c: In function 'get_ldnumber':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/ps7_cortexa9_0/standalone/bsp/libsrc/xilffs/src/ff.c:4000:13: warning: unused variable 'vol' [-Wunused-variable]
+ 4000 |         int vol = -1;
+      |             ^~~
+[236/236] Linking C static library libsrc\xilffs\src\libxilffs.a
+Generating Boot ELFs
+[INFO]: Starting Application build process
+[INFO]: Building BSP
+[INFO]: Copying headers and built archives
+CMake Warning (dev) at libsrc/cmake_install.cmake:111 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake:112
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:42 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/cmake_install.cmake:119 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/cmake_install.cmake:119
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:42 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/standalone/src/cmake_install.cmake:63 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake:64
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:47 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/standalone/src/cmake_install.cmake:71 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/standalone/src/cmake_install.cmake:71
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:47 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xiltimer/src/cmake_install.cmake:53 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake:54
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:52 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xiltimer/src/cmake_install.cmake:61 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/cmake_install.cmake:61
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:52 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xilffs/src/cmake_install.cmake:53 (list):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake:54
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/../include
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:57 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+CMake Warning (dev) at libsrc/xilffs/src/cmake_install.cmake:61 (file):
+  Syntax error in cmake code at
+    C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xilffs/src/cmake_install.cmake:61
+  when parsing string
+    C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\nlimfinal\work\vitis_short\p\zynq_fsbl\zynq_fsbl_bsp\include/..
+  Invalid escape sequence \U
+  Policy CMP0010 is not set: Bad variable reference syntax is an error.  Run
+  "cmake --help-policy CMP0010" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  cmake_install.cmake:57 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[INFO]: Successfully built BSP. Generated libxil.a, libxilffs.a, libxilrsa.a, libxilstandalone.a, libxiltimer.a
+[INFO]: Building Application
+[1/2] Archiving C static library libsrc/build_configs/gen_bsp/libxil.a
+[2/2] ========== BSP Build Information ==========
+Compiler PATH: C:/AMDDesignTools/2025.2/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
+Compiler FLAGS:  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/ASUS/D
+esktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spe
+c -IC:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_
+fsbl_bsp/include  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns -DNDEBUG
+===========================================
+** The above flags are BSP level flags. Increase verbosity to see component specific flags **
+===========================================
+[1/14] ==========Application Build Information ==========
+Compiler Flags:  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/ASUS/D
+esktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spe
+c -IC:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_
+fsbl_bsp/include -Wall -Wextra      -O0  -g3     -U__clang__  
+Linker Flags:       -Os -Wl,--gc-sections -n -T"C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/
+nlimfinal/work/vitis_short/p/zynq_fsbl/lscript.ld" -L"C:/Users/ASUS/Desktop/project/nilm_eth_demo/ou
+tputs/nlimfinal/work/vitis_short/p/zynq_fsbl/zynq_fsbl_bsp/lib/" -L"/" -Wl,--start-group,-lxiltimer,
+-lxilffs,-lxilrsa,-lxil,-lxilstandalone,-lxiltimer,-lxilffs,-lxilrsa,-lgcc,-lc -Wl,--end-group
+===========================================
+[2/14] Building ASM object CMakeFiles/fsbl.elf.dir/fsbl_handoff.S.obj
+[3/14] Building C object CMakeFiles/fsbl.elf.dir/fsbl_hooks.c.obj
+[4/14] Building C object CMakeFiles/fsbl.elf.dir/md5.c.obj
+[5/14] Building C object CMakeFiles/fsbl.elf.dir/rsa.c.obj
+[6/14] Building C object CMakeFiles/fsbl.elf.dir/image_mover.c.obj
+[7/14] Building C object CMakeFiles/fsbl.elf.dir/nand.c.obj
+[8/14] Building C object CMakeFiles/fsbl.elf.dir/main.c.obj
+[9/14] Building C object CMakeFiles/fsbl.elf.dir/nor.c.obj
+[10/14] Building C object CMakeFiles/fsbl.elf.dir/qspi.c.obj
+[11/14] Building C object CMakeFiles/fsbl.elf.dir/pcap.c.obj
+[12/14] Building C object CMakeFiles/fsbl.elf.dir/sd.c.obj
+[13/14] Building C object CMakeFiles/fsbl.elf.dir/ps7_init.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/ps7_init.c: In function 'ps7_config':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/zynq_fsbl/ps7_init.c:9214:35: warning: comparison of integer expressions of different signedness: 'long unsigned int' and 'int' [-Wsign-compare]
+ 9214 |                     while ((*addr < delay)) {
+      |                                   ^
+[14/14] Linking C executable fsbl.elf
+   text	   data	    bss	    dec	    hex	filename
+  83793	   8716	  72128	 164637	  2831d	fsbl.elf
+Generating Export directory
+Platform Build Finished successfully.
+PASS_PLATFORM_BUILD
+Shutting down Vitis server running on port '63342'

@@ -1,0 +1,19 @@
+IRQHandler:
+  100020:	0f 50 2d e9 	push	{r0, r1, r2, r3, r12, lr}
+  100024:	10 0b 2d ed 	vpush	{d0, d1, d2, d3, d4, d5, d6, d7}
+  100028:	20 0b 6d ed 	vpush	{d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31}
+  10002c:	10 1a f1 ee 	vmrs	r1, fpscr
+  100030:	04 10 2d e5 	str	r1, [sp, #-4]!
+  100034:	10 1a f8 ee 	vmrs	r1, fpexc
+  100038:	04 10 2d e5 	str	r1, [sp, #-4]!
+  10003c:	ba 51 00 eb 	bl	#83688 <IRQInterrupt>
+  100040:	04 10 9d e4 	ldr	r1, [sp], #4
+  100044:	10 1a e8 ee 	vmsr	fpexc, r1
+  100048:	04 10 9d e4 	ldr	r1, [sp], #4
+  10004c:	10 1a e1 ee 	vmsr	fpscr, r1
+  100050:	20 0b fd ec 	vpop	{d16, d17, d18, d19, d20, d21, d22, d23, d24, d25, d26, d27, d28, d29, d30, d31}
+  100054:	10 0b bd ec 	vpop	{d0, d1, d2, d3, d4, d5, d6, d7}
+  100058:	0f 50 bd e8 	pop	{r0, r1, r2, r3, r12, lr}
+  10005c:	04 f0 5e e2 	subs	pc, lr, #4
+
+

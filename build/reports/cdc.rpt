@@ -1,0 +1,121 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sat Oct 31 15:49:04 2026
+| Host         : LAPTOP-CAI0PGC1 running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -all_checks_per_endpoint -file C:/Users/ASUS/Desktop/project/nilm_eth_demo/validation/dorm/cdc.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID      Severity  Count  Description
+------  --------  -----  -------------------------------------------------------
+CDC-3   Info         14  1-bit synchronized with ASYNC_REG property
+CDC-9   Info          3  Asynchronous reset synchronized with ASYNC_REG property
+CDC-15  Warning      56  Clock enable controlled CDC structure detected
+
+Source Clock: clk_out1_clk_wiz_sample
+Destination Clock: clk_fpga_0
+CDC Type: Safely Timed
+
+Row  ID      Severity  Description                                     Depth  Exception                Source (From)                                                     Destination (To)
+---  ------  --------  ----------------------------------------------  -----  -----------------------  ----------------------------------------------------------------  -----------------------------------------------------------
+  1  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[0]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[0]/D
+  2  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[1]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[1]/D
+  3  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[2]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[2]/D
+  4  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[3]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[3]/D
+  5  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[4]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[4]/D
+  6  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[5]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[5]/D
+  7  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[6]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[6]/D
+  8  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[7]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[7]/D
+  9  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[8]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[8]/D
+ 10  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[9]/C          system_i/nilm_stream_axi_0/inst/mailbox/data_reg[9]/D
+ 11  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[10]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[10]/D
+ 12  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[11]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[11]/D
+ 13  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[16]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[16]/D
+ 14  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[17]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[17]/D
+ 15  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[18]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[18]/D
+ 16  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[19]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[19]/D
+ 17  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[20]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[20]/D
+ 18  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[21]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[21]/D
+ 19  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[22]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[22]/D
+ 20  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[23]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[23]/D
+ 21  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[24]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[24]/D
+ 22  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[25]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[25]/D
+ 23  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[26]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[26]/D
+ 24  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[27]/C         system_i/nilm_stream_axi_0/inst/mailbox/data_reg[27]/D
+ 25  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  False Path               system_i/nilm_sample_source_0/inst/u_core/u_reader/overrun_reg/C  system_i/nilm_stream_axi_0/inst/mailbox/fault_meta_reg[0]/D
+ 26  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  False Path               system_i/nilm_stream_axi_0/inst/mailbox/overflow_reg/C            system_i/nilm_stream_axi_0/inst/mailbox/fault_meta_reg[1]/D
+ 27  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[32]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[0]/D
+ 28  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[33]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[1]/D
+ 29  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[34]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[2]/D
+ 30  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[35]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[3]/D
+ 31  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[36]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[4]/D
+ 32  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[37]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[5]/D
+ 33  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[38]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[6]/D
+ 34  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[39]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[7]/D
+ 35  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[40]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[8]/D
+ 36  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[41]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[9]/D
+ 37  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[42]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[10]/D
+ 38  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[43]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[11]/D
+ 39  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[44]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[12]/D
+ 40  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[45]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[13]/D
+ 41  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[46]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[14]/D
+ 42  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[47]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[15]/D
+ 43  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[48]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[16]/D
+ 44  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[49]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[17]/D
+ 45  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[50]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[18]/D
+ 46  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[51]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[19]/D
+ 47  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[52]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[20]/D
+ 48  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[53]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[21]/D
+ 49  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[54]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[22]/D
+ 50  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[55]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[23]/D
+ 51  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[56]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[24]/D
+ 52  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[57]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[25]/D
+ 53  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[58]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[26]/D
+ 54  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[59]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[27]/D
+ 55  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[60]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[28]/D
+ 56  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[61]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[29]/D
+ 57  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[62]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[30]/D
+ 58  CDC-15  Warning   Clock enable controlled CDC structure detected      0  Max Delay Datapath Only  system_i/nilm_stream_axi_0/inst/mailbox/payload_reg[63]/C         system_i/nilm_stream_axi_0/inst/mailbox/id_reg[31]/D
+ 59  CDC-3   Info      1-bit synchronized with ASYNC_REG property          3  False Path               system_i/nilm_stream_axi_0/inst/mailbox/request_reg/C             system_i/nilm_stream_axi_0/inst/mailbox/req_sync_reg[0]/D
+ 60  CDC-3   Info      1-bit synchronized with ASYNC_REG property          2  False Path               system_i/nilm_stream_axi_0/inst/sample_reset_registered_reg/C     system_i/nilm_stream_axi_0/inst/sample_reset_sync_reg[0]/D
+
+Source Clock: clk_fpga_0
+Destination Clock: clk_out1_clk_wiz_sample
+CDC Type: User Ignored
+
+Row  ID     Severity  Description                                              Depth  Exception   Source (From)                                                     Destination (To)
+---  -----  --------  -------------------------------------------------------  -----  ----------  ----------------------------------------------------------------  ---------------------------------------------------------
+  1  CDC-9  Info      Asynchronous reset synchronized with ASYNC_REG property     16  False Path  system_i/rst_ps7_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C  system_i/nilm_sample_source_0/inst/reset_pipe_reg[0]/PRE
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  system_i/nilm_stream_axi_0/inst/mailbox/acknowledge_reg/C         system_i/nilm_stream_axi_0/inst/mailbox/ack_sync_reg[0]/D
+
+Source Clock: dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK
+Destination Clock: clk_out1_clk_wiz_sample
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                              Depth  Exception   Source (From)                                                                                            Destination (To)
+---  -----  --------  -------------------------------------------------------  -----  ----------  -------------------------------------------------------------------------------------------------------  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/icn_cmd_en_temp_reg/C       dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_1_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/icn_cmd_en_temp_reg/C       dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD2/stat_reg_ld_reg[0]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/icn_cmd_en_temp_reg/C       dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD3/stat_reg_ld_reg[0]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/icn_cmd_en_temp_reg/C       dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD4/ctl_reg_en_1_reg[0]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/icn_cmd_en_temp_reg/C       dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD5/ctl_reg_en_1_reg[0]/D
+  6  CDC-9  Info      Asynchronous reset synchronized with ASYNC_REG property      2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/wrdata_rst_reg/C                   dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_5_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_rd_reg1_reg/PRE
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/icn_cmd_en_temp_reg/C   dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_1_reg[0]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/icn_cmd_en_temp_reg/C  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_STAT/stat_reg_ld_reg[0]/D
+  9  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/icn_cmd_en_reg[5]/C                dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/icn_cmd_en_5_temp_reg/D
+
+Source Clock: clk_out1_clk_wiz_sample
+Destination Clock: dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                              Depth  Exception   Source (From)                                                                                  Destination (To)
+---  -----  --------  -------------------------------------------------------  -----  ----------  ---------------------------------------------------------------------------------------------  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-9  Info      Asynchronous reset synchronized with ASYNC_REG property      2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/rddata_rst_reg/C         dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_5_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rst_rd_reg1_reg/PRE
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property                   2  False Path  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_reg[0]/C  dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/ma_rst_1_reg/D
+

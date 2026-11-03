@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>S02  事件提取、未知判断与多窗口确认</title>
+<rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">S02  事件提取、未知判断与多窗口确认</text>
+<text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">从现场数据有效性检查到正式状态发布；失败原因按处理阶段保留</text>
+<polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="100,145 89.0,140.5 89.0,149.5" fill="#1676AD"/>
+<text x="114" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#1676AD">DATA · 数据</text>
+<polyline points="452,145 500,145" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="500,145 489.0,140.5 489.0,149.5" fill="#C13E49"/>
+<text x="514" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#C13E49">CONTROL · 控制 / 状态</text>
+<rect x="65" y="245" width="310" height="115" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="220.0" y="296.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">连续 RAW1 数据块</text>
+<text x="220.0" y="324.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">编号 / epoch / 块完整性</text>
+<rect x="465" y="245" width="360" height="115" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="645.0" y="281.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">标定与变化检测</text>
+<text x="645.0" y="309.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">功率变化 / ON・OFF 方向</text>
+<text x="645.0" y="339.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">冻结首次变化前背景</text>
+<rect x="915" y="245" width="340" height="115" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1085.0" y="281.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">前后窗口快照</text>
+<text x="1085.0" y="309.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">背景 3 窗 + 后置 3 窗</text>
+<text x="1085.0" y="339.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">每窗 4096 点</text>
+<rect x="1345" y="245" width="390" height="115" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1540.0" y="281.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">源稳定性与输入检查</text>
+<text x="1540.0" y="309.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">记录实测值 / 门限 / 窗口</text>
+<text x="1540.0" y="339.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">无效时保留具体原因</text>
+<polyline points="375,303 465,303" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="465,303 454.0,298.5 454.0,307.5" fill="#1676AD"/>
+<polyline points="825,303 915,303" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="915,303 904.0,298.5 904.0,307.5" fill="#1676AD"/>
+<polyline points="1255,303 1345,303" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1345,303 1334.0,298.5 1334.0,307.5" fill="#1676AD"/>
+<rect x="1345" y="485" width="390" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1540.0" y="528.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">事件波形提取</text>
+<text x="1540.0" y="556.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">相位对齐 / 背景差分</text>
+<text x="1540.0" y="586.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">方向与时延处理 / 质量检查</text>
+<polyline points="1540,360 1540,485" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1540,485 1544.5,474.0 1535.5,474.0" fill="#1676AD"/>
+<rect x="915" y="485" width="340" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1085.0" y="528.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">单窗特征计算</text>
+<text x="1085.0" y="556.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#233448">5 维：P / Irms / Ipeak / Crest / PF</text>
+<text x="1085.0" y="586.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">PL：原始 64 维特征</text>
+<polyline points="1345,550 1255,550" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1255,550 1266.0,554.5 1266.0,545.5" fill="#1676AD"/>
+<rect x="465" y="485" width="360" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="645.0" y="528.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">基础识别与拒识</text>
+<text x="645.0" y="556.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">KNN / CNN 候选</text>
+<text x="645.0" y="586.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">特征支持范围 + 辅助森林</text>
+<polyline points="915,550 825,550" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="825,550 836.0,554.5 836.0,545.5" fill="#1676AD"/>
+<rect x="65" y="485" width="310" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="220.0" y="528.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">登记参考匹配</text>
+<text x="220.0" y="556.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">基础未知进入匹配</text>
+<text x="220.0" y="586.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">距离 / 门限 / 类间间隔</text>
+<polyline points="465,550 375,550" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="375,550 386.0,554.5 386.0,545.5" fill="#1676AD"/>
+<rect x="394.0" y="516.3" width="52.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="420" y="534.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">未知</text>
+<rect x="65" y="790" width="760" height="145" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="445.0" y="841.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">单个检查点：三个窗口判断一致</text>
+<text x="445.0" y="869.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">记录已知 / 登记名称 / 未知 / 待确认</text>
+<text x="445.0" y="899.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">不一致或质量不合格 → 保留原因，等待后续检查点</text>
+<polyline points="220,615 220,790" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="220,790 224.5,779.0 215.5,779.0" fill="#1676AD"/>
+<polyline points="645,615 645,790" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="645,790 649.5,779.0 640.5,779.0" fill="#1676AD"/>
+<rect x="583.0" y="698.3" width="124.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="645" y="716.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">基础已知候选</text>
+<rect x="915" y="790" width="340" height="145" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1085.0" y="841.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">跨检查点确认</text>
+<text x="1085.0" y="869.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">连续两次检查点一致</text>
+<text x="1085.0" y="899.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">每点三个窗口</text>
+<polyline points="825,862 915,862" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="915,862 904.0,857.5 904.0,866.5" fill="#1676AD"/>
+<rect x="1345" y="790" width="390" height="145" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1540.0" y="841.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">正式事件与状态更新</text>
+<text x="1540.0" y="869.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">ON / OFF · 名称 / 原因</text>
+<text x="1540.0" y="899.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">交给状态跟踪与计量</text>
+<polyline points="1255,862 1345,862" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1345,862 1334.0,857.5 1334.0,866.5" fill="#1676AD"/>
+<polyline points="1085,935 1085,1010 1780,1010 1780,205 1085,205 1085,245" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1085,245 1089.5,234.0 1080.5,234.0" fill="#C13E49"/>
+<rect x="1205.0" y="998.3" width="370.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1390" y="1016.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">未确认时重试：最多 6 个检查点 / 18 个窗口</text>
+<text x="50" y="1081.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">最终超时保留最近具体失败原因；未知、待确认和硬件/采集异常分别处理，不自动记为已识别电器。</text>
+<polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 S02：展示当前事件识别流程；“未知”是已有特征与门限下的拒识结果，不等于已证明属于全新电器。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+</svg>

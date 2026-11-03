@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "physical_pipeline": [
+    {
+      "name": "known_window",
+      "state": 0,
+      "label": 8,
+      "score": 0.06856131599226664,
+      "probability": 0.0
+    },
+    {
+      "name": "unknown_window",
+      "state": 1,
+      "label": 4,
+      "score": 6.785221009432361,
+      "probability": 0.9820344734650891
+    },
+    {
+      "name": "ipad_window",
+      "state": 1,
+      "label": 9,
+      "score": 5.543968603661988,
+      "probability": 0.8023862864652145
+    }
+  ],
+  "registered_scope_known": true,
+  "base_known_protected": true,
+  "hardware_connected": false
+}

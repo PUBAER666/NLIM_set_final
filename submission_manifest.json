@@ -1,0 +1,26 @@
+{
+  "package": "NLIM_set_fianl",
+  "target_release": "NLIM_set_fianl",
+  "target_artifacts_received": true,
+  "reference_boot": "board/release/sd_card/BOOT.BIN",
+  "publication_status": "github_repository",
+  "model_weight_training": false,
+  "delivery_release": "NLIM_set_fianl",
+  "firmware_revision": "NLIM_set_fianl",
+  "release_status": "final_design_confirmed",
+  "final_design_confirmed_by_user": true,
+  "design_confirmation_date": "2026-11-03",
+  "final_design_note": "Final design confirmed by user; implementation and reported results are included.",
+  "diagram_index": "report/diagrams/diagram_index.json",
+  "validation_materials": [
+    "host_regression",
+    "model_numerical_comparison",
+    "hls_synthesis_report",
+    "rtl_cosimulation_report",
+    "implementation_timing_and_resources"
+  ],
+  "identity_update_date": "2026-11-03",
+  "repository_url": "https://github.com/PUBAER666/NLIM_set_fianl",
+  "layout": "expanded_source_tree",
+  "reports_root": "build/reports"
+}

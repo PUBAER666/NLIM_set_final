@@ -1,0 +1,50 @@
+{
+  "evidence_type": "analytical_and_tool_reports_not_board_benchmark",
+  "clock_hz": 100000000,
+  "parallel_output_channels": 4,
+  "ideal_core_throughput_ratio_vs_one_lane_same_clock": 4,
+  "core_pipeline_ii": 1,
+  "hls_latency_max_cycles": 3002349,
+  "hls_latency_estimate_ms": 30.02349,
+  "rtl_valid_transaction_cycles": 2924558,
+  "rtl_valid_latency_ms": 29.24558,
+  "nominal_input_window_ms": 160.0,
+  "single_cnn_budget_ratio": 5.329160600583077,
+  "ps_speedup": null,
+  "end_to_end_speedup": null,
+  "layers": [
+    {
+      "length": 4096,
+      "input_channels": 1,
+      "output_channels": 8,
+      "kernel": 9,
+      "dense_macs": 294912,
+      "executed_macs": 294752
+    },
+    {
+      "length": 2048,
+      "input_channels": 8,
+      "output_channels": 16,
+      "kernel": 7,
+      "dense_macs": 1835008,
+      "executed_macs": 1833472
+    },
+    {
+      "length": 1024,
+      "input_channels": 16,
+      "output_channels": 32,
+      "kernel": 5,
+      "dense_macs": 2621440,
+      "executed_macs": 2618368
+    }
+  ],
+  "fc_macs": 896,
+  "full_pl_resources": {
+    "lut": 14919,
+    "ff": 19985,
+    "bram36_tiles": 60,
+    "dsp": 20
+  },
+  "wns_ns": 0.369,
+  "hardware_benchmarked": false
+}

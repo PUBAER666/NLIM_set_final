@@ -1,0 +1,32 @@
+[
+  {
+    "lib": "xiltimer",
+    "param": "XILTIMER_en_interval_timer",
+    "value": "true"
+  },
+  {
+    "lib": "xiltimer",
+    "param": "XILTIMER_sleep_timer",
+    "value": "ps7_scutimer_0"
+  },
+  {
+    "lib": "xiltimer",
+    "param": "XILTIMER_tick_timer",
+    "value": "ps7_ttc_0"
+  },
+  {
+    "lib": "lwip220",
+    "param": "lwip220_dhcp",
+    "value": "true"
+  },
+  {
+    "lib": "lwip220",
+    "param": "lwip220_lwip_dhcp_does_acd_check",
+    "value": "true"
+  },
+  {
+    "lib": "lwip220",
+    "param": "lwip220_pbuf_pool_size",
+    "value": "2048"
+  }
+]

@@ -1,0 +1,2 @@
+PASS durable single-delete, clear-all, reboot, interrupted clear, failed delete and unrelated settings retained
+PASS rolling 12 paired references, duplicate protection, reserved names; dual-slot CRC/write/sync/power-loss; legacy migration preserves rules/references, resets obsolete scale, leaves old files intact; migration retry and no stale rollback

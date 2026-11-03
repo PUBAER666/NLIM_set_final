@@ -1,0 +1,116 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/rtl/nilm_bram_writer.v" into library work
+INFO: [VRFC 10-311] analyzing module nilm_bram_writer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/rtl/nilm_sample_mailbox.v" into library work
+INFO: [VRFC 10-311] analyzing module nilm_sample_mailbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/rtl/nilm_sample_source.v" into library work
+INFO: [VRFC 10-311] analyzing module nilm_sample_source
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/rtl/nilm_stream_axi.v" into library work
+INFO: [VRFC 10-311] analyzing module nilm_stream_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/rtl/nilm_stream_engine.v" into library work
+INFO: [VRFC 10-311] analyzing module nilm_stream_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/rtl/nilm_xadc_top.v" into library work
+INFO: [VRFC 10-311] analyzing module nilm_xadc_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/rtl/xadc_reader.v" into library work
+INFO: [VRFC 10-311] analyzing module xadc_reader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/sim/tests/tb_nilm_stream_axi.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_nilm_stream_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/sim/tests/tb_nilm_stream_engine.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_nilm_stream_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/sim/tests/tb_nilm_sample_mailbox.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_nilm_sample_mailbox
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_nilm_stream_engine -s tb_nilm_stream_engine 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.nilm_stream_engine(BLOCK_SAMPLES...
+Compiling module work.tb_nilm_stream_engine
+Built simulation snapshot tb_nilm_stream_engine
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Nov  2 13:38:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_nilm_stream_engine/xsim_script.tcl
+# xsim {tb_nilm_stream_engine} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: four-bank ownership, full-block drop, stale/duplicate/epoch release, snapshots, stop, fault, ID wrap/gap
+$finish called at time : 7590 ns : File "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/sim/tests/tb_nilm_stream_engine.sv" Line 80
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 13:38:21 2026...
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_nilm_sample_mailbox -s tb_nilm_sample_mailbox 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.nilm_sample_mailbox
+Compiling module work.tb_nilm_sample_mailbox
+Built simulation snapshot tb_nilm_sample_mailbox
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Nov  2 13:38:22 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_nilm_sample_mailbox/xsim_script.tcl
+# xsim {tb_nilm_sample_mailbox} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: mailbox asynchronous phase, atomic payload, overflow and source fault
+$finish called at time : 117967240 ps : File "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/sim/tests/tb_nilm_sample_mailbox.sv" Line 27
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 13:38:24 2026...
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe tb_nilm_stream_axi -s tb_nilm_stream_axi 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.nilm_sample_mailbox
+Compiling module work.nilm_stream_engine
+Compiling module work.nilm_stream_axi
+Compiling module work.tb_nilm_stream_axi
+Built simulation snapshot tb_nilm_stream_axi
+
+****** xsim v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Nov  2 13:38:25 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_nilm_stream_axi/xsim_script.tcl
+# xsim {tb_nilm_stream_axi} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: AXI AW/W ordering, response backpressure, partial write rejection; 4 x 1024 atomic mailbox records, RAM boundaries, readable reset epoch
+$finish called at time : 1602400 ns : File "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/sim/tests/tb_nilm_stream_axi.sv" Line 70
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 13:38:27 2026...
+PASS_STREAM_RTL: engine, mailbox, AXI

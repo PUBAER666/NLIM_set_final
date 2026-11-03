@@ -1,0 +1,46 @@
+{
+  "package": "NLIM_set_fianl",
+  "firmware": "NLIM_set_fianl",
+  "firmware_revision": "NLIM_set_fianl",
+  "ps_build": true,
+  "bootgen_build": true,
+  "bootgen_read": true,
+  "host_regression": true,
+  "receiver_packaged_loopback": {
+    "passed": true,
+    "packaged": true,
+    "checks": [
+      "connection check",
+      "host token",
+      "version mismatch",
+      "config forwarding",
+      "UTF8 rule/enrollment",
+      "invalid request",
+      "no local integration",
+      "event CSV deduplication",
+      "command log",
+      "reboot serial"
+    ]
+  },
+  "pl_bitstream_unchanged": true,
+  "model_asset_files_unchanged": 11,
+  "hardware_connected": false,
+  "artifacts": [
+    {
+      "path": "board/release/sd_card/BOOT.BIN",
+      "bytes": 10362424,
+      "sha256": "3c3a8ae3bd28d1e2c5af583baeb86cfd79ca7ca720cef7309d28e4d5052c831f"
+    },
+    {
+      "path": "board/release/NLIM_set_fianl.elf",
+      "bytes": 7555016,
+      "sha256": "82f7e5b86c88a0dbac81627dcd5dd6c20bcf49bf82ddec97a691ea3a2ebb27fe"
+    },
+    {
+      "path": "board/release/NLIM_set_fianl.exe",
+      "bytes": 9318422,
+      "sha256": "bea93e47472083f049b1d70e8c66d6028600d4f4e21586a99a04d18c65783b37"
+    }
+  ],
+  "historical_evidence": "Previous test records retain their original identities and dates."
+}

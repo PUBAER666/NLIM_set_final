@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>H04  CNN 硬件加速器内部框图</title>
+<rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">H04  CNN 硬件加速器内部框图</text>
+<text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">Float32 · 三层一维卷积 · 四输出通道并行 · 权重固化 · 输出 14 logits + 64 原始特征</text>
+<polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="100,145 89.0,140.5 89.0,149.5" fill="#1676AD"/>
+<text x="114" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#1676AD">DATA · 数据</text>
+<polyline points="417,145 465,145" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="465,145 454.0,140.5 454.0,149.5" fill="#B96B13"/>
+<text x="479" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#B96B13">ADDRESS · 地址</text>
+<polyline points="782,145 830,145" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="830,145 819.0,140.5 819.0,149.5" fill="#C13E49"/>
+<text x="844" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#C13E49">CONTROL · 控制</text>
+<polyline points="1147,145 1195,145" fill="none" stroke="#64748B" stroke-width="2.8"/>
+<polygon points="1195,145 1184.0,140.5 1184.0,149.5" fill="#64748B"/>
+<text x="1209" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">CLOCK / RESET · 时钟 / 复位</text>
+<rect x="45" y="205" width="1710" height="815" fill="#F1EDF7" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="63" y="237.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">nilm_cnn HLS IP · 100 MHz</text>
+<rect x="80" y="270" width="350" height="100" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="255.0" y="313.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">AXI-Lite 控制寄存器</text>
+<text x="255.0" y="341.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">input / output 地址 · ABI / model</text>
+<rect x="530" y="270" width="470" height="100" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="765.0" y="298.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">请求检查与执行控制</text>
+<text x="765.0" y="326.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">ABI=2 · model=0x37DED17F</text>
+<text x="765.0" y="356.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">start / done / status</text>
+<rect x="1115" y="270" width="600" height="100" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1415.0" y="313.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">固化模型参数</text>
+<text x="1415.0" y="341.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">卷积权重 / bias / BN 仿射参数 / FC 权重</text>
+<polyline points="430,300 530,300" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="530,300 519.0,295.5 519.0,304.5" fill="#1676AD"/>
+<rect x="421.0" y="266.3" width="118.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="480" y="284.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">ABI / model</text>
+<polyline points="430,345 530,345" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="530,345 519.0,340.5 519.0,349.5" fill="#C13E49"/>
+<polygon points="430,345 441.0,349.5 441.0,340.5" fill="#C13E49"/>
+<rect x="80" y="450" width="280" height="125" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="220.0" y="491.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">AXI 主接口 / 输入缓存</text>
+<text x="220.0" y="519.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">DDR → x[4096]</text>
+<text x="220.0" y="549.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">4096 × float32</text>
+<rect x="430" y="450" width="350" height="125" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="605.0" y="491.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">Conv1 + BN + ReLU</text>
+<text x="605.0" y="519.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">1 → 8 通道 · K=9</text>
+<text x="605.0" y="549.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">MaxPool2 → 8 × 2048</text>
+<rect x="860" y="450" width="350" height="125" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1035.0" y="491.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">Conv2 + BN + ReLU</text>
+<text x="1035.0" y="519.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">8 → 16 通道 · K=7</text>
+<text x="1035.0" y="549.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">MaxPool2 → 16 × 1024</text>
+<rect x="1290" y="450" width="425" height="125" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1502.5" y="491.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">Conv3 + BN + ReLU</text>
+<text x="1502.5" y="519.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">16 → 32 通道 · K=5</text>
+<text x="1502.5" y="549.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">GAP + GMP → 32 + 32</text>
+<polyline points="360,515 430,515" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="430,515 419.0,510.5 419.0,519.5" fill="#1676AD"/>
+<polyline points="780,515 860,515" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="860,515 849.0,510.5 849.0,519.5" fill="#1676AD"/>
+<polyline points="1210,515 1290,515" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1290,515 1279.0,510.5 1279.0,519.5" fill="#1676AD"/>
+<polyline points="255,370 255,450" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="255,450 259.5,439.0 250.5,439.0" fill="#B96B13"/>
+<rect x="188.5" y="398.3" width="133.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="255" y="416.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#B96B13">DDR 输入地址</text>
+<polyline points="765,370 765,410 605,410 605,450" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="605,450 609.5,439.0 600.5,439.0" fill="#C13E49"/>
+<polyline points="1415,370 1415,428 650,428 650,450" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="650,450 654.5,439.0 645.5,439.0" fill="#1676AD"/>
+<polyline points="1035,428 1035,450" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1035,450 1039.5,439.0 1030.5,439.0" fill="#1676AD"/>
+<polyline points="1415,428 1500,428 1500,450" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1500,450 1504.5,439.0 1495.5,439.0" fill="#1676AD"/>
+<rect x="1188.0" y="396.3" width="124.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1250" y="414.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">片内权重读取</text>
+<rect x="1290" y="680" width="425" height="110" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1502.5" y="728.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">64 维 embedding</text>
+<text x="1502.5" y="756.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">前 32：均值；后 32：最大值</text>
+<polyline points="1500,575 1500,680" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1500,680 1504.5,669.0 1495.5,669.0" fill="#1676AD"/>
+<rect x="1290" y="865" width="425" height="110" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1502.5" y="898.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">FC 64 → 14 / 输出打包</text>
+<text x="1502.5" y="926.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">output[0:13]：logits</text>
+<text x="1502.5" y="956.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">output[14:77]：embedding</text>
+<polyline points="1500,790 1500,865" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1500,865 1504.5,854.0 1495.5,854.0" fill="#1676AD"/>
+<rect x="80" y="650" width="1110" height="365" fill="#FFFFFF" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="98" y="682.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">三层卷积共同采用的计算组织（逻辑展开）</text>
+<rect x="110" y="735" width="245" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="232.5" y="778.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">输入 / 权重读出</text>
+<text x="232.5" y="806.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">共享输入 x</text>
+<text x="232.5" y="836.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">4 路权重分组</text>
+<rect x="430" y="715" width="320" height="170" fill="#EDF5EC" stroke="#233448" stroke-width="1.8"/>
+<text x="590.0" y="763.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">4 路并行乘加</text>
+<text x="590.0" y="791.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">OC0 / OC1 / OC2 / OC3</text>
+<text x="590.0" y="821.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">acc[4][8]</text>
+<text x="590.0" y="851.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">8 个位置交错累加</text>
+<rect x="825" y="735" width="325" height="130" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="987.5" y="778.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">仿射 + ReLU</text>
+<text x="987.5" y="806.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">前两层：池化与 BRAM</text>
+<text x="987.5" y="836.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">第三层：均值 / 最大值</text>
+<polyline points="355,800 430,800" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="430,800 419.0,795.5 419.0,804.5" fill="#1676AD"/>
+<polyline points="750,800 825,800" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="825,800 814.0,795.5 814.0,804.5" fill="#1676AD"/>
+<text x="630" y="961.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#64748B">MAC 主循环 II=1；8 位置交错不等于 32 路并行乘法器。</text>
+<rect x="80" y="1030" width="1635" height="40" fill="#FCF3E6" stroke="#233448" stroke-width="1.8"/>
+<text x="897.5" y="1058.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">外部 DDR 输入 / 输出缓冲（经 m_axi_memory → cnn_memory → S_AXI_HP0）</text>
+<polyline points="1715,920 1735,920 1735,1050 1715,1050" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="1715,1050 1726.0,1054.5 1726.0,1045.5" fill="#1676AD"/>
+<polyline points="80,1050 60,1050 60,515 80,515" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="80,515 69.0,510.5 69.0,519.5" fill="#1676AD"/>
+<polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 H04：层间张量尺寸来自 HLS 源码；BN 使用推理仿射参数。图中没有训练、反向传播或在线更新权重电路。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+</svg>

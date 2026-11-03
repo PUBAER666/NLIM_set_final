@@ -1,0 +1,27 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/NLIM_set_fianl/work/ps
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/NLIM_set_fianl/work/ps
+[1/3] ==========Application Build Information ==========
+
+Compiler Flags:  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/ASUS/D
+esktop/project/nilm_eth_demo/.build/submission/verified_rebuild_work/vitis_short/p/export/p/sw/stand
+alone/Xilinx.spec -IC:/Users/ASUS/Desktop/project/nilm_eth_demo/.build/submission/verified_rebuild_w
+ork/vitis_short/p/export/p/sw/standalone/include -Wall -Wextra      -O2  -g3    -ffp-contract=off -U
+__clang__  NI_PL_BACKEND=1
+NILM_CNN_BASE=0x43C10000u
+
+Linker Flags:       -Wl,-T -Wl,"C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/NLIM_set_fianl/s
+rc/ps/lscript.ld" -L"C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/NLIM_set_fianl/src/ps/" -L"
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/.build/submission/verified_rebuild_work/vitis_short/p/ex
+port/p/sw/standalone/lib/" -L"/" -Wl,--start-group,-lxilstandalone,-lxiltimer,-llwip220,-lxil,-lxilt
+imer,-llwip220,-lgcc,-lc,-lm,-lxilffs -Wl,--end-group
+
+===========================================
+[2/3] Building C object CMakeFiles/NLIM_set_fianl.elf.dir/main.c.obj
+[3/3] Linking C executable NLIM_set_fianl.elf
+   text    data     bss     dec     hex filename
+ 245220 5957443 9625936 15828599  f18677 C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/NLIM_set_fianl/work/ps/NLIM_set_fianl.elf
+PASS_PS_BUILD: NLIM_set_fianl firmware; NLIM_set_fianl final design package

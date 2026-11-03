@@ -1,0 +1,59 @@
+﻿{
+    "pl_reused":  true,
+    "unknown_assets":  "3c3314d928437326",
+    "registry_margin":  1.2,
+    "board":  "EES331 XC7Z020CLG484-1",
+    "recovery":  "4-block power mean; 7 consecutive windows; 5-second timeout",
+    "diagnostics_revision":  "event-registry-recovery-r3",
+    "artifacts":  [
+                      {
+                          "sha256":  "756fe8eca024974d0047d38c5d76557bdbccd5df7e80311ec96fe304c481089f",
+                          "name":  "BOOT.BIN",
+                          "bytes":  10362616
+                      },
+                      {
+                          "sha256":  "2f5262c6ddde992c890f0b2013e81b6edafc94e452156929c2480cd57e8271a0",
+                          "name":  "system_wrapper.bit",
+                          "bytes":  4045690
+                      },
+                      {
+                          "sha256":  "72acc521fa8c8571fdbc5895c7b7579d313e58d088aa95ce10f04cdc9e737f42",
+                          "name":  "nilm_board.elf",
+                          "bytes":  7560292
+                      },
+                      {
+                          "sha256":  "a5113bff41b1051843b4169627756df309d9d17c6558ef87e847d9a6397d2a93",
+                          "name":  "fsbl.elf",
+                          "bytes":  538984
+                      }
+                  ],
+    "hardware_tested":  false,
+    "cnn_abi":  2,
+    "firmware":  "NILM_SET_v4",
+    "ps_compute":  "event extraction, KNN/gate, 64D support, auxiliary forest, paired registration, energy and rules",
+    "unknown_accuracy_validated":  false,
+    "startup_issue_resolved":  false,
+    "pl_compute":  "frozen CNN convolution, pooling, embedding and logits",
+    "calibration_verified":  false,
+    "registry_policy":  "base-unknown-absolute-support-distinct-class-margin",
+    "pc":  "DISPLAY_COMMANDS_LOGGING_ONLY",
+    "unknown_scope":  "EVENT_RESIDUAL_64D_AUX_BOARD_VARIANT",
+    "neural_weight_training":  false,
+    "source_stability_thresholds_unchanged":  true,
+    "unknown_method":  "EMBEDDING64_AUX_FOREST_V3",
+    "window_phase_sensitivity_resolved":  false,
+    "registration":  "user-confirmed valid ON or OFF event; merge/extend; up to 12 representatives",
+    "release":  "NILM_set_v4_4",
+    "registry_margin_validated":  false,
+    "thresholds_unchanged":  false,
+    "frontend":  "V2 PCB",
+    "registration_delete":  "revision-guarded single or all; durable dual-slot commit; invalidate cached IDs",
+    "legacy_import":  "read-only v4/v3 import; preserves paired samples/rules; resets obsolete multiplier",
+    "sd_schema":  5,
+    "sd_files":  [
+                     "NILM430.BIN",
+                     "NILM431.BIN"
+                 ],
+    "cnn_model":  "37ded17f8e17881f",
+    "firmware_revision":  "v4.4-learn-r1"
+}

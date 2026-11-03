@@ -1,0 +1,1 @@
+PASS phase-median ON/OFF, checkpoints, ADC/gap/stale guards; staged startup retains trigger+prehistory, transient rearm, bounded confirmation timeout and diagnostics

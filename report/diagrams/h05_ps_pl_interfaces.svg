@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<title>H05  PS–PL 地址、数据与控制接口框图</title>
+<rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">H05  PS–PL 地址、数据与控制接口框图</text>
+<text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">分离 GP0 控制访问与 HP0 DDR 读写；AXI 的响应和握手归入红色控制信号</text>
+<polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="100,145 89.0,140.5 89.0,149.5" fill="#1676AD"/>
+<text x="114" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#1676AD">DATA · 数据</text>
+<polyline points="417,145 465,145" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="465,145 454.0,140.5 454.0,149.5" fill="#B96B13"/>
+<text x="479" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#B96B13">ADDRESS · 地址</text>
+<polyline points="782,145 830,145" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="830,145 819.0,140.5 819.0,149.5" fill="#C13E49"/>
+<text x="844" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#C13E49">CONTROL · 控制</text>
+<polyline points="1147,145 1195,145" fill="none" stroke="#64748B" stroke-width="2.8"/>
+<polygon points="1195,145 1184.0,140.5 1184.0,149.5" fill="#64748B"/>
+<text x="1209" y="151.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">CLOCK / RESET · 时钟 / 复位</text>
+<rect x="45" y="215" width="520" height="790" fill="#EDF5FA" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="63" y="247.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">PS / DDR 侧</text>
+<rect x="690" y="215" width="1065" height="790" fill="#EDF5EC" stroke="#8C9CAC" stroke-width="1.5" stroke-dasharray="8 7"/>
+<text x="708" y="247.82" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="23" font-weight="700" text-anchor="start" fill="#233448">PL 侧</text>
+<rect x="85" y="300" width="430" height="120" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="300.0" y="338.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">ARM Cortex-A9</text>
+<text x="300.0" y="366.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">MMIO · Cache / DSB</text>
+<text x="300.0" y="396.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">驱动提交、轮询与结果检查</text>
+<rect x="85" y="540" width="430" height="110" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="300.0" y="588.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">M_AXI_GP0</text>
+<text x="300.0" y="616.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">AXI 控制和存储映射访问</text>
+<polyline points="300,420 300,540" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="300,540 304.5,529.0 295.5,529.0" fill="#C13E49"/>
+<polygon points="300,420 295.5,431.0 304.5,431.0" fill="#C13E49"/>
+<rect x="243.0" y="468.3" width="114.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="300" y="486.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">PS 软件访问</text>
+<rect x="745" y="520" width="320" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="905.0" y="573.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">AXI SmartConnect</text>
+<text x="905.0" y="601.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">地址译码 / 路由</text>
+<text x="905.0" y="631.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">采集控制 / BRAM / CNN</text>
+<polyline points="515,550 745,550" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="745,550 734.0,545.5 734.0,554.5" fill="#1676AD"/>
+<polygon points="515,550 526.0,554.5 526.0,545.5" fill="#1676AD"/>
+<rect x="548.03125" y="518.3" width="163.9375" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="630" y="536.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">WDATA / RDATA</text>
+<polyline points="515,595 745,595" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="745,595 734.0,590.5 734.0,599.5" fill="#B96B13"/>
+<rect x="532.0" y="563.3" width="196.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="630" y="581.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#B96B13">AWADDR / ARADDR</text>
+<polyline points="515,640 745,640" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="745,640 734.0,635.5 734.0,644.5" fill="#C13E49"/>
+<polygon points="515,640 526.0,644.5 526.0,635.5" fill="#C13E49"/>
+<rect x="526.0078125" y="608.3" width="207.984375" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="630" y="626.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">VALID / READY / RESP</text>
+<rect x="1220" y="285" width="470" height="110" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1455.0" y="318.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">RAW1 控制寄存器</text>
+<text x="1455.0" y="346.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">0x43C00000 · 4 KiB</text>
+<text x="1455.0" y="376.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">命令 / 描述符 / 状态</text>
+<rect x="1220" y="520" width="470" height="150" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1455.0" y="558.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">AXI BRAM Controller</text>
+<text x="1455.0" y="586.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">0x40000000 · 32 KiB</text>
+<text x="1455.0" y="616.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">双口 BRAM Port A</text>
+<text x="1455.0" y="646.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">PS 读取采样记录</text>
+<rect x="1220" y="790" width="470" height="120" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="1455.0" y="828.5" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">CNN 控制与 AXI 主接口</text>
+<text x="1455.0" y="856.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">CSR：0x43C10000 · 64 KiB</text>
+<text x="1455.0" y="886.8" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">输入 / 输出 DDR 指针与状态</text>
+<polyline points="1065,550 1140,550 1140,340 1220,340" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1220,340 1209.0,335.5 1209.0,344.5" fill="#C13E49"/>
+<polygon points="1065,550 1076.0,554.5 1076.0,545.5" fill="#C13E49"/>
+<rect x="1368.5" y="258.3" width="123.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1430" y="276.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">AXI 映射访问</text>
+<polyline points="1065,595 1140,595 1140,595 1220,595" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1220,595 1209.0,590.5 1209.0,599.5" fill="#C13E49"/>
+<polygon points="1065,595 1076.0,599.5 1076.0,590.5" fill="#C13E49"/>
+<rect x="1368.5" y="483.3" width="123.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1430" y="501.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">AXI 映射访问</text>
+<polyline points="1065,640 1140,640 1140,850 1220,850" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="1220,850 1209.0,845.5 1209.0,854.5" fill="#C13E49"/>
+<polygon points="1065,640 1076.0,644.5 1076.0,635.5" fill="#C13E49"/>
+<rect x="1368.5" y="933.3" width="123.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="1430" y="951.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">AXI 映射访问</text>
+<rect x="85" y="795" width="430" height="115" fill="#EDF5FA" stroke="#233448" stroke-width="1.8"/>
+<text x="300.0" y="846.0" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#233448">S_AXI_HP0 / DDR 控制器</text>
+<text x="300.0" y="874.3" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#233448">CNN 数据缓冲 / PS 历史缓存</text>
+<polyline points="1220,805 515,805" fill="none" stroke="#1676AD" stroke-width="2.8"/>
+<polygon points="515,805 526.0,809.5 526.0,800.5" fill="#1676AD"/>
+<polygon points="1220,805 1209.0,800.5 1209.0,809.5" fill="#1676AD"/>
+<rect x="779.0" y="775.3" width="142.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="850" y="793.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#1676AD">输入 / 输出数据</text>
+<polyline points="1220,850 515,850" fill="none" stroke="#B96B13" stroke-width="2.8"/>
+<polygon points="515,850 526.0,854.5 526.0,845.5" fill="#B96B13"/>
+<rect x="783.5" y="820.3" width="133.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="850" y="838.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#B96B13">DDR 读写地址</text>
+<polyline points="1220,895 515,895" fill="none" stroke="#C13E49" stroke-width="2.8"/>
+<polygon points="515,895 526.0,899.5 526.0,890.5" fill="#C13E49"/>
+<polygon points="1220,895 1209.0,890.5 1209.0,899.5" fill="#C13E49"/>
+<rect x="779.5" y="865.3" width="141.0" height="24.3" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
+<text x="850" y="883.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#C13E49">AXI 握手 / 响应</text>
+<text x="50" y="1051.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">缓存流程：PS 准备输入 → Flush + DSB → start → 轮询 done/status → Invalidate + DSB → 读取输出。</text>
+<text x="50" y="1086.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">CNN 完成采用轮询；未绘制未接入的 CNN 中断、AXI DMA 或 CDMA。地址为当前硬件工程的实际映射。</text>
+<polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
+<text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 H05：右侧红色支路为访问关系概括；中部、下部三色信号列分别展开 GP0 与 CNN AXI 主通路。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+</svg>

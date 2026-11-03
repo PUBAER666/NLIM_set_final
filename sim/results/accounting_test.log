@@ -1,0 +1,1 @@
+PASS accounting-r1: noisy-baseline known ON recovery, prospective energy, OFF retention, power mismatch, reactive/unexplained load, unknown/ambiguous, gaps, busy drops, duplicates and consecutive OFF gate

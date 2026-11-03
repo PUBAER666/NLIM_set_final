@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "errors": [],
+  "polls": 4,
+  "checks": [
+    "delete and clear cancel send nothing",
+    "confirmed delete and clear include revision",
+    "new reasons",
+    "revision",
+    "12 references",
+    "recovery message",
+    "enroll forwarding",
+    "board uptime and relative event times",
+    "time boundaries and invalid timestamps",
+    "refresh and reboot time",
+    "source-side diagnostics and recovery cancellation rendering"
+  ],
+  "fixture_only": true
+}

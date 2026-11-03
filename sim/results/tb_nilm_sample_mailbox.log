@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Nov  2 13:38:22 2026
+# Process ID         : 187848
+# Current directory  : C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/stream_rtl
+# Command line       : xsim.exe -log tb_nilm_sample_mailbox.log -mode tcl -source {xsim.dir/tb_nilm_sample_mailbox/xsim_script.tcl}
+# Log file           : C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/stream_rtl/tb_nilm_sample_mailbox.log
+# Journal file       : C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/stream_rtl\xsim.jou
+# Running On         : LAPTOP-CAI0PGC1
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i9-14900HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 24
+# CPU Logical cores  : 32
+# Host memory        : 33959 MB
+# Swap memory        : 4831 MB
+# Total Virtual      : 38791 MB
+# Available Virtual  : 16257 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_nilm_sample_mailbox/xsim_script.tcl
+# xsim {tb_nilm_sample_mailbox} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS: mailbox asynchronous phase, atomic payload, overflow and source fault
+$finish called at time : 117967240 ps : File "C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/sim/tests/tb_nilm_sample_mailbox.sv" Line 27
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Nov  2 13:38:24 2026...

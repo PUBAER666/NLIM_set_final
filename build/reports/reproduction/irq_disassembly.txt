@@ -1,0 +1,27 @@
+
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/ps/nilm_echo.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00100020 <IRQHandler>:
+  100020:	e92d500f 	push	{r0, r1, r2, r3, ip, lr}
+  100024:	ed2d0b10 	vpush	{d0-d7}
+  100028:	ed6d0b20 	vpush	{d16-d31}
+  10002c:	eef11a10 	vmrs	r1, fpscr
+  100030:	e52d1004 	push	{r1}		; (str r1, [sp, #-4]!)
+  100034:	eef81a10 	vmrs	r1, fpexc
+  100038:	e52d1004 	push	{r1}		; (str r1, [sp, #-4]!)
+  10003c:	eb0051ba 	bl	11472c <IRQInterrupt>
+  100040:	e49d1004 	pop	{r1}		; (ldr r1, [sp], #4)
+  100044:	eee81a10 	vmsr	fpexc, r1
+  100048:	e49d1004 	pop	{r1}		; (ldr r1, [sp], #4)
+  10004c:	eee11a10 	vmsr	fpscr, r1
+  100050:	ecfd0b20 	vpop	{d16-d31}
+  100054:	ecbd0b10 	vpop	{d0-d7}
+  100058:	e8bd500f 	pop	{r0, r1, r2, r3, ip, lr}
+  10005c:	e25ef004 	subs	pc, lr, #4
+
+Disassembly of section .init:
+
+Disassembly of section .fini:

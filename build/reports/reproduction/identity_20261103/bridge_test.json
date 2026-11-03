@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "packaged": true,
+  "checks": [
+    "connection check",
+    "host token",
+    "version mismatch",
+    "config forwarding",
+    "UTF8 rule/enrollment",
+    "invalid request",
+    "no local integration",
+    "event CSV deduplication",
+    "command log",
+    "reboot serial"
+  ]
+}

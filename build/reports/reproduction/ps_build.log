@@ -1,0 +1,91 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/AMDDesignTools/2025.2/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/AMDDesignTools/2025.2/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/AMDDesignTools/2025.2/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/ps
+[1/35] ==========Application Build Information ==========
+
+Compiler Flags:  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/Users/ASUS/D
+esktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/export/p/sw/standalone/Xilinx.spec
+ -IC:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/export/p/sw/stan
+dalone/include -Wall -Wextra      -O2  -g3    -ffp-contract=off -U__clang__  NI_PL_BACKEND=1
+NILM_CN
+N_BASE=0x43C10000u
+
+Linker Flags:       -Wl,-T -Wl,"C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps
+
+/lscript.ld" -L"C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps/" -L"C:/Users/A
+
+SUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/work/vitis_short/p/export/p/sw/standalone/lib/" 
+
+-L"/" -Wl,--start-group,-lxilstandalone,-lxiltimer,-llwip220,-lxil,-lxiltimer,-llwip220,-lgcc,-lc,-l
+
+m,-lxilffs -Wl,--end-group
+
+
+===========================================
+[2/35] Building C object CMakeFiles/nilm_echo.elf.dir/si5324.c.obj
+[3/35] Building C object CMakeFiles/nilm_echo.elf.dir/sfp.c.obj
+[4/35] Building C object CMakeFiles/nilm_echo.elf.dir/i2c_access.c.obj
+[5/35] Building C object CMakeFiles/nilm_echo.elf.dir/echo.c.obj
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps/echo.c: In function 'recv_callback':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps/echo.c:53:54: warning: parameter 'err' set but not used [-Wunused-but-set-parameter]
+   53 |                                struct pbuf *p, err_t err)
+      |                                                ~~~~~~^~~
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps/echo.c:52:27: warning: unused parameter 'arg' [-Wunused-parameter]
+   52 | err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
+      |                     ~~~~~~^~~
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps/echo.c: In function 'accept_callback':
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps/echo.c:78:29: warning: unused parameter 'arg' [-Wunused-parameter]
+   78 | err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err)
+      |                       ~~~~~~^~~
+C:/Users/ASUS/Desktop/project/nilm_eth_demo/outputs/nlimfinal/src/ps/echo.c:78:64: warning: unused parameter 'err' [-Wunused-parameter]
+   78 | err_t accept_callback(void *arg, struct tcp_pcb *newpcb, err_t err)
+      |                                                          ~~~~~~^~~
+[6/35] Building C object CMakeFiles/nilm_echo.elf.dir/iic_phyreset.c.obj
+[7/35] Building C object CMakeFiles/nilm_echo.elf.dir/main.c.obj
+[8/35] Building C object CMakeFiles/nilm_echo.elf.dir/platform.c.obj
+[9/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_stream.c.obj
+[10/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_xadapter.c.obj
+[11/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_physpeed.c.obj
+[12/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_knn.c.obj
+[13/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_model.c.obj
+[14/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_wire.c.obj
+[15/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_stream_service.c.obj
+[16/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_status.c.obj
+[17/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_net.c.obj
+[18/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_store.c.obj
+[19/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_learn.c.obj
+[20/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_event.c.obj
+[21/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_board.c.obj
+[22/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_pl.c.obj
+[23/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_control.c.obj
+[24/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_assets.c.obj
+[25/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_infer.c.obj
+[26/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_dynamic.c.obj
+[27/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_legacy.c.obj
+[28/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_open.c.obj
+[29/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_phase.c.obj
+[30/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_lag.c.obj
+[31/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_dorm_assets.c.obj
+[32/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_dorm.c.obj
+[33/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_lag_assets.c.obj
+[34/35] Building C object CMakeFiles/nilm_echo.elf.dir/nilm_open_assets.c.obj
+[35/35] Linking C executable nilm_echo.elf
+   text	   data	    bss	    dec	    hex	filename
+
+6198187	   4500	9625936	15828623	 f1868f	nilm_echo.elf
+
+PASS_PS_BUILD: reference v4.4 source, not v5.1

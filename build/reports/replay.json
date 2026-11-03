@@ -1,0 +1,440 @@
+{
+  "functional_replay": true,
+  "real_time_validated": false,
+  "accuracy_evaluated": false,
+  "recordings": [
+    {
+      "source": "pair/curlingiron_incandescent/curlingiron_incandescent_off_curlingiron_both_curlingiron_off_s01_real.csv",
+      "samples": 638976,
+      "events": [
+        {
+          "id": 1,
+          "ms": 8680,
+          "kind": "EVENT_UNCERTAIN",
+          "name": "UNCONFIRMED_AT_18_WINDOWS",
+          "power_w": 0,
+          "event": 1,
+          "ack": false
+        },
+        {
+          "id": 2,
+          "ms": 8720,
+          "kind": "UNIDENTIFIED_LOAD",
+          "name": "",
+          "power_w": 84.7413691,
+          "event": 0,
+          "ack": false
+        },
+        {
+          "id": 3,
+          "ms": 14200,
+          "kind": "EVENT_UNCERTAIN",
+          "name": "UNCONFIRMED_AT_18_WINDOWS",
+          "power_w": 0,
+          "event": 2,
+          "ack": false
+        },
+        {
+          "id": 4,
+          "ms": 14240,
+          "kind": "UNIDENTIFIED_LOAD",
+          "name": "",
+          "power_w": 104.298805,
+          "event": 0,
+          "ack": false
+        },
+        {
+          "id": 5,
+          "ms": 18720,
+          "kind": "EVENT_UNCERTAIN",
+          "name": "UNCONFIRMED_AT_18_WINDOWS",
+          "power_w": 0,
+          "event": 3,
+          "ack": false
+        },
+        {
+          "id": 6,
+          "ms": 18760,
+          "kind": "UNIDENTIFIED_LOAD",
+          "name": "",
+          "power_w": 57.7486464,
+          "event": 0,
+          "ack": false
+        },
+        {
+          "id": 8,
+          "ms": 22040,
+          "kind": "APPLIANCE_OFF",
+          "name": "CurlingIron",
+          "power_w": 55.7475221,
+          "event": 4,
+          "ack": false
+        },
+        {
+          "id": 7,
+          "ms": 22040,
+          "kind": "OFF_WITHOUT_TRACKED_ON",
+          "name": "CurlingIron",
+          "power_w": 55.7475221,
+          "event": 4,
+          "ack": false
+        }
+      ],
+      "wall_seconds": 0.3120000000053551,
+      "final": {
+        "schema": 1,
+        "compute": "BOARD_PS_PL",
+        "hardware_validated": false,
+        "unknown_validated": false,
+        "event_pending": false,
+        "state_current": true,
+        "off": true,
+        "overload": false,
+        "unknown_active": false,
+        "restricted_count": 0,
+        "anomaly_count": 0,
+        "tracking_uncertain": false,
+        "unassigned_w": 0.943107431,
+        "unassigned_wh": 0.477532452,
+        "store": "READY",
+        "config": {
+          "revision": 0,
+          "limit_w": 0,
+          "confirm_s": 1,
+          "clear_ratio": 0.9,
+          "unknown_enabled": true,
+          "support_scale": 1,
+          "restricted": []
+        },
+        "devices": [],
+        "profiles": [],
+        "events": [
+          {
+            "id": 8,
+            "ms": 22040,
+            "kind": "APPLIANCE_OFF",
+            "name": "CurlingIron",
+            "power_w": 55.7475221,
+            "event": 4,
+            "ack": false
+          },
+          {
+            "id": 7,
+            "ms": 22040,
+            "kind": "OFF_WITHOUT_TRACKED_ON",
+            "name": "CurlingIron",
+            "power_w": 55.7475221,
+            "event": 4,
+            "ack": false
+          },
+          {
+            "id": 6,
+            "ms": 18760,
+            "kind": "UNIDENTIFIED_LOAD",
+            "name": "",
+            "power_w": 57.7486464,
+            "event": 0,
+            "ack": false
+          },
+          {
+            "id": 5,
+            "ms": 18720,
+            "kind": "EVENT_UNCERTAIN",
+            "name": "UNCONFIRMED_AT_18_WINDOWS",
+            "power_w": 0,
+            "event": 3,
+            "ack": false
+          },
+          {
+            "id": 4,
+            "ms": 14240,
+            "kind": "UNIDENTIFIED_LOAD",
+            "name": "",
+            "power_w": 104.298805,
+            "event": 0,
+            "ack": false
+          },
+          {
+            "id": 3,
+            "ms": 14200,
+            "kind": "EVENT_UNCERTAIN",
+            "name": "UNCONFIRMED_AT_18_WINDOWS",
+            "power_w": 0,
+            "event": 2,
+            "ack": false
+          },
+          {
+            "id": 2,
+            "ms": 8720,
+            "kind": "UNIDENTIFIED_LOAD",
+            "name": "",
+            "power_w": 84.7413691,
+            "event": 0,
+            "ack": false
+          },
+          {
+            "id": 1,
+            "ms": 8680,
+            "kind": "EVENT_UNCERTAIN",
+            "name": "UNCONFIRMED_AT_18_WINDOWS",
+            "power_w": 0,
+            "event": 1,
+            "ack": false
+          }
+        ],
+        "unidentified_load": {
+          "active": false,
+          "power_w": 0.943107431,
+          "energy_wh": 0.477532452,
+          "carbon_kg": 0
+        },
+        "identification": {
+          "status": "known",
+          "method": "KNOWN_VAL_5D_V1_CONFLICT_GUARD",
+          "unknown_validated": false,
+          "event_id": 4,
+          "windows": [
+            {
+              "score": 0.0205332779153,
+              "candidate_score": 0.443260374635,
+              "matched_class": "SolderingIron",
+              "candidate_class": "CurlingIron",
+              "reason": "WITHIN_KNOWN_SUPPORT",
+              "known_val_calibrated": true
+            },
+            {
+              "score": 0.022254851981,
+              "candidate_score": 0.427204406253,
+              "matched_class": "SolderingIron",
+              "candidate_class": "CurlingIron",
+              "reason": "WITHIN_KNOWN_SUPPORT",
+              "known_val_calibrated": true
+            },
+            {
+              "score": 0.0241156780889,
+              "candidate_score": 0.446106129109,
+              "matched_class": "SolderingIron",
+              "candidate_class": "CurlingIron",
+              "reason": "WITHIN_KNOWN_SUPPORT",
+              "known_val_calibrated": true
+            }
+          ]
+        },
+        "enroll_event": 4,
+        "enroll_available": true,
+        "enroll_direction": "OFF",
+        "advice": "TURN_OFF_UNUSED_APPLIANCES",
+        "accounting_scope": "BOOT_VALID_DATA_ESTIMATED_CLASS_ALLOCATION"
+      }
+    },
+    {
+      "source": "pair/kettle_hairdryer/kettle_hairdryer_off_hairdryer_both_hairdryer_off_s01_real.csv",
+      "samples": 638976,
+      "events": [
+        {
+          "id": 1,
+          "ms": 6960,
+          "kind": "APPLIANCE_ON",
+          "name": "HairDryer",
+          "power_w": 576.94052,
+          "event": 1,
+          "ack": false
+        },
+        {
+          "id": 2,
+          "ms": 11520,
+          "kind": "APPLIANCE_ON",
+          "name": "Kettle",
+          "power_w": 1510.03915,
+          "event": 2,
+          "ack": false
+        },
+        {
+          "id": 3,
+          "ms": 16720,
+          "kind": "APPLIANCE_OFF",
+          "name": "Kettle",
+          "power_w": 1488.85068,
+          "event": 3,
+          "ack": false
+        },
+        {
+          "id": 4,
+          "ms": 20360,
+          "kind": "ALL_OFF",
+          "name": "HairDryer",
+          "power_w": 0,
+          "event": 0,
+          "ack": false
+        },
+        {
+          "id": 6,
+          "ms": 21160,
+          "kind": "APPLIANCE_OFF",
+          "name": "HairDryer",
+          "power_w": 574.004271,
+          "event": 4,
+          "ack": false
+        },
+        {
+          "id": 5,
+          "ms": 21160,
+          "kind": "OFF_WITHOUT_TRACKED_ON",
+          "name": "HairDryer",
+          "power_w": 574.004271,
+          "event": 4,
+          "ack": false
+        }
+      ],
+      "wall_seconds": 0.20399999999790452,
+      "final": {
+        "schema": 1,
+        "compute": "BOARD_PS_PL",
+        "hardware_validated": false,
+        "unknown_validated": false,
+        "event_pending": false,
+        "state_current": true,
+        "off": true,
+        "overload": false,
+        "unknown_active": false,
+        "restricted_count": 0,
+        "anomaly_count": 0,
+        "tracking_uncertain": false,
+        "unassigned_w": 0.61967015,
+        "unassigned_wh": 1.01801475,
+        "store": "READY",
+        "config": {
+          "revision": 0,
+          "limit_w": 0,
+          "confirm_s": 1,
+          "clear_ratio": 0.9,
+          "unknown_enabled": true,
+          "support_scale": 1,
+          "restricted": []
+        },
+        "devices": [
+          {
+            "name": "HairDryer",
+            "on": false,
+            "power_w": 0,
+            "energy_wh": 1.73697906,
+            "carbon_kg": 0,
+            "restricted": false,
+            "anomaly": false,
+            "estimated": true
+          },
+          {
+            "name": "Kettle",
+            "on": false,
+            "power_w": 0,
+            "energy_wh": 1.68604386,
+            "carbon_kg": 0,
+            "restricted": false,
+            "anomaly": false,
+            "estimated": true
+          }
+        ],
+        "profiles": [],
+        "events": [
+          {
+            "id": 6,
+            "ms": 21160,
+            "kind": "APPLIANCE_OFF",
+            "name": "HairDryer",
+            "power_w": 574.004271,
+            "event": 4,
+            "ack": false
+          },
+          {
+            "id": 5,
+            "ms": 21160,
+            "kind": "OFF_WITHOUT_TRACKED_ON",
+            "name": "HairDryer",
+            "power_w": 574.004271,
+            "event": 4,
+            "ack": false
+          },
+          {
+            "id": 4,
+            "ms": 20360,
+            "kind": "ALL_OFF",
+            "name": "HairDryer",
+            "power_w": 0,
+            "event": 0,
+            "ack": false
+          },
+          {
+            "id": 3,
+            "ms": 16720,
+            "kind": "APPLIANCE_OFF",
+            "name": "Kettle",
+            "power_w": 1488.85068,
+            "event": 3,
+            "ack": false
+          },
+          {
+            "id": 2,
+            "ms": 11520,
+            "kind": "APPLIANCE_ON",
+            "name": "Kettle",
+            "power_w": 1510.03915,
+            "event": 2,
+            "ack": false
+          },
+          {
+            "id": 1,
+            "ms": 6960,
+            "kind": "APPLIANCE_ON",
+            "name": "HairDryer",
+            "power_w": 576.94052,
+            "event": 1,
+            "ack": false
+          }
+        ],
+        "unidentified_load": {
+          "active": false,
+          "power_w": 0.61967015,
+          "energy_wh": 1.01801475,
+          "carbon_kg": 0
+        },
+        "identification": {
+          "status": "known",
+          "method": "KNOWN_VAL_5D_V1_CONFLICT_GUARD",
+          "unknown_validated": false,
+          "event_id": 4,
+          "windows": [
+            {
+              "score": 0.117392157553,
+              "candidate_score": 0.117392157553,
+              "matched_class": "HairDryer",
+              "candidate_class": "HairDryer",
+              "reason": "WITHIN_KNOWN_SUPPORT",
+              "known_val_calibrated": true
+            },
+            {
+              "score": 0.118060277484,
+              "candidate_score": 0.118060277484,
+              "matched_class": "HairDryer",
+              "candidate_class": "HairDryer",
+              "reason": "WITHIN_KNOWN_SUPPORT",
+              "known_val_calibrated": true
+            },
+            {
+              "score": 0.120890384601,
+              "candidate_score": 0.120890384601,
+              "matched_class": "HairDryer",
+              "candidate_class": "HairDryer",
+              "reason": "WITHIN_KNOWN_SUPPORT",
+              "known_val_calibrated": true
+            }
+          ]
+        },
+        "enroll_event": 4,
+        "enroll_available": true,
+        "enroll_direction": "OFF",
+        "advice": "TURN_OFF_UNUSED_APPLIANCES",
+        "accounting_scope": "BOOT_VALID_DATA_ESTIMATED_CLASS_ALLOCATION"
+      }
+    }
+  ]
+}

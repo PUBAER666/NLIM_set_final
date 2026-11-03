@@ -1,0 +1,52 @@
+[
+  {
+    "path": "check_connection.cmd",
+    "bytes": 87,
+    "sha256": "bf349aa5389751bce077ed53b147f9030c633f951c2325dff3c800100ea6c7ed"
+  },
+  {
+    "path": "fsbl.elf",
+    "bytes": 538984,
+    "sha256": "a5113bff41b1051843b4169627756df309d9d17c6558ef87e847d9a6397d2a93"
+  },
+  {
+    "path": "manifest.json",
+    "bytes": 2589,
+    "sha256": "79b50e856324289c292a23d536a522c2b558e0a6f2a6e71e1d4b1fd368e0321a"
+  },
+  {
+    "path": "NLIM_set_fianl.elf",
+    "bytes": 7555016,
+    "sha256": "82f7e5b86c88a0dbac81627dcd5dd6c20bcf49bf82ddec97a691ea3a2ebb27fe"
+  },
+  {
+    "path": "NLIM_set_fianl.exe",
+    "bytes": 9318422,
+    "sha256": "bea93e47472083f049b1d70e8c66d6028600d4f4e21586a99a04d18c65783b37"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3651,
+    "sha256": "1929de5af80740bdc765831a9a7b9f9d53e3e7a80a2229f7959817600be49142"
+  },
+  {
+    "path": "sd_card/BOOT.BIN",
+    "bytes": 10362424,
+    "sha256": "3c3a8ae3bd28d1e2c5af583baeb86cfd79ca7ca720cef7309d28e4d5052c831f"
+  },
+  {
+    "path": "start_capture.cmd",
+    "bytes": 95,
+    "sha256": "ff0fe77d7c196b7fe70f43e555e4828b927f88573d621c779b97e69c49906dfa"
+  },
+  {
+    "path": "verify_package.cmd",
+    "bytes": 118,
+    "sha256": "647999e216dc288d9da282885a6f11435fe1c710797fd4277ae8777a6d06752a"
+  },
+  {
+    "path": "verify_package.ps1",
+    "bytes": 898,
+    "sha256": "0837a1a4ced5fef4c0c9249fae280ddd9672810a5c5f049d1f2f89bd7dca01cb"
+  }
+]

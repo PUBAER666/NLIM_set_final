@@ -1,0 +1,19 @@
+{
+  "layout": "expanded_source_tree",
+  "repository": "https://github.com/PUBAER666/NLIM_set_fianl",
+  "root_directories": [
+    "src",
+    "sim",
+    "build",
+    "board",
+    "data",
+    "skill",
+    "report"
+  ],
+  "firmware_unchanged": true,
+  "source_and_binary_files_identical": 272,
+  "documentation_links_passed": true,
+  "skill_selftest_passed": true,
+  "performance_arithmetic_passed": true,
+  "hardware_connected": false
+}

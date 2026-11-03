@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "kind": "arithmetic_check_not_measurement",
+  "hls_ms": 30.02349,
+  "rtl_ms": 29.24558,
+  "ideal_core_ratio": 4,
+  "ps_speedup": null
+}

@@ -1,0 +1,10 @@
+work/
+__pycache__/
+*.pyc
+sim/results/*.exe
+sim/results/*.dll
+board/release/recordings/
+*.jou
+*.str
+
+.cache/

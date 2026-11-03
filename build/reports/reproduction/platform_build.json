@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "xsa": "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\nlimfinal\\board\\hardware\\nilm_board.xsa",
+  "artifacts": [
+    "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\nlimfinal\\work\\vitis_short\\p\\export\\p\\sw\\standalone\\lib\\libxil.a",
+    "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\nlimfinal\\work\\vitis_short\\p\\export\\p\\sw\\standalone\\lib\\libxilstandalone.a",
+    "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\nlimfinal\\work\\vitis_short\\p\\export\\p\\sw\\standalone\\lib\\libxiltimer.a",
+    "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\nlimfinal\\work\\vitis_short\\p\\export\\p\\sw\\standalone\\lib\\liblwip220.a",
+    "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\nlimfinal\\work\\vitis_short\\p\\export\\p\\sw\\standalone\\lib\\libxilffs.a",
+    "C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\nlimfinal\\work\\vitis_short\\p\\export\\p\\sw\\boot\\fsbl.elf"
+  ]
+}

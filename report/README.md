@@ -1,0 +1,10 @@
+# 设计报告
+
+- [设计报告](design_report.md)
+- [可打印 HTML](design_report.html)
+- [最终方案说明](final_design.md)
+- [软硬件框图说明](diagrams/README.md)
+- [九页 PDF 图集](diagrams/nlim_set_fianl_diagrams.pdf)
+- [大模型协作记录](ai_collaboration.md)
+
+![图纸总览](diagrams/all_diagrams.png)

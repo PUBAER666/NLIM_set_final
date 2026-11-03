@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-03",
+  "package": "nlimfinal",
+  "scope": "delivery_labels_and_final_diagrams",
+  "design_confirmed_by_user": true,
+  "new_board_test": false,
+  "protected_artifacts_unchanged": true,
+  "protected_sha256": {
+    "board/hardware/nilm_board.xsa": "59a0f53e0254e4c3624a6bc04473caa95ba83ea45c22cc771cbb309458b5df34",
+    "board/hardware/system_wrapper.bit": "2f5262c6ddde992c890f0b2013e81b6edafc94e452156929c2480cd57e8271a0",
+    "board/release/fsbl.elf": "a5113bff41b1051843b4169627756df309d9d17c6558ef87e847d9a6397d2a93",
+    "board/release/nilm_board.elf": "72acc521fa8c8571fdbc5895c7b7579d313e58d088aa95ce10f04cdc9e737f42",
+    "board/release/NILM_System.exe": "a1579af2c6ce1c8c0dbd1fc77bc4fb13e0c742cbdfac4e7543be9ae222ffbaad",
+    "board/release/sd_card/BOOT.BIN": "756fe8eca024974d0047d38c5d76557bdbccd5df7e80311ec96fe304c481089f"
+  },
+  "diagram_count": 9,
+  "historical_evidence_preserved": true
+}
