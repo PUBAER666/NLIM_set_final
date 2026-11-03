@@ -3,7 +3,7 @@
 | Skill | 用途 | 适用环境与证据 |
 |---|---|---|
 | [ps-pl-release-validation](ps-pl-release-validation/SKILL.md) | 交付完整性、黄金数值、事件诊断和性能证据检查 | 现有裸机 PS–PL 工作流；通用脚本在主机运行 |
-| [pynq-overlay-validate](pynq-overlay-validate/SKILL.md) | Overlay 元数据、标量 AXI-Lite 接口契约、加速器黄金样例及报告 | 独立 PYNQ 工具；27项主机行为测试、两套 mock、两个示例 HLS 综合/接口核对；尚无 PYNQ 实机记录 |
+| [pynq-overlay-validate](pynq-overlay-validate/SKILL.md) | Overlay 元数据、标量 AXI-Lite 接口契约、加速器黄金样例及报告 | 独立 PYNQ 工具；27项主机行为测试、两套 mock、两个示例 HLS 综合/接口核对 |
 
 Skill 可由支持该格式的智能体读取，也可直接运行其中脚本。正文与示例自包含；在线资料用于查阅 API，不要求运行时联网。
 
