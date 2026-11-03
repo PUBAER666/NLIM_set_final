@@ -1,0 +1,61 @@
+--- four/cnn.cpp
++++ single/cnn.cpp
+@@ -1,25 +1,25 @@
+ #include "cnn.h"
+ #include "weights.h"
+ 
+-// Eight positions interleave each floating-point recurrence. Four output
+-// channels share each input read. Tap order matches the PS reference.
++// Matched single-output-channel baseline. Eight positions still interleave
++// each floating-point recurrence; tap order and numerical precision unchanged.
+ template<int L, int IC, int OC, int K, bool POOL>
+ static void layer(const float input[IC*L], float output[OC*L/2],
+                   float embedding[64], const float weight[OC][IC*K],
+                   const float bias[OC], const float alpha[OC], const float beta[OC])
+ {
+ #pragma HLS INLINE off
+-#pragma HLS ARRAY_PARTITION variable=weight cyclic factor=4 dim=1
+-    for (int group=0; group<OC; group+=4) {
+-        float sum[4]={0,0,0,0}, peak[4]={0,0,0,0};
++#pragma HLS ARRAY_PARTITION variable=weight cyclic factor=1 dim=1
++    for (int group=0; group<OC; group+=1) {
++        float sum[1]={0}, peak[1]={0};
+ #pragma HLS ARRAY_PARTITION variable=sum complete
+ #pragma HLS ARRAY_PARTITION variable=peak complete
+         for (int pos=0; pos<L; pos+=8) {
+-            float acc[4][8];
++            float acc[1][8];
+ #pragma HLS ARRAY_PARTITION variable=acc complete dim=0
+             for (int p=0;p<8;p++) {
+ #pragma HLS PIPELINE II=1
+-                for(int o=0;o<4;o++) {
++                for(int o=0;o<1;o++) {
+ #pragma HLS UNROLL
+                     acc[o][p]=bias[group+o];
+                 }
+@@ -31,14 +31,14 @@
+                     // Skipping padding MACs also preserves signed-zero behavior.
+                     if(at>=0 && at<L) {
+                         float x=input[ic*L+at];
+-                        for(int o=0;o<4;o++) {
++                        for(int o=0;o<1;o++) {
+ #pragma HLS UNROLL
+                             acc[o][p]+=x*weight[group+o][ic*K+k];
+                         }
+                     }
+                 }
+             }
+-            for(int o=0;o<4;o++) {
++            for(int o=0;o<1;o++) {
+                 float previous=0;
+                 for(int p=0;p<8;p++) {
+                     float y=acc[o][p]*alpha[group+o]+beta[group+o];
+@@ -53,7 +53,7 @@
+                 }
+             }
+         }
+-        if(!POOL) for(int o=0;o<4;o++) {
++        if(!POOL) for(int o=0;o<1;o++) {
+             embedding[group+o]=sum[o];embedding[group+o+32]=peak[o];
+         }
+     }

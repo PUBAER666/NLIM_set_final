@@ -7,7 +7,7 @@
 | 对外方案与交付名称 | NLIM_set_final |
 | 配套固件真实版本 | NLIM_set_final |
 | CNN ABI / 模型 | 2 / 37ded17f8e17881f |
-| 硬件 | EES331 / XC7Z020CLG484-1；V2 PCB |
+| 硬件 | EES331 / XC7Z020CLG484-1；当前 PCB（历史配置名 PCB_V2） |
 | 图纸 | diagrams/ 下 H01–H05 与 S01–S04，共9张 |
 
 ## 最终架构

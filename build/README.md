@@ -61,4 +61,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File build/build_receiver.ps1
 
 `build/reports/performance/theoretical_performance.md` 提供真实报告的推导，`build/recompute_performance.py` 可重新核对周期换算。
 
-构建与回归记录见 `build/reports/reproduction/summary.json`。实现报告与包内 bitstream 对应，指标按理论分析、综合、仿真和实现报告分类整理。
+单／四路硬件对比的独立源码、脚本与原始证据见 [cnn_parallel_comparison](reports/cnn_parallel_comparison/README.md)，从该目录按其 README 运行。
+
+最终命名交付的构建与回归记录见 `build/reports/reproduction/identity_20261103/summary.json`；较早记录保留于 `build/reports/reproduction/summary.json`。实现报告与包内 bitstream 对应，指标按理论分析、综合、仿真和实现报告分类整理。

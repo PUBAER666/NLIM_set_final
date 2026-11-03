@@ -1,5 +1,8 @@
 # 设计报告
 
+- [竞赛技术文档](technical_document.docx)
+- [验证范围与指标口径](validation_scope.md)
+- [CNN 单路与四路对比](../build/reports/cnn_parallel_comparison/comparison_report.md)
 - [设计报告](design_report.md)
 - [可打印 HTML](design_report.html)
 - [最终方案说明](final_design.md)

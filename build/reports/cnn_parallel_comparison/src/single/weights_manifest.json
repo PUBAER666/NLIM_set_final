@@ -1,0 +1,8 @@
+{
+  "asset_id": "37ded17f8e17881f",
+  "source_sha256": "37ded17f8e17881f162f26436114a7283acfc29228ff26ccb7d16eed49a71ce2",
+  "weights_sha256": "b8a3c7a4ad71c870e8e77bc35cf1c642dd6ca969c61b1048753ce5ccdb1985bd",
+  "precision": "float32",
+  "classes": 14,
+  "input_samples": 4096
+}

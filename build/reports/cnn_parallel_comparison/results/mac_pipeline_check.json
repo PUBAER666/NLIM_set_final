@@ -1,0 +1,42 @@
+{
+  "single": [
+    {
+      "report": "layer_4096_1_8_9_true_Pipeline_VITIS_LOOP_27_6_VITIS_LOOP_28_7_csynth.xml",
+      "pipeline_ii": [
+        "1"
+      ]
+    },
+    {
+      "report": "layer_Pipeline_VITIS_LOOP_27_5_VITIS_LOOP_27_6_VITIS_LOOP_28_7_1_csynth.xml",
+      "pipeline_ii": [
+        "1"
+      ]
+    },
+    {
+      "report": "layer_Pipeline_VITIS_LOOP_27_5_VITIS_LOOP_27_6_VITIS_LOOP_28_7_csynth.xml",
+      "pipeline_ii": [
+        "1"
+      ]
+    }
+  ],
+  "four": [
+    {
+      "report": "layer_4096_1_8_9_true_Pipeline_VITIS_LOOP_27_6_VITIS_LOOP_28_7_csynth.xml",
+      "pipeline_ii": [
+        "1"
+      ]
+    },
+    {
+      "report": "layer_Pipeline_VITIS_LOOP_27_5_VITIS_LOOP_27_6_VITIS_LOOP_28_7_1_csynth.xml",
+      "pipeline_ii": [
+        "1"
+      ]
+    },
+    {
+      "report": "layer_Pipeline_VITIS_LOOP_27_5_VITIS_LOOP_27_6_VITIS_LOOP_28_7_csynth.xml",
+      "pipeline_ii": [
+        "1"
+      ]
+    }
+  ]
+}

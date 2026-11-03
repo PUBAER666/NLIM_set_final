@@ -6,7 +6,7 @@
 
 CNN 卷积采用四输出通道并行、八位置交错累加，三层 MAC 主循环达到 II=1。在同频、相同精度、充分供数且无停顿条件下，单通路 II=1 基线每周期启动1次 MAC，当前四通路结构每周期启动4次 MAC，核心理想吞吐倍率为4。100 MHz下理想峰值为400 MMAC/s。
 
-该倍率的口径是卷积核心与假设单通路硬件结构的理论吞吐比较。八位置交错用于缓解累加依赖；完整CNN还包含数据访问、初始化、激活、池化、特征汇总和输出写回。
+该倍率的口径是卷积核心与单通路硬件结构的理论吞吐比较。八位置交错用于缓解累加依赖；完整CNN还包含数据访问、初始化、激活、池化、特征汇总和输出写回。
 
 ## 延迟与时间预算
 
@@ -33,10 +33,14 @@ CNN 卷积采用四输出通道并行、八位置交错累加，三层 MAC 主�
 
 ## 证据文件
 
-- `build/reports/cnn.cpp`：计算结构。
-- `build/reports/conv1_pipeline.rpt`、`conv2_pipeline.rpt`、`conv3_pipeline.rpt`：II=1调度结果。
-- `build/reports/cnn_csynth.rpt`：HLS延迟与资源估计。
-- `build/reports/cnn_cosim.rpt`、`test_cnn.cpp`、`cosim_case0.log`至`cosim_case3.log`：有效事务及输出比较。
-- `build/reports/timing_summary.rpt`、`utilization.rpt`：实现时序与完整PL资源。
-- `build/reports/release_manifest.json`、`weights_manifest.json`：版本及模型标识。
+- `build/reports/performance/evidence/cnn.cpp`：计算结构。
+- `build/reports/performance/evidence/conv1_pipeline.rpt`、`conv2_pipeline.rpt`、`conv3_pipeline.rpt`：II=1调度结果。
+- `build/reports/performance/evidence/cnn_csynth.rpt`：HLS延迟与资源估计。
+- `build/reports/performance/evidence/cnn_cosim.rpt`、`test_cnn.cpp`、`cosim_case0.log`至`cosim_case3.log`：有效事务及输出比较。
+- `build/reports/performance/evidence/timing_summary.rpt`、`utilization.rpt`：实现时序与完整PL资源。
+- `build/reports/performance/evidence/release_manifest.json`、`weights_manifest.json`：版本及模型标识。
 - `metrics.json`、`sources.json`：结构化指标、来源及SHA256。
+
+## 同条件单路与四路硬件对比
+
+补充实验见 [对比报告](../cnn_parallel_comparison/comparison_report.md)。同器件、权重、float32 与 100 MHz 下，HLS 最大延迟由 68.05572 ms 降至 30.02349 ms；同一输入的有效 RTL 事务由 66.90917 ms 降至 29.24558 ms，加速约 2.29 倍。单路采用本次 RTL 仿真，四路使用与新综合逐字节匹配的归档 RTL 记录。该比较不代表 PS 对比 PL 或板上实测。

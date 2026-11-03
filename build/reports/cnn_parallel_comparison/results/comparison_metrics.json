@@ -1,0 +1,83 @@
+{
+  "evidence_type": "matched_hls_synthesis_and_rtl_cosimulation_not_board_measurement",
+  "part": "xc7z020clg484-1",
+  "tool": "Vitis HLS 2025.2",
+  "clock_mhz": 100,
+  "single": {
+    "worst_latency_cycles": 6805572,
+    "worst_latency_ms": 68.05572,
+    "target_clock_ns": 10.0,
+    "estimated_clock_ns": 7.3,
+    "resources": {
+      "BRAM_18K": 92,
+      "DSP": 5,
+      "FF": 6191,
+      "LUT": 6698,
+      "URAM": 0
+    }
+  },
+  "four": {
+    "worst_latency_cycles": 3002349,
+    "worst_latency_ms": 30.02349,
+    "target_clock_ns": 10.0,
+    "estimated_clock_ns": 7.3,
+    "resources": {
+      "BRAM_18K": 96,
+      "DSP": 20,
+      "FF": 14067,
+      "LUT": 11785,
+      "URAM": 0
+    }
+  },
+  "layers": [
+    {
+      "name": "layer_4096_1_8_9_true_s",
+      "single_ms": 9.09337,
+      "four_ms": 6.08263,
+      "ratio": 1.4949733914441614
+    },
+    {
+      "name": "layer_2048_8_16_7_true_s",
+      "single_ms": 24.49457,
+      "four_ms": 9.93293,
+      "ratio": 2.4659964381104067
+    },
+    {
+      "name": "layer_1024_16_32_5_false_s",
+      "single_ms": 34.32545,
+      "four_ms": 13.86561,
+      "ratio": 2.4755816729303652
+    }
+  ],
+  "synthesis_speedup": 2.2667491354269607,
+  "synthesis_latency_reduction_percent": 55.88395802733408,
+  "host_validation": {
+    "cases": 24,
+    "outputs_per_case": 78,
+    "bit_identical_between_variants": true,
+    "worst_absolute_error_vs_ps": 0
+  },
+  "four_archived_cases_have_identical_transaction_times": true,
+  "four_fresh_rtl_files_identical_to_archived": 68,
+  "four_rtl_provenance": "Archived 2026-10-31; matching source/testbench, model weight hash, tool/version/clock, and fresh synthesis metrics.",
+  "board_measured": false,
+  "ps_vs_pl_speedup": null,
+  "end_to_end_speedup": null,
+  "single_rtl": {
+    "min_cycles": 3,
+    "report_avg_cycles": 2230307,
+    "valid_cycles": 6690917,
+    "valid_ms": 66.90917,
+    "passed": true
+  },
+  "four_rtl": {
+    "min_cycles": 3,
+    "report_avg_cycles": 974854,
+    "valid_cycles": 2924558,
+    "valid_ms": 29.24558,
+    "passed": true
+  },
+  "rtl_speedup": 2.287838709302397,
+  "rtl_latency_reduction_percent": 56.29062503689703,
+  "rtl_input": "case 3: deterministic fundamental + third harmonic + seeded noise; 4096 float32 samples; 2 invalid requests excluded"
+}

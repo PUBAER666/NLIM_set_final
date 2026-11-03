@@ -17,7 +17,8 @@
     "model_numerical_comparison",
     "hls_synthesis_report",
     "rtl_cosimulation_report",
-    "implementation_timing_and_resources"
+    "implementation_timing_and_resources",
+    "matched_single_four_cnn_hls_rtl_comparison"
   ],
   "identity_update_date": "2026-11-03",
   "repository_url": "https://github.com/PUBAER666/NLIM_set_final",
@@ -39,5 +40,13 @@
     "hls_synthesis_examples": 2,
     "pynq_board_verified": false,
     "cross_board_verified": false
+  },
+  "report_alignment": {
+    "date": "2026-11-03",
+    "source_firmware_baseline": "9615c762113b7c5bb53fd206d7e8e56d784056bc",
+    "technical_document": "report/technical_document.docx",
+    "scope": "report/validation_scope.md",
+    "comparison": "build/reports/cnn_parallel_comparison/results/comparison_metrics.json",
+    "firmware_changed": false
   }
 }

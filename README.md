@@ -2,7 +2,7 @@
 
 基于 Zynq PS–PL 协同的电器识别与用电监测系统。
 
-仓库采用展开式工程目录，可直接查看源码、仿真、构建脚本、运行文件与报告。平台为 EES331（XC7Z020CLG484-1），配套 V2 PCB 模拟前端；固件标识为 `NLIM_set_final`。
+仓库采用展开式工程目录，可直接查看源码、仿真、构建脚本、运行文件与报告。平台为 EES331（XC7Z020CLG484-1），配套当前 PCB 模拟前端（历史配置名 PCB_V2／V2 PCB，与 pcb_v1 为同一硬件版本）；固件标识为 `NLIM_set_final`。
 
 ## 目录结构
 
@@ -22,6 +22,9 @@ NLIM_set_final/
 
 | 入口 | 内容 |
 |---|---|
+| [竞赛技术文档](report/technical_document.docx) | 与最终工程对齐的完整技术文档 |
+| [验证范围](report/validation_scope.md) | 离线统计、工具验证与板级验证的对应范围 |
+| [CNN 单路与四路对比](build/reports/cnn_parallel_comparison/comparison_report.md) | 同条件综合与 RTL 仿真，约 2.29 倍有效事务加速 |
 | [设计报告](report/design_report.md) | 系统架构、PS–PL 分工、识别、登记和计量流程 |
 | [硬件与软件框图](report/diagrams/README.md) | 九张 PNG / SVG 框图及 PDF 图集 |
 | [源码说明](src/README.md) | PS、HLS、RTL、硬件工程和网页模块 |

@@ -1,0 +1,155 @@
+from pathlib import Path
+import hashlib, json
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
+import numpy as np
+
+root=Path(__file__).resolve().parents[1]
+d=json.loads((root/'results/comparison_metrics.json').read_text(encoding='utf-8'))
+s,f=d['single'],d['four']
+sr,fr=d['single_rtl'],d['four_rtl']
+font_path=Path('C:/Windows/Fonts/msyh.ttc')
+font=FontProperties(fname=font_path) if font_path.exists() else FontProperties()
+if font_path.exists():
+    from matplotlib import font_manager
+    font_manager.fontManager.addfont(str(font_path))
+    plt.rcParams['font.family']=font.get_name()
+plt.rcParams.update({'axes.spines.top':False,'axes.spines.right':False,'svg.fonttype':'none','font.size':10,'axes.unicode_minus':False})
+fig,ax=plt.subplots(1,2,figsize=(12.0,4.7),gridspec_kw={'width_ratios':[1.05,1]})
+x=np.arange(2);w=.32
+for shift,values,label,color in [(-w/2,[s['worst_latency_ms'],f['worst_latency_ms']],'HLS 综合估计','#9aaabd'),(w/2,[sr['valid_ms'],fr['valid_ms']],'RTL 仿真有效推理','#2474a8')]:
+    bars=ax[0].bar(x+shift,values,w,label=label,color=color)
+    ax[0].bar_label(bars,fmt='%.2f',padding=4,fontsize=10)
+ax[0].set_xticks(x,['单路基线','四路并行'])
+ax[0].set_ylabel('单窗推理延迟 / ms')
+ax[0].set_ylim(0,max(s['worst_latency_ms'],sr['valid_ms'])*1.3)
+ax[0].legend(frameon=False,loc='upper right',fontsize=9)
+ax[0].set_title(f"RTL 仿真加速 {d['rtl_speedup']:.2f} 倍",pad=16,fontweight='bold')
+keys=['DSP','LUT','FF','BRAM_18K']
+ratios=[f['resources'][k]/s['resources'][k] for k in keys]
+bars=ax[1].bar(np.arange(4),ratios,color=['#2474a8','#4e8bb1','#78a4be','#a9c2d1'],width=.56)
+ax[1].bar_label(bars,labels=[f'{v:.2f}×' for v in ratios],padding=4)
+ax[1].axhline(1,color='#6c737c',linestyle='--',linewidth=1)
+ax[1].set_xticks(np.arange(4),['DSP','LUT','FF','BRAM18K'])
+ax[1].set_ylabel('四路资源量 / 单路资源量')
+ax[1].set_ylim(0,4.8)
+ax[1].set_title('CNN IP 资源代价（HLS 估计）',pad=16,fontweight='bold')
+fig.suptitle('CNN 单路与四路并行实现对比',fontweight='bold',fontsize=16,y=.98)
+fig.text(.5,.025,'XC7Z020 · 100 MHz · 同模型/输入/float32精度；RTL为仿真结果，非板上实测',ha='center',fontsize=10,color='#555555')
+fig.subplots_adjust(left=.07,right=.98,bottom=.17,top=.82,wspace=.31)
+for ext in ['png','svg']:
+    fig.savefig(root/f'comparison.{ext}',dpi=220,facecolor='white')
+plt.close(fig)
+
+resource_rows='\n'.join(f'| {label} | {s["resources"][key]:,} | {f["resources"][key]:,} | {f["resources"][key]/s["resources"][key]:.3f}× |' for key,label in [('DSP','DSP'),('LUT','LUT'),('FF','FF'),('BRAM_18K','BRAM18K')])
+layer_rows='\n'.join(f'| Conv{i+1} | {v["single_ms"]:.5f} | {v["four_ms"]:.5f} | {v["ratio"]:.3f}× |' for i,v in enumerate(d['layers']))
+report=f'''# CNN 并行优化对比报告
+
+实验日期：2026-11-03。比较对象为单输出通道基线与当前四输出通道并行 CNN IP；现有交付固件未改动。
+
+## 结论
+
+在相同器件、100 MHz 时钟、模型权重与 float32 精度下，四路版本的 HLS 最坏延迟估计从 **{s['worst_latency_ms']:.5f} ms** 降至 **{f['worst_latency_ms']:.5f} ms**，加速 **{d['synthesis_speedup']:.3f} 倍**。同一有效输入的 RTL 仿真延迟从 **{sr['valid_ms']:.5f} ms** 降至 **{fr['valid_ms']:.5f} ms**，加速 **{d['rtl_speedup']:.3f} 倍**、延迟下降 **{d['rtl_latency_reduction_percent']:.2f}%**。
+
+24 组主机数值测试中，两版本的 14 个分类分数与 64 个特征逐位一致；与 PS 软件参考的最大绝对误差为 0。单路本次 RTL 检查及四路归档 RTL 检查均通过，所检向量最大绝对误差为 0。这验证了所测输入上的数值一致性，不是分类准确率评估。
+
+![对比图](comparison.png)
+
+## 比较条件
+
+| 条件 | 两版本共同设置 |
+|---|---|
+| 器件 | XC7Z020CLG484-1 |
+| 工具 | Vitis HLS 2025.2；RTL 仿真器 XSIM |
+| 时钟约束 | 10 ns，即 100 MHz；时钟不确定度 2.70 ns |
+| 网络输入／输出 | 4096 个 float32 电流样本；14 个分数＋64 个特征 |
+| 模型 ID | 37ded17f8e17881f |
+| 权重 SHA-256 | b8a3c7a4ad71c870e8e77bc35cf1c642dd6ca969c61b1048753ce5ccdb1985bd |
+| 数值方式 | float32，禁止浮点乘加收缩；累加 tap 顺序不变 |
+| 保留优化 | 8 个位置交错累加、既有 BRAM 缓冲、AXI 接口 |
+| 唯一实验变量 | 输出通道并行度 1→4，及与其配套的累加器数量和权重分区 |
+
+单路基线是从当前四路源码构造的匹配基线，并非声称恢复了项目历史上曾上板的旧版本；它也保留流水优化，不是刻意放慢的串行软件实现。改动逐行记录在 `results/source_change.diff`。
+
+## 延迟与资源
+
+| 指标 | 单路基线 | 四路并行 | 加速比 |
+|---|---:|---:|---:|
+| HLS 最坏延迟 / 周期 | {s['worst_latency_cycles']:,} | {f['worst_latency_cycles']:,} | {d['synthesis_speedup']:.3f}× |
+| HLS 最坏延迟 / ms | {s['worst_latency_ms']:.5f} | {f['worst_latency_ms']:.5f} | {d['synthesis_speedup']:.3f}× |
+| RTL 有效推理 / 周期 | {sr['valid_cycles']:,} | {fr['valid_cycles']:,} | {d['rtl_speedup']:.3f}× |
+| RTL 有效推理 / ms | {sr['valid_ms']:.5f} | {fr['valid_ms']:.5f} | {d['rtl_speedup']:.3f}× |
+
+| CNN IP 资源（HLS 估计） | 单路基线 | 四路并行 | 四路／单路 |
+|---|---:|---:|---:|
+{resource_rows}
+
+资源范围仅为 CNN IP，两列均使用 HLS 估计，未把整个 PL 的实现资源与单个 IP 混用。BRAM 单位为 18 Kb 块。没有进行单路整板布局布线，因此不能据此声称单路整板时序已通过。
+
+| 分层 HLS 最坏延迟 / ms | 单路基线 | 四路并行 | 加速比 |
+|---|---:|---:|---:|
+{layer_rows}
+
+## 为什么不是整网 4 倍
+
+四路并行加快了卷积乘加部分，但每通道的后处理、池化／统计、全连接层、AXI 输入输出和控制仍有时间开销。所有这些开销都计入整网延迟；不能把乘加并行度直接写成整网加速倍数。此次结果体现的是资源换延迟：DSP 从 5 个增加到 20 个，整网仿真加速约 {d['rtl_speedup']:.2f} 倍。
+
+## 验证过程与证据
+
+1. 2026-11-03 重新编译并测试两版本：零输入、脉冲、常量及不同幅值的基波＋三次谐波＋确定性噪声，共 24 组。每组检查 78 个输出，并直接比较单路与四路浮点位模式。
+2. 同一天分别完成单路和四路 HLS 综合。四路新生成的 68 个 Verilog／存储初始化文件与旧 RTL 逐字节相同，且资源、延迟报告一致。详见 `results/four_rtl_reproduction.json`。
+3. 单路本次使用测试 case 3 完成 C/RTL 协同仿真；四路使用 2026-10-31 同一 case 的既有通过记录。四路另有 case 0/1/2 的既有通过记录；四组终止仿真时刻相同。四路没有伪称本次重新仿真。
+4. 每轮 RTL 测试包含两笔错误 ABI／模型请求和一笔有效推理。前两笔仅耗 3 周期，因此报告中的平均延迟不能代表 CNN 推理延迟。本表取有效推理事务的周期数，排除快速拒绝请求。
+5. 保留原始报告和日志，结果脚本从 XML／报告提取数值，未手工填写加速比。
+
+关键文件：`results/host_pair.log`、`results/single_cosim.log`、`evidence/single_fresh_cosim/`、`evidence/four_archived/cosim_case3.log`、`evidence/*_fresh_synth/`、`results/comparison_metrics.json`。
+
+## 报告可用表述
+
+> 为量化硬件并行优化的收益，构建了与当前实现具有相同模型权重、数值精度及接口的单输出通道基线，并与四输出通道并行实现进行对照。在 XC7Z020、100 MHz 条件下，HLS 最坏延迟估计由 {s['worst_latency_ms']:.2f} ms 降至 {f['worst_latency_ms']:.2f} ms；同一输入的 RTL 仿真有效推理延迟由 {sr['valid_ms']:.2f} ms 降至 {fr['valid_ms']:.2f} ms，加速约 {d['rtl_speedup']:.2f} 倍。24 组主机测试的分类分数及特征逐位一致，RTL 数值检查通过。代价是 DSP 用量由 5 个增加至 20 个。以上为同条件综合与 RTL 仿真结果。
+
+## 使用边界
+
+本实验未测 PS 运行时间，因此不能写“相对 ARM／CPU 加速 {d['rtl_speedup']:.2f} 倍”；也未测整机端到端延迟、功耗或电器识别准确率。160 ms 为名义采样窗口时长；即使两种单窗 CNN 延迟都低于它，也不能单凭此证明多个事件检查点并发、通信与采集共同运行时的实时性。该比较证明了并行硬件对本 CNN 的加速效果，不单独证明使用 FPGA 的必要性。
+'''
+(root/'comparison_report.md').write_text(report,encoding='utf-8')
+readme='''# CNN parallel comparison
+
+阅读 `comparison_report.md`；图片为 `comparison.png`（报告插图）及 `comparison.svg`（矢量版）。`results/comparison_metrics.json` 保存机器可读结果。
+
+这是独立实验，不替换 NLIM_set_final 的 BOOT.BIN、模型或接收程序。
+
+## Reproduce on Windows
+
+需要 Python 3、MinGW GCC/G++、AMD Vitis 2025.2。工程与工作路径建议无空格、无中文。先备份现有证据，使用新的工作目录；运行会更新本实验目录中的日志。
+
+```powershell
+python scripts/run_comparison.py --work C:/nilm_cnn_compare_work --stage all
+python scripts/summarize.py
+python scripts/render_report.py
+```
+
+默认重跑 24 组主机测试、两路 HLS 综合、单路 case 3 RTL 仿真。四路 RTL 证据为逐字节匹配的既有设计，原始记录位于 `evidence/four_archived/`。如需另外重跑四路 RTL：
+
+```powershell
+python scripts/run_comparison.py --work C:/nilm_cnn_compare_work --stage cosim --rtl-lane four
+```
+
+`--amd` 和 `--gcc-dir` 可指定工具目录。生成图表额外需要 matplotlib 与 numpy。所有时延均由设计周期数与 10 ns 时钟换算；编译或仿真的电脑耗时不是硬件推理延迟。
+
+## Layout
+
+- `src/single/`：单路基线、冻结权重。
+- `src/four/`：当前四路源码，保持原始字节。
+- `src/reference/`：数值参考与链接所需依赖。
+- `tests/`：原始 RTL 测试与单路／四路直接一致性测试。
+- `scripts/`：运行、提取结果与生成报告。
+- `evidence/`：原始综合报告、RTL 仿真报告和匹配的四路旧 RTL。
+- `results/`：日志、哈希核对、源码差异与对比指标。
+
+报告结果仅为硬件实现间的综合／RTL 仿真对比，不是板上实测或 PS-versus-PL 跑分。
+'''
+(root/'README.md').write_text(readme,encoding='utf-8')
+print(root/'comparison_report.md')
