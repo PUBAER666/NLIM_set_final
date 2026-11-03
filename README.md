@@ -73,6 +73,3 @@ python skill/ps-pl-release-validation/scripts/verify_delivery.py .
 
 验证与实现报告归档在 `build/reports/`。历史测试记录保留原版本、日期和来源路径；当前目录与原交付包的对应关系见 [layout_map.json](build/layout_map.json)。厂商 IP 的导出归档作为硬件工程配套文件保留，源码同时展开于 `src/hardware/cnn_ip/`。
 
-## 通用 PYNQ Skill
-
-新增独立的 [pynq-overlay-validate](skill/pynq-overlay-validate/SKILL.md)：按配置核对 Overlay/标量 AXI-Lite 接口，运行黄金样例并生成 JSON/HTML 报告。已附主机测试、mock 样例及 HLS 综合/寄存器核对记录；实际 PYNQ 板卡验证状态见 [验证记录](skill/pynq-overlay-validate/references/validation.md)。原裸机系统的固件与模型保持不变。
