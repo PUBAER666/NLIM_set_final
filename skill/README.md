@@ -19,8 +19,3 @@ python scripts/validate_overlay.py run --backend mock --contract assets/add_cont
 
 这份 Skill 不绑定电器模型和某个板卡地址；当前支持32位标量 AXI-Lite/ap_ctrl_hs，不覆盖 DMA、外部内存指针或所有 PYNQ 加速器。两个 mock 算例不是两块板的实测。跨板复用条件与已有证据见 [验证记录](pynq-overlay-validate/references/validation.md)。
 
-## 裸机验证经验
-
-原 Skill 保留交付哈希、黄金输出容差、事件拒识阶段诊断和性能证据分类的方法。它仍面向裸机 PS–PL，不因新增工具而变成 PYNQ 运行程序。
-
-现有系统不需要安装 PYNQ 才能演示；新增 Skill 是独立提交材料，不修改 BOOT.BIN、原模型或板端算法。是否满足赛事通用 PYNQ Skill 加分条件，应由评审结合实际材料认定。
