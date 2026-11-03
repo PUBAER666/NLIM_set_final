@@ -19,3 +19,4 @@ python scripts/validate_overlay.py run --backend mock --contract assets/add_cont
 
 这份 Skill 不绑定电器模型和某个板卡地址；当前支持32位标量 AXI-Lite/ap_ctrl_hs，不覆盖 DMA、外部内存指针或所有 PYNQ 加速器。两个 mock 算例不是两块板的实测。跨板复用条件与已有证据见 [验证记录](pynq-overlay-validate/references/validation.md)。
 
+[队友技能包说明](team_materials_readme.md)

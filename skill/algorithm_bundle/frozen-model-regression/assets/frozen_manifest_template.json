@@ -1,0 +1,24 @@
+{
+  "assets": [
+    {
+      "name": "model-weight",
+      "path": "model/best_model.pth",
+      "mode": "sha256"
+    },
+    {
+      "name": "scaler",
+      "path": "model/standard_scaler.joblib",
+      "mode": "sha256"
+    },
+    {
+      "name": "class-mapping",
+      "path": "model/class_mapping.csv",
+      "mode": "csv"
+    },
+    {
+      "name": "gate-config",
+      "path": "config/frozen_gate.json",
+      "mode": "json"
+    }
+  ]
+}

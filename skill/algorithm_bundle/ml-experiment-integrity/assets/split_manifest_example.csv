@@ -1,0 +1,8 @@
+Sample_ID,Class,Device,Mode,Session,Split,Relative_Path
+lamp_d01_s01_w01,Lamp,01,run,s01,Train,data/lamp/d01/s01/w01.csv
+lamp_d01_s01_w02,Lamp,01,run,s01,Train,data/lamp/d01/s01/w02.csv
+lamp_d01_s02_w01,Lamp,01,run,s02,Val,data/lamp/d01/s02/w01.csv
+lamp_d01_s03_w01,Lamp,01,run,s03,Test,data/lamp/d01/s03/w01.csv
+fan_d02_s01_w01,Fan,02,run,s01,Train,data/fan/d02/s01/w01.csv
+fan_d02_s02_w01,Fan,02,run,s02,Val,data/fan/d02/s02/w01.csv
+fan_d02_s03_w01,Fan,02,run,s03,Test,data/fan/d02/s03/w01.csv

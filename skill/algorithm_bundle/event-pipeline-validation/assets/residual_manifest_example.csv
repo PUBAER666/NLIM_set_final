@@ -1,0 +1,4 @@
+Event_ID,Residual_Rank,Residual_Path
+e001,1,residuals/e001_r1.csv
+e001,2,residuals/e001_r2.csv
+e001,3,residuals/e001_r3.csv

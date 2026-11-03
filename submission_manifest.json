@@ -24,6 +24,12 @@
   "layout": "expanded_source_tree",
   "reports_root": "build/reports",
   "skills": [
+    "algorithm_bundle/event-pipeline-validation",
+    "algorithm_bundle/frozen-model-regression",
+    "algorithm_bundle/ml-experiment-integrity",
+    "kicad-sch-codegen",
+    "llm-hw-debug-pitfalls",
+    "pcb-sch-cross-audit",
     "ps-pl-release-validation",
     "pynq-overlay-validate"
   ],

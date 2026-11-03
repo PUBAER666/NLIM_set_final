@@ -10,6 +10,16 @@
     "sha256": "51b5904d3e12bf495d59e5d306c8c911454f345d45319a3c6e86df9e74dd5c25"
   },
   {
+    "path": "README.md",
+    "bytes": 4173,
+    "sha256": "449b4239892f487eb16c2b98881670c80436c4b7a50855a13480f4fc59844ac6"
+  },
+  {
+    "path": "board/README.md",
+    "bytes": 458,
+    "sha256": "d4358849c02b26aaf8424c20501a9b5e6f0c052f631d3523dd767c029d3be106"
+  },
+  {
     "path": "board/hardware/nilm_board.xsa",
     "bytes": 1034304,
     "sha256": "59a0f53e0254e4c3624a6bc04473caa95ba83ea45c22cc771cbb309458b5df34"
@@ -25,9 +35,19 @@
     "sha256": "2f5262c6ddde992c890f0b2013e81b6edafc94e452156929c2480cd57e8271a0"
   },
   {
-    "path": "board/README.md",
-    "bytes": 458,
-    "sha256": "d4358849c02b26aaf8424c20501a9b5e6f0c052f631d3523dd767c029d3be106"
+    "path": "board/release/NLIM_set_final.elf",
+    "bytes": 7555016,
+    "sha256": "d5471275a8736c55571df7127b812c7d696735ebc3dc1b5307707a0fde693bed"
+  },
+  {
+    "path": "board/release/NLIM_set_final.exe",
+    "bytes": 9317612,
+    "sha256": "e4337453e5d81edafc43bfa416f028ba597f41e398c296710fc6f5cac3625e81"
+  },
+  {
+    "path": "board/release/README.md",
+    "bytes": 3651,
+    "sha256": "9e31043fadf046b4c53c1f4f69fc53050716e3dd24a5f6e383fc07b4442bb807"
   },
   {
     "path": "board/release/check_connection.cmd",
@@ -50,21 +70,6 @@
     "sha256": "aa5b3e545a4d99e9d5c3bd9ad3578fbe2ffc83cf9a3829e8201820c78d6aff12"
   },
   {
-    "path": "board/release/NLIM_set_final.elf",
-    "bytes": 7555016,
-    "sha256": "d5471275a8736c55571df7127b812c7d696735ebc3dc1b5307707a0fde693bed"
-  },
-  {
-    "path": "board/release/NLIM_set_final.exe",
-    "bytes": 9317612,
-    "sha256": "e4337453e5d81edafc43bfa416f028ba597f41e398c296710fc6f5cac3625e81"
-  },
-  {
-    "path": "board/release/README.md",
-    "bytes": 3651,
-    "sha256": "9e31043fadf046b4c53c1f4f69fc53050716e3dd24a5f6e383fc07b4442bb807"
-  },
-  {
     "path": "board/release/sd_card/BOOT.BIN",
     "bytes": 10362424,
     "sha256": "a42e79b9c5b6c1a00872e61f06a5e2e806dc9814b49f377b96f3413d4183fb38"
@@ -83,6 +88,11 @@
     "path": "board/release/verify_package.ps1",
     "bytes": 898,
     "sha256": "aa3c78eed7498053360336db4a40ac37b411668d5b590ea057ba17e972feefb6"
+  },
+  {
+    "path": "build/README.md",
+    "bytes": 3723,
+    "sha256": "a3b3658c8e754546cc14ff5eba564743646c9fdecbbaf0c7ba31014cc38c112c"
   },
   {
     "path": "build/bsp_options.json",
@@ -128,11 +138,6 @@
     "path": "build/make_boot.ps1",
     "bytes": 916,
     "sha256": "81aae994edab54ec81d3cd49ac4f3c6d92941c87f1698bf35048c8c69f03be46"
-  },
-  {
-    "path": "build/README.md",
-    "bytes": 3723,
-    "sha256": "a3b3658c8e754546cc14ff5eba564743646c9fdecbbaf0c7ba31014cc38c112c"
   },
   {
     "path": "build/recompute_performance.py",
@@ -485,6 +490,11 @@
     "sha256": "de80c14004a1164723c3529009d868742f3d739ebe0c2904346b9a6026f55b91"
   },
   {
+    "path": "data/README.md",
+    "bytes": 913,
+    "sha256": "ee85be6047758a95824e1faebde2a350146ae48913aa5c25588149cd2a880bfe"
+  },
+  {
     "path": "data/field_logs/20261101_205548/commands.jsonl",
     "bytes": 2740,
     "sha256": "5e2391b3ce4e75a194581dc1cb6f83fbf35cf2214296b1e553144983152c076e"
@@ -520,19 +530,14 @@
     "sha256": "2db3ff41f312e59cbb69e74486693255687ec389c061cd7b1da35a501fd2a0d2"
   },
   {
-    "path": "data/README.md",
-    "bytes": 913,
-    "sha256": "ee85be6047758a95824e1faebde2a350146ae48913aa5c25588149cd2a880bfe"
-  },
-  {
-    "path": "README.md",
-    "bytes": 4599,
-    "sha256": "437ec99ff48a21792cd6655cbe6cbf77aae58d288e0103a321fbf329a7751f2f"
+    "path": "report/README.md",
+    "bytes": 337,
+    "sha256": "200b40e4b369b03ecce819d1451a0dcb91cb594f0441a060b08800b856bd070b"
   },
   {
     "path": "report/ai_collaboration.md",
-    "bytes": 3897,
-    "sha256": "e351f7525291d01373c443b799650065f40d0c22baaa3421f8b4d98817fa7963"
+    "bytes": 3699,
+    "sha256": "f2e8d9257eea6e5e1e03ee281aaf6626b091a568dc6ab6b6e8e88973ceb56551"
   },
   {
     "path": "report/architecture.svg",
@@ -546,8 +551,13 @@
   },
   {
     "path": "report/design_report.md",
-    "bytes": 13020,
-    "sha256": "2a93ac1771db10c89e46f49b14acf608b17b227b2698dfee60595b756b760527"
+    "bytes": 12960,
+    "sha256": "ce5bff5f288d0434805972a979e8ceeafa887bfbd879f50202b4142dcdbd5279"
+  },
+  {
+    "path": "report/diagrams/README.md",
+    "bytes": 1949,
+    "sha256": "7fd5feb76648ba2be1ae537bfac543be43b378fc9738c66f34f4dac046a59b30"
   },
   {
     "path": "report/diagrams/all_diagrams.png",
@@ -620,11 +630,6 @@
     "sha256": "90877e1dd4e60fa98893c615dd192637eff1bdfd346fd30988e8424bae9f6b9f"
   },
   {
-    "path": "report/diagrams/README.md",
-    "bytes": 1949,
-    "sha256": "7fd5feb76648ba2be1ae537bfac543be43b378fc9738c66f34f4dac046a59b30"
-  },
-  {
     "path": "report/diagrams/s01_software_overview.png",
     "bytes": 561635,
     "sha256": "95f5cf7282ee850f51ed0c0a71f2de5945f3f841476e995ddff8baa13e3fb6c9"
@@ -670,9 +675,9 @@
     "sha256": "ca3bcc747b3d6b61be49b85f059e5bec1ff2070421649719c1d1a0462d8b8b23"
   },
   {
-    "path": "report/README.md",
-    "bytes": 337,
-    "sha256": "200b40e4b369b03ecce819d1451a0dcb91cb594f0441a060b08800b856bd070b"
+    "path": "report/llm_collaboration.md",
+    "bytes": 7590,
+    "sha256": "b433dbe293c6ea708d5304aea80b5e41ff69b36287e7afdb65cc7a5cdfbaad1b"
   },
   {
     "path": "sim/README.md",
@@ -845,6 +850,241 @@
     "sha256": "de839f83921282f89c83c0f26733e475b5b2fa46b83cc672dd7a2f1ef9d3cd1a"
   },
   {
+    "path": "skill/README.md",
+    "bytes": 1614,
+    "sha256": "2043d2d0c10436ab9b65959cca06a1e54a237bf1d31dd0885dda317d8413f6ff"
+  },
+  {
+    "path": "skill/algorithm_bundle/FILE_LIST.txt",
+    "bytes": 1399,
+    "sha256": "94b6d8e4dfdea404331150a03b41b8b7f2ffcb9a1deb4055cc39866c2ebe029a"
+  },
+  {
+    "path": "skill/algorithm_bundle/README.md",
+    "bytes": 2557,
+    "sha256": "6b398206ef7164a7acf0d2cdfd668aa65054dce614f926710bcb084b14ba461f"
+  },
+  {
+    "path": "skill/algorithm_bundle/VALIDATION_REPORT.md",
+    "bytes": 644,
+    "sha256": "dec18f5e19163fad5bd540589ba2d27dd5ec6dddc0a4c725da63bbfd4fa1f332"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/README.md",
+    "bytes": 1114,
+    "sha256": "554c2a66a79cd0899dbcadaed97edd7504de4553215d0b7dbb0f87130e061615"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/SKILL.md",
+    "bytes": 2348,
+    "sha256": "65afcb4aeb2cc1b4c8ef03326b5372c6c3b1d07ba9b74838fe64e93de9e84729"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/assets/event_manifest_example.csv",
+    "bytes": 212,
+    "sha256": "e03539342827d3053d3ae492ebf88133235b560c670859bc17eeffbd482ae3b1"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/assets/residual_manifest_example.csv",
+    "bytes": 124,
+    "sha256": "002ce167531e88eda783f51e84f4fc8565d917e21e671e9d7caf8ff625b04910"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/references/EVENT_FAILURE_MODES.md",
+    "bytes": 1330,
+    "sha256": "41d44cd0dbc7e341d11f4fd8a253c04ff8ecf3ee8a8fb5014cd548029b99b774"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/references/EVENT_VALIDATION_WORKFLOW.md",
+    "bytes": 1490,
+    "sha256": "536ed46aca023105e59b23027dc9965e57bca3cba4b79c64960c43fc9cf43c7c"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/references/PROJECT_CASE.md",
+    "bytes": 1813,
+    "sha256": "1ed6398389b8ce65735432610aa604a73e076b9aba795c42716645535a261088"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/scripts/check_residual_contract.py",
+    "bytes": 4207,
+    "sha256": "e023f5268e18575db4802dd86b10962c2be934d1db6df9155af029cdad1830fc"
+  },
+  {
+    "path": "skill/algorithm_bundle/event-pipeline-validation/scripts/validate_event_candidates.py",
+    "bytes": 4246,
+    "sha256": "33a4c91eb2a1096a388bb9b49eb7cbc96c3c7965f612c20f661c4ff0d35fe20c"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/README.md",
+    "bytes": 1356,
+    "sha256": "f0659c8e1455106ca03f2136905002373e60215fd52eb2d14c531771b2b08636"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/SKILL.md",
+    "bytes": 2189,
+    "sha256": "e83193df97de0da45ea5a7d35ed4f31a6a0f961e6a1134d98ac196cb9975e168"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/assets/frozen_manifest_template.json",
+    "bytes": 439,
+    "sha256": "0abc77377a1a5375e2c3212949cbf5ccf418c18fdf5b8a5f53999c2bf6e29390"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/assets/golden_cases_example.csv",
+    "bytes": 137,
+    "sha256": "0f94bb9f70b5bd07308203dd9400c3a75a0084e692054b43132a900b9fe423a1"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/references/FROZEN_ASSET_CHECKLIST.md",
+    "bytes": 1043,
+    "sha256": "d9db5e94fc27f1212f4ec2e3baabc19f0b9e9574a5e329788b4845d1c663dbfc"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/references/GOLDEN_REGRESSION_PROTOCOL.md",
+    "bytes": 846,
+    "sha256": "4a7fd8825c93793f7fb012debb3cff88a71aeccd1ffa08344df986b67f3714dd"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/references/PROJECT_CASE.md",
+    "bytes": 898,
+    "sha256": "36a8f7c03a6c4670bf94b78961d5eb919ad98af4302d7d9636a923cf1cd8db0f"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/scripts/compare_model_assets.py",
+    "bytes": 3964,
+    "sha256": "f9872de6b8ce13407571c62b7fb4935491bcabdf96d2363fefd53e8d7fd8bd15"
+  },
+  {
+    "path": "skill/algorithm_bundle/frozen-model-regression/scripts/run_golden_regression.py",
+    "bytes": 3078,
+    "sha256": "968d81e36aa18026db25944bc53580b0321b48c5b39944e86882717145aa2f35"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/README.md",
+    "bytes": 1466,
+    "sha256": "1511687a31b49abf25aeefed46d586d2b99fd52fd224fef39de7654179460672"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/SKILL.md",
+    "bytes": 2858,
+    "sha256": "9eca80759248db4f5830fa22cacb35abe79cd54808b187032a9546116472ab1f"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/assets/split_manifest_example.csv",
+    "bytes": 496,
+    "sha256": "242b91f28c2b3c495c14c162104c6d6f6d0216672c286d2a59c445d90c345e3b"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/references/EXPERIMENT_PROTOCOL.md",
+    "bytes": 1476,
+    "sha256": "b65ca4d7eeb99c7a5b268947cb9730897abc2c74ac51616a6615128fec51b4d5"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/references/FAILURE_MODES.md",
+    "bytes": 1228,
+    "sha256": "63e6074d0405d515c98fb55c9e1122b34b2ecb1b104f2047b16d4a541dc387ef"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/references/PROJECT_CASE.md",
+    "bytes": 864,
+    "sha256": "12b7ccaf37a85fa1d4e6980e6bfe0e7d9b3b29a0097eaac61eff12f28e9184ea"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/scripts/audit_split_manifest.py",
+    "bytes": 3342,
+    "sha256": "d8859aa75d39515d166c2e468b32a468e6eddb2a100a9e527edb613329c1d9d0"
+  },
+  {
+    "path": "skill/algorithm_bundle/ml-experiment-integrity/scripts/check_group_leakage.py",
+    "bytes": 2941,
+    "sha256": "e1f7b00dac65dbd5e989d181e3223727814d5d3407b2c6e1647167d2e07ce060"
+  },
+  {
+    "path": "skill/hardware_source_readme.md",
+    "bytes": 7733,
+    "sha256": "c4b617963dc3dbf9dbdbb5f308c3f0a6ff8d688a6676d019a1713629d1bd38d6"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/SKILL.md",
+    "bytes": 27086,
+    "sha256": "7fbea92d4a24f7d3354759677d0da43fbf8bb9ae3b49da762788428ce1433cd8"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/draw_png.py",
+    "bytes": 8866,
+    "sha256": "360d2205f2b2a1494aee45ce4cda12e34ea1d58508ab4cb6cbe476a942c1ddaf"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/dump_bom.py",
+    "bytes": 971,
+    "sha256": "44ff7c2c713b64f03f4718b0987acd42347abb41d02a538246f6e9d84ff8d90f"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/erc_check.py",
+    "bytes": 10341,
+    "sha256": "c59a791139590bda2abc7065ab0bf1484e363feb5059ec9810830a8427c91774"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/gen_kicad.py",
+    "bytes": 24379,
+    "sha256": "c68dcff823e362f17ecd5778152bb2911314766a5717b6fb6e4c1ed86dc8b627"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/gen_kicad6_sch.py",
+    "bytes": 39394,
+    "sha256": "77201bc4cd1690aac1f61762d4bb54475fac97c0226f1020784cde0747722d6a"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/minimal_example.png",
+    "bytes": 30902,
+    "sha256": "b279a8d7c6ea35d9fcfff4ecd65dc0eac1a0055394aef8dbdfdc7be3a1428711"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/minimal_example.py",
+    "bytes": 2470,
+    "sha256": "47557d2df23efc56499fd24c81db79bd8a9d1ee3f61140f4a10d9cec8ba2eb87"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/render_sch_preview.py",
+    "bytes": 6551,
+    "sha256": "94316ea4ab375a57c31b5ff2a0e5a262cff90586efe6ca0e549cde6e4899cd4a"
+  },
+  {
+    "path": "skill/kicad-sch-codegen/reference/schematic_dsl.py",
+    "bytes": 15782,
+    "sha256": "20a898c33e5db90b75dd532f7dfb3cb9303816f81cf88b22817921670cf980e9"
+  },
+  {
+    "path": "skill/llm-hw-debug-pitfalls/SKILL.md",
+    "bytes": 12866,
+    "sha256": "101d35e62af92b73ecc9299afc11d8f9f8deb24dbf476b9e4dfece8f4e324042"
+  },
+  {
+    "path": "skill/llm-hw-debug-pitfalls/reference/case-2026-09-28.md",
+    "bytes": 5850,
+    "sha256": "ac6c81f4103367ec6fa8a25a57812a3382dc2f9c6a67d87c63e5b1dc851584bc"
+  },
+  {
+    "path": "skill/llm-hw-debug-pitfalls/reference/case-2026-10-04.md",
+    "bytes": 8824,
+    "sha256": "c304a1c6db78452794c293be8ce9f4bec6461b495265e33e7a79475d4fd910ed"
+  },
+  {
+    "path": "skill/pcb-sch-cross-audit/SKILL.md",
+    "bytes": 14989,
+    "sha256": "af12ebf15f51d6a8a625600241987f76fc4cdf3bb43e4d7859c7fdc45c8a6e9a"
+  },
+  {
+    "path": "skill/pcb-sch-cross-audit/reference/audit_pcb.py",
+    "bytes": 34026,
+    "sha256": "2d0d0b9b03e7939935e414fa4e9e60b1f0aabaf488f750908146d303eca1e40f"
+  },
+  {
+    "path": "skill/ps-pl-release-validation/SKILL.md",
+    "bytes": 2819,
+    "sha256": "d8683bc4c278ad27fb9125a238b20cebadb7bd14a56371e4ef179fc7ad94991e"
+  },
+  {
     "path": "skill/ps-pl-release-validation/references/event_triage.md",
     "bytes": 1434,
     "sha256": "f37d780d275197d66dba71f969640d45ac50977d7f82931d970ac77f27bfcdbd"
@@ -875,9 +1115,14 @@
     "sha256": "ce8b8cf3f0c233df357b33c688df8daa0bd5e0e5f9df498aa347cbb491c72d83"
   },
   {
-    "path": "skill/ps-pl-release-validation/SKILL.md",
-    "bytes": 2819,
-    "sha256": "d8683bc4c278ad27fb9125a238b20cebadb7bd14a56371e4ef179fc7ad94991e"
+    "path": "skill/ps_pl_source_readme.md",
+    "bytes": 1605,
+    "sha256": "8d486e10474e9f6c0bc818a302f6116526f4d14a0b64029c03807fe175558dd1"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/SKILL.md",
+    "bytes": 4529,
+    "sha256": "143dbe6c390d8120916da6cbf4a576dc228376085a13f8a7046edfcb2112ddd1"
   },
   {
     "path": "skill/pynq-overlay-validate/agents/openai.yaml",
@@ -953,11 +1198,6 @@
     "path": "skill/pynq-overlay-validate/scripts/validate_overlay.py",
     "bytes": 18660,
     "sha256": "5fe87f7631710d2e7401fc9cb41e36a41f9367f6e2a98a97596d7736b9e8f900"
-  },
-  {
-    "path": "skill/pynq-overlay-validate/SKILL.md",
-    "bytes": 4529,
-    "sha256": "143dbe6c390d8120916da6cbf4a576dc228376085a13f8a7046edfcb2112ddd1"
   },
   {
     "path": "skill/pynq-overlay-validate/validation/example_source_test.json",
@@ -1040,9 +1280,14 @@
     "sha256": "45ff490e34fd165c2791666c40725607edc098f720d5714dbddfe78ab3b1ee05"
   },
   {
-    "path": "skill/README.md",
-    "bytes": 2030,
-    "sha256": "eedb33c359ba01897e4516c89c2b5805cb46934823197d0ecde828215de2a9da"
+    "path": "skill/team_materials_readme.md",
+    "bytes": 11374,
+    "sha256": "73837cce618ca7577edec7d654cbdd004b7a72dc2c2236af4b69cb519a31a4b6"
+  },
+  {
+    "path": "src/README.md",
+    "bytes": 528,
+    "sha256": "ed93d26b99949b0f21fdf0d74eeb21b04d800c18aa94a3a2efe878a3f1197319"
   },
   {
     "path": "src/hardware/cnn_ip/component.xml",
@@ -1945,14 +2190,29 @@
     "sha256": "cfa1ee2e8fe7c0b9ba60eda6325f1f2e6a6f10b6dce56750e47e33d110bfeeaa"
   },
   {
-    "path": "src/ps/app.yaml",
-    "bytes": 250,
-    "sha256": "e5030c5ab4cf929685946a009d6256cec1950473ac7bc79dafe3d148e6633cfe"
-  },
-  {
     "path": "src/ps/CMakeLists.txt",
     "bytes": 2916,
     "sha256": "41d204bbac27497cf92dd31a5829dba5c49d5de14e7e0b4da8db7e566dd49c75"
+  },
+  {
+    "path": "src/ps/Lwip_echo_serverExample.cmake",
+    "bytes": 975,
+    "sha256": "a22d6080da4a4c844ff605f5a4785e06b2e77087ed6c9a7afc3265c7195ddfae"
+  },
+  {
+    "path": "src/ps/README.txt",
+    "bytes": 2779,
+    "sha256": "cdd0d297a56bf348e2c72bc84c93f6f7eb5b47a7f2ffde6c467ddf242190bd11"
+  },
+  {
+    "path": "src/ps/UserConfig.cmake",
+    "bytes": 8485,
+    "sha256": "6fc6a09c73e37d0dbf87267b8128ab9a31e9aba990b8bc8f6e385d5c0b5a9a8c"
+  },
+  {
+    "path": "src/ps/app.yaml",
+    "bytes": 250,
+    "sha256": "e5030c5ab4cf929685946a009d6256cec1950473ac7bc79dafe3d148e6633cfe"
   },
   {
     "path": "src/ps/compile_commands.json",
@@ -1983,11 +2243,6 @@
     "path": "src/ps/lwip_echo_server.cmake",
     "bytes": 1874,
     "sha256": "8c6aa1cc9f76894ec7d481021cd6409f8f591cda584cca74bbbde1901f4d87ec"
-  },
-  {
-    "path": "src/ps/Lwip_echo_serverExample.cmake",
-    "bytes": 975,
-    "sha256": "a22d6080da4a4c844ff605f5a4785e06b2e77087ed6c9a7afc3265c7195ddfae"
   },
   {
     "path": "src/ps/main.c",
@@ -2305,11 +2560,6 @@
     "sha256": "32a76347afb94c981193acb7a35617ff6b96343bea38dd530f942714e73e3527"
   },
   {
-    "path": "src/ps/README.txt",
-    "bytes": 2779,
-    "sha256": "cdd0d297a56bf348e2c72bc84c93f6f7eb5b47a7f2ffde6c467ddf242190bd11"
-  },
-  {
     "path": "src/ps/sfp.c",
     "bytes": 7235,
     "sha256": "ca6799fa4cf56a6374cc780ae4df579ca752dc802098d097d2fa72e30c22f249"
@@ -2318,16 +2568,6 @@
     "path": "src/ps/si5324.c",
     "bytes": 6502,
     "sha256": "fa4eb7c2e57d6299f751b4ebb503a7b1f457ca255b22a8a4ed691d4a6c4a13a2"
-  },
-  {
-    "path": "src/ps/UserConfig.cmake",
-    "bytes": 8485,
-    "sha256": "6fc6a09c73e37d0dbf87267b8128ab9a31e9aba990b8bc8f6e385d5c0b5a9a8c"
-  },
-  {
-    "path": "src/README.md",
-    "bytes": 528,
-    "sha256": "ed93d26b99949b0f21fdf0d74eeb21b04d800c18aa94a3a2efe878a3f1197319"
   },
   {
     "path": "src/rtl/nilm_bram_writer.v",
@@ -2381,7 +2621,7 @@
   },
   {
     "path": "submission_manifest.json",
-    "bytes": 1286,
-    "sha256": "36530d5e748a3e4fb9ff53f032bbd7d6ec1f6ec160f35fa1e56a9eb51c33ac94"
+    "bytes": 1519,
+    "sha256": "c3864990e76e21a661e66cc3ac5f5fd765bd3a2de2fb79f5e988a22e318079a5"
   }
 ]
