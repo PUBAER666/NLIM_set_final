@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "evidence_kind": "hls_synthesis_and_export_metadata_check",
+  "tool": "Vitis HLS 2025.2",
+  "part": "xc7z020clg484-1",
+  "clock_target_ns": 10,
+  "top": "accel_multiply",
+  "hardware_tested": false,
+  "pynq_runtime_tested": false,
+  "rtl_cosimulation_tested": false,
+  "contract_matches_hls_export": true,
+  "source_sha256": "a8f2ddaff05aa9f1da0e16c4ae2baab146836fd58e0a7960c14f834a857299f4",
+  "component_sha256": "e11facea3eef09cb8e961c7338059f400961044eed4276bdf3b6e74524dd6370",
+  "contract_sha256": "940161710862ae8e9c24d7ec035141a06e594834be257a36df065c31d8983b4d",
+  "registers": {
+    "CTRL": {
+      "address_offset": 0,
+      "size": 32,
+      "access": "read-write",
+      "fields": {
+        "AP_START": {
+          "bit_offset": 0,
+          "bit_width": 1
+        },
+        "AP_DONE": {
+          "bit_offset": 1,
+          "bit_width": 1
+        },
+        "AP_IDLE": {
+          "bit_offset": 2,
+          "bit_width": 1
+        },
+        "AP_READY": {
+          "bit_offset": 3,
+          "bit_width": 1
+        },
+        "RESERVED_1": {
+          "bit_offset": 4,
+          "bit_width": 3
+        },
+        "AUTO_RESTART": {
+          "bit_offset": 7,
+          "bit_width": 1
+        },
+        "RESERVED_2": {
+          "bit_offset": 8,
+          "bit_width": 1
+        },
+        "INTERRUPT": {
+          "bit_offset": 9,
+          "bit_width": 1
+        },
+        "RESERVED_3": {
+          "bit_offset": 10,
+          "bit_width": 22
+        }
+      }
+    },
+    "GIER": {
+      "address_offset": 4,
+      "size": 32,
+      "access": "read-write",
+      "fields": {
+        "Enable": {
+          "bit_offset": 0,
+          "bit_width": 1
+        },
+        "RESERVED": {
+          "bit_offset": 1,
+          "bit_width": 31
+        }
+      }
+    },
+    "IP_IER": {
+      "address_offset": 8,
+      "size": 32,
+      "access": "read-write",
+      "fields": {
+        "CHAN0_INT_EN": {
+          "bit_offset": 0,
+          "bit_width": 1
+        },
+        "CHAN1_INT_EN": {
+          "bit_offset": 1,
+          "bit_width": 1
+        },
+        "RESERVED_0": {
+          "bit_offset": 2,
+          "bit_width": 30
+        }
+      }
+    },
+    "IP_ISR": {
+      "address_offset": 12,
+      "size": 32,
+      "access": "read-write",
+      "fields": {
+        "CHAN0_INT_ST": {
+          "bit_offset": 0,
+          "bit_width": 1
+        },
+        "CHAN1_INT_ST": {
+          "bit_offset": 1,
+          "bit_width": 1
+        },
+        "RESERVED_0": {
+          "bit_offset": 2,
+          "bit_width": 30
+        }
+      }
+    },
+    "x": {
+      "address_offset": 16,
+      "size": 32,
+      "access": "write-only",
+      "fields": {
+        "x": {
+          "bit_offset": 0,
+          "bit_width": 32
+        }
+      }
+    },
+    "gain": {
+      "address_offset": 24,
+      "size": 32,
+      "access": "write-only",
+      "fields": {
+        "gain": {
+          "bit_offset": 0,
+          "bit_width": 32
+        }
+      }
+    },
+    "result": {
+      "address_offset": 32,
+      "size": 32,
+      "access": "read-only",
+      "fields": {
+        "result": {
+          "bit_offset": 0,
+          "bit_width": 32
+        }
+      }
+    },
+    "result_ctrl": {
+      "address_offset": 36,
+      "size": 32,
+      "access": "read-only",
+      "fields": {
+        "result_ap_vld": {
+          "bit_offset": 0,
+          "bit_width": 1
+        },
+        "RESERVED": {
+          "bit_offset": 1,
+          "bit_width": 31
+        }
+      }
+    }
+  }
+}

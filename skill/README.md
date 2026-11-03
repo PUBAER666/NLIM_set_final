@@ -1,14 +1,26 @@
 # 可复用技能包
 
-本目录是与大模型协作形成的工程经验，不是运行 NILM 所必需的软件。`ps-pl-release-validation/SKILL.md` 可交给支持 Skill 的智能体读取；不使用智能体也可直接运行脚本。无需联网，不会操作板卡。
+| Skill | 用途 | 适用环境与证据 |
+|---|---|---|
+| [ps-pl-release-validation](ps-pl-release-validation/SKILL.md) | 交付完整性、黄金数值、事件诊断和性能证据检查 | 现有裸机 PS–PL 工作流；通用脚本在主机运行 |
+| [pynq-overlay-validate](pynq-overlay-validate/SKILL.md) | Overlay 元数据、标量 AXI-Lite 接口契约、加速器黄金样例及报告 | 独立 PYNQ 工具；27项主机行为测试、两套 mock、两个示例 HLS 综合/接口核对；尚无 PYNQ 实机记录 |
 
-| 能力 | 来源 | 验证方法 | 失效条件 |
-|---|---|---|---|
-| 固件与交付完整性检查 | 旧 BOOT 配新页面导致协议不匹配；中文路径校验编码故障 | 对照 SHA256，模拟文件篡改与越界路径 | 哈希清单本身不可信、硬件平台与清单不符 |
-| 黄金输出数值比较 | CNN 从 PS 迁移至 PL，必须同时核对 logits 和特征 | 同值、容差内、超差、NaN、长度错误用例 | 输入预处理、单位、输出顺序没有对齐 |
-| 拒识链路分段诊断 | SOURCE_UNSTABLE 与 AUXILIARY_UNKNOWN_EXPOSURE 两条独立失败路径 | 真实旧日志复盘；检查点及登记距离诊断 | 日志不含阶段信息；不能从低频快照还原原始波形 |
-| 性能证据分类 | 两次参数拒绝请求混入仿真平均延迟 | 用完整事务周期和时钟重算 | 将工具仿真、理论吞吐或主机执行时间冒充板级耗时 |
+Skill 可由支持该格式的智能体读取，也可直接运行其中脚本。正文与示例自包含；在线资料用于查阅 API，不要求运行时联网。
 
-使用步骤：阅读 SKILL.md → 按任务选择 references → 执行 scripts → 保存结果并标注仿真/本机/板级证据类型。通用脚本仅依赖 Python 3 标准库。
+## 通用 PYNQ 验证
 
-这是一套裸机 PS–PL 工作流，不是已验证的通用 PYNQ Skill。跨板卡使用时必须重新核对地址、缓存策略、数据精度、时钟和复位，不得直接复用本项目的硬件常量。
+进入 `pynq-overlay-validate` 后，在没有开发板的电脑上可执行：
+
+```sh
+python scripts/validate_overlay.py run --backend mock --contract assets/add_contract.json --cases assets/add_cases.json --out runs/add
+```
+
+打开输出目录中的 `report.html` 即可查看结果。切换实际 PYNQ 环境时，提供目标板专用 `.bit/.hwh`、配置寄存器契约并使用 `--backend pynq`；`--download` 会显式编程 PL。详细步骤与适用边界见 [SKILL.md](pynq-overlay-validate/SKILL.md)。
+
+这份 Skill 不绑定电器模型和某个板卡地址；当前支持32位标量 AXI-Lite/ap_ctrl_hs，不覆盖 DMA、外部内存指针或所有 PYNQ 加速器。两个 mock 算例不是两块板的实测。跨板复用条件与已有证据见 [验证记录](pynq-overlay-validate/references/validation.md)。
+
+## 裸机验证经验
+
+原 Skill 保留交付哈希、黄金输出容差、事件拒识阶段诊断和性能证据分类的方法。它仍面向裸机 PS–PL，不因新增工具而变成 PYNQ 运行程序。
+
+现有系统不需要安装 PYNQ 才能演示；新增 Skill 是独立提交材料，不修改 BOOT.BIN、原模型或板端算法。是否满足赛事通用 PYNQ Skill 加分条件，应由评审结合实际材料认定。

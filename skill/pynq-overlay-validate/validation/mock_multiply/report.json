@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-03T12:24:10.734578+00:00",
+  "backend": "mock",
+  "operation": "run",
+  "status": "PASS",
+  "hardware_executed": false,
+  "hardware_validation_passed": false,
+  "board_label": null,
+  "host": {
+    "python": "3.12.14",
+    "system": "Windows",
+    "machine": "AMD64"
+  },
+  "cases": [
+    {
+      "id": "zero",
+      "passed": true,
+      "outputs": {
+        "scaled": {
+          "passed": true,
+          "actual": 0.0,
+          "expected": 0.0,
+          "absolute_error": 0.0,
+          "allowed_error": 1e-07,
+          "mode": "atol_plus_rtol_times_expected"
+        }
+      },
+      "host_observed_transaction_ms": 0.0175
+    },
+    {
+      "id": "negative",
+      "passed": true,
+      "outputs": {
+        "scaled": {
+          "passed": true,
+          "actual": -2.5,
+          "expected": -2.5,
+          "absolute_error": 0.0,
+          "allowed_error": 2.5999999999999997e-06,
+          "mode": "atol_plus_rtol_times_expected"
+        }
+      },
+      "host_observed_transaction_ms": 0.0113
+    },
+    {
+      "id": "fraction",
+      "passed": true,
+      "outputs": {
+        "scaled": {
+          "passed": true,
+          "actual": 0.020000001415610313,
+          "expected": 0.02,
+          "absolute_error": 1.4156103129991937e-09,
+          "allowed_error": 1.2e-07,
+          "mode": "atol_plus_rtol_times_expected"
+        }
+      },
+      "host_observed_transaction_ms": 0.0088
+    },
+    {
+      "id": "large",
+      "passed": true,
+      "outputs": {
+        "scaled": {
+          "passed": true,
+          "actual": 150000.0,
+          "expected": 150000.0,
+          "absolute_error": 0.0,
+          "allowed_error": 0.1500001,
+          "mode": "atol_plus_rtol_times_expected"
+        }
+      },
+      "host_observed_transaction_ms": 0.0071
+    }
+  ],
+  "timing_scope": "Host wall time includes register I/O and polling; not accelerator cycles or speedup.",
+  "contract_sha256": "940161710862ae8e9c24d7ec035141a06e594834be257a36df065c31d8983b4d",
+  "contract_name": "floating_multiplier_example",
+  "cases_sha256": "407082f93c90dded158ead3084943400056a47ef40e50154aaaf056c1cf4b2c9",
+  "artifacts": {},
+  "ip_metadata": {
+    "compute/accel_multiply_0": {
+      "phys_addr": 2684354560,
+      "addr_range": 4096,
+      "type": "mock:mock:arithmetic:1.0",
+      "registers": {
+        "CTRL": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "fields": {
+            "AP_START": {
+              "bit_offset": 0,
+              "bit_width": 1
+            },
+            "AP_DONE": {
+              "bit_offset": 1,
+              "bit_width": 1
+            },
+            "AP_IDLE": {
+              "bit_offset": 2,
+              "bit_width": 1
+            },
+            "AUTO_RESTART": {
+              "bit_offset": 7,
+              "bit_width": 1
+            }
+          }
+        },
+        "x": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "write-only"
+        },
+        "gain": {
+          "address_offset": 24,
+          "size": 32,
+          "access": "write-only"
+        },
+        "result": {
+          "address_offset": 32,
+          "size": 32,
+          "access": "read-only"
+        }
+      }
+    }
+  },
+  "contract_ip": {
+    "phys_addr": 2684354560,
+    "addr_range": 4096,
+    "type": "mock:mock:arithmetic:1.0",
+    "registers": {
+      "CTRL": {
+        "address_offset": 0,
+        "size": 32,
+        "access": "read-write",
+        "fields": {
+          "AP_START": {
+            "bit_offset": 0,
+            "bit_width": 1
+          },
+          "AP_DONE": {
+            "bit_offset": 1,
+            "bit_width": 1
+          },
+          "AP_IDLE": {
+            "bit_offset": 2,
+            "bit_width": 1
+          },
+          "AUTO_RESTART": {
+            "bit_offset": 7,
+            "bit_width": 1
+          }
+        }
+      },
+      "x": {
+        "address_offset": 16,
+        "size": 32,
+        "access": "write-only"
+      },
+      "gain": {
+        "address_offset": 24,
+        "size": 32,
+        "access": "write-only"
+      },
+      "result": {
+        "address_offset": 32,
+        "size": 32,
+        "access": "read-only"
+      }
+    }
+  },
+  "overlay_programmed": false,
+  "active_case": "large"
+}

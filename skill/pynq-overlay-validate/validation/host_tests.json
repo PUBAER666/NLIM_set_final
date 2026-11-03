@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "tests_run": 27,
+  "failures": 0,
+  "errors": 0,
+  "evidence_kind": "host_unit_tests_with_pynq_api_doubles",
+  "pynq_hardware_tested": false,
+  "cross_board_hardware_verified": false
+}

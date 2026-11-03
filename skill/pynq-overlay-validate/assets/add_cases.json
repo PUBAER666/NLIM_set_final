@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {"id": "zero", "inputs": {"a": 0, "b": 0}, "expected": {"sum": 0}},
+    {"id": "ordinary", "inputs": {"a": 123, "b": 456}, "expected": {"sum": 579}},
+    {"id": "upper_bit", "inputs": {"a": 2147483648, "b": 7}, "expected": {"sum": 2147483655}},
+    {"id": "wraparound", "inputs": {"a": 4294967295, "b": 1}, "expected": {"sum": 0}},
+    {"id": "near_max", "inputs": {"a": 4294967294, "b": 1}, "expected": {"sum": 4294967295}}
+  ]
+}

@@ -22,5 +22,16 @@
   "identity_update_date": "2026-11-03",
   "repository_url": "https://github.com/PUBAER666/NLIM_set_final",
   "layout": "expanded_source_tree",
-  "reports_root": "build/reports"
+  "reports_root": "build/reports",
+  "skills": [
+    "ps-pl-release-validation",
+    "pynq-overlay-validate"
+  ],
+  "pynq_skill_validation": {
+    "host_tests": 27,
+    "mock_examples": 2,
+    "hls_synthesis_examples": 2,
+    "pynq_board_verified": false,
+    "cross_board_verified": false
+  }
 }

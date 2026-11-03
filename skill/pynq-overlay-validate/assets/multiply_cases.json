@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {"id": "zero", "inputs": {"x": 0.0, "gain": 2.0}, "expected": {"scaled": 0.0}},
+    {"id": "negative", "inputs": {"x": -1.25, "gain": 2.0}, "expected": {"scaled": -2.5}},
+    {"id": "fraction", "inputs": {"x": 0.1, "gain": 0.2}, "expected": {"scaled": 0.02}},
+    {"id": "large", "inputs": {"x": 100000.0, "gain": 1.5}, "expected": {"scaled": 150000.0}}
+  ]
+}

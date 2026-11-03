@@ -121,8 +121,8 @@
   },
   {
     "path": "build/layout_map.json",
-    "bytes": 54440,
-    "sha256": "fccf2f6d51099e15e942b27a735b45e42fa4381b674ff8ce3641407dd3d0a9b9"
+    "bytes": 58444,
+    "sha256": "8c5237d4c2bab6a19eb693a72443aef1d3297a5d53ccf2f2dfc108130b7b3198"
   },
   {
     "path": "build/make_boot.ps1",
@@ -526,13 +526,13 @@
   },
   {
     "path": "README.md",
-    "bytes": 4171,
-    "sha256": "ea52921186ca670a498346eeedc3398dfa71136d679f2a82f163ae9a29ceb669"
+    "bytes": 4599,
+    "sha256": "437ec99ff48a21792cd6655cbe6cbf77aae58d288e0103a321fbf329a7751f2f"
   },
   {
     "path": "report/ai_collaboration.md",
-    "bytes": 3903,
-    "sha256": "b86ff5eff83e124c0e334e91bdaaa1471b6b09c14b093d157d2a4c4caaf465b0"
+    "bytes": 3897,
+    "sha256": "e351f7525291d01373c443b799650065f40d0c22baaa3421f8b4d98817fa7963"
   },
   {
     "path": "report/architecture.svg",
@@ -880,9 +880,169 @@
     "sha256": "d8683bc4c278ad27fb9125a238b20cebadb7bd14a56371e4ef179fc7ad94991e"
   },
   {
+    "path": "skill/pynq-overlay-validate/agents/openai.yaml",
+    "bytes": 302,
+    "sha256": "624cd84ea5debdf53281ae5402ce0d2699e80244599d7b959fa5b5d27af37cee"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/assets/add_cases.json",
+    "bytes": 473,
+    "sha256": "24d37ad3a8ab7bedaebd72680f0dfaf5b4a7ebde5d15d7f8ce8325b615a11161"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/assets/add_contract.json",
+    "bytes": 600,
+    "sha256": "af12731d34481c237451419f7410805ada3185f1fc14ea3f1cc65a1f2d8dd75b"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/assets/example_hls.cpp",
+    "bytes": 868,
+    "sha256": "a8f2ddaff05aa9f1da0e16c4ae2baab146836fd58e0a7960c14f834a857299f4"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/assets/example_hls_test.cpp",
+    "bytes": 520,
+    "sha256": "0cb98fc6b111d474683312128cca6e067a116f4c9a59d536f800b949669692b0"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/assets/multiply_cases.json",
+    "bytes": 402,
+    "sha256": "407082f93c90dded158ead3084943400056a47ef40e50154aaaf056c1cf4b2c9"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/assets/multiply_contract.json",
+    "bytes": 668,
+    "sha256": "940161710862ae8e9c24d7ec035141a06e594834be257a36df065c31d8983b4d"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/references/board_run.md",
+    "bytes": 2876,
+    "sha256": "7babadd15597c17aa64f99a234bd257f775143ae411517a2f019dc1c7e255c81"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/references/contract.md",
+    "bytes": 3940,
+    "sha256": "ab1128984de2054b012ffd906ce0651f1b36f21706b9daacb1be3937cdd82435"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/references/example_overlay.md",
+    "bytes": 2168,
+    "sha256": "bf517e8c3c7b299c1aeae93d5edfc297776abc2769b33a183b91e20b92302ced"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/references/sources.md",
+    "bytes": 1240,
+    "sha256": "26af2b87c83eb65a7461f3c5e91e05e5596cadab431ae62c9bf53ea9f5671198"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/references/validation.md",
+    "bytes": 2007,
+    "sha256": "0021bd8ce6f75e93b21092c6c0a134477cad4a4ec48b77cc0cefb4be55dd3262"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/scripts/build_example.py",
+    "bytes": 1604,
+    "sha256": "e89a1e7777128f70dedcc669192a92900e02fbabc468d4b4a91c2400454d693f"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/scripts/test_validator.py",
+    "bytes": 10946,
+    "sha256": "69b0460be2369ee2d60d7c708790131299fd12066e0e584d5b87d171d5dbd64b"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/scripts/validate_overlay.py",
+    "bytes": 18660,
+    "sha256": "5fe87f7631710d2e7401fc9cb41e36a41f9367f6e2a98a97596d7736b9e8f900"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/SKILL.md",
+    "bytes": 4529,
+    "sha256": "143dbe6c390d8120916da6cbf4a576dc228376085a13f8a7046edfcb2112ddd1"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/example_source_test.json",
+    "bytes": 524,
+    "sha256": "d5b1c913fbbbefd108434d8c53cd119a0374853eec08d78fb8dceb70bfa60def"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_add/build.log",
+    "bytes": 14648,
+    "sha256": "b2e41c706d03457fc0c4c6a63a04d99353b96db9cb7cbd14d0cb09761399add7"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_add/component_metadata.xml",
+    "bytes": 58289,
+    "sha256": "e4144bf985e20a591cc822e144df1b2f5a361000b660d0e1418f358417b1d77b"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_add/csynth.rpt",
+    "bytes": 5948,
+    "sha256": "d5cbd9455200c140c5f349ca743da2b01468831eca3694f2e23c991394839a00"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_add/hls.cfg",
+    "bytes": 364,
+    "sha256": "58e4ed644bcbbaeec34d759210c520864a952becf06c72d1c2e4f932929332ff"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_add/result.json",
+    "bytes": 3645,
+    "sha256": "5af11bd917385e3a907020336088df33e571bd23b7fff852140ac4a36a650c7e"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_multiply/build.log",
+    "bytes": 17024,
+    "sha256": "0924504d4a57a7d84547867741694f73d6eb411d0261aaeeed28742fffcebde3"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_multiply/component_metadata.xml",
+    "bytes": 63024,
+    "sha256": "e11facea3eef09cb8e961c7338059f400961044eed4276bdf3b6e74524dd6370"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_multiply/csynth.rpt",
+    "bytes": 6531,
+    "sha256": "e70b5c4e3a7e95af05841f4af13b4a57ec11da07edfd939e4219de523feed41b"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_multiply/hls.cfg",
+    "bytes": 379,
+    "sha256": "c2870a5be44c775a0332b5fdcdff29d186bb25babbf580aa7f12070ff1133f29"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/hls_multiply/result.json",
+    "bytes": 3656,
+    "sha256": "4ec3154d245676b0cc397c378ef62b1bcb10ac03ee24fc15fc343c4beff930a8"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/host_tests.json",
+    "bytes": 216,
+    "sha256": "fad0c46f2814ff2fdd83b708ff5f4269b86902da560ec4f48bcb4626ff561585"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/mock_add/report.html",
+    "bytes": 6538,
+    "sha256": "11f8f30de7d8eb5331ad131563c354ecd253965ff0c7458d376bf0f10f72948e"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/mock_add/report.json",
+    "bytes": 4492,
+    "sha256": "edf92bbaa3ac3a3d39a70e7131e8ae14f4011c78c6b3c8981c49233aec4afd57"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/mock_multiply/report.html",
+    "bytes": 6433,
+    "sha256": "9fd968e19b3192e93426944ba85a38f9ef2d6a89d3696a7ed6fe97b10f10cbeb"
+  },
+  {
+    "path": "skill/pynq-overlay-validate/validation/mock_multiply/report.json",
+    "bytes": 4467,
+    "sha256": "45ff490e34fd165c2791666c40725607edc098f720d5714dbddfe78ab3b1ee05"
+  },
+  {
     "path": "skill/README.md",
-    "bytes": 1605,
-    "sha256": "8d486e10474e9f6c0bc818a302f6116526f4d14a0b64029c03807fe175558dd1"
+    "bytes": 2030,
+    "sha256": "eedb33c359ba01897e4516c89c2b5805cb46934823197d0ecde828215de2a9da"
   },
   {
     "path": "src/hardware/cnn_ip/component.xml",
@@ -2221,7 +2381,7 @@
   },
   {
     "path": "submission_manifest.json",
-    "bytes": 1015,
-    "sha256": "56f45ad7f919fa4e8d7a2f138f45d385571bdbdcf6cdb806449bc0991f70939c"
+    "bytes": 1286,
+    "sha256": "36530d5e748a3e4fb9ff53f032bbd7d6ec1f6ec160f35fa1e56a9eb51c33ac94"
   }
 ]

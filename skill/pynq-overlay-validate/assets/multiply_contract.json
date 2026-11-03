@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "name": "floating_multiplier_example",
+  "interface": "axi_lite_ap_ctrl_hs",
+  "overlay": {"bitfile": "overlay/multiplier.bit"},
+  "ip": "compute/accel_multiply_0",
+  "control": {"register": "CTRL", "offset": "0x00"},
+  "inputs": [
+    {"name": "x", "register": "x", "offset": "0x10", "dtype": "float32"},
+    {"name": "gain", "register": "gain", "offset": "0x18", "dtype": "float32"}
+  ],
+  "outputs": [
+    {"name": "scaled", "register": "result", "offset": "0x20", "dtype": "float32", "atol": 1e-7, "rtol": 1e-6}
+  ],
+  "timeout_s": 2.0,
+  "poll_interval_s": 0.001,
+  "mock": {"operation": "f32_multiply", "base_address": "0xa0000000"}
+}

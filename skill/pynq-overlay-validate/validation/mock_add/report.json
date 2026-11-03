@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-03T12:24:10.367701+00:00",
+  "backend": "mock",
+  "operation": "run",
+  "status": "PASS",
+  "hardware_executed": false,
+  "hardware_validation_passed": false,
+  "board_label": null,
+  "host": {
+    "python": "3.12.14",
+    "system": "Windows",
+    "machine": "AMD64"
+  },
+  "cases": [
+    {
+      "id": "zero",
+      "passed": true,
+      "outputs": {
+        "sum": {
+          "passed": true,
+          "actual": 0,
+          "expected": 0,
+          "absolute_error": 0,
+          "mode": "exact_integer"
+        }
+      },
+      "host_observed_transaction_ms": 0.0216
+    },
+    {
+      "id": "ordinary",
+      "passed": true,
+      "outputs": {
+        "sum": {
+          "passed": true,
+          "actual": 579,
+          "expected": 579,
+          "absolute_error": 0,
+          "mode": "exact_integer"
+        }
+      },
+      "host_observed_transaction_ms": 0.0149
+    },
+    {
+      "id": "upper_bit",
+      "passed": true,
+      "outputs": {
+        "sum": {
+          "passed": true,
+          "actual": 2147483655,
+          "expected": 2147483655,
+          "absolute_error": 0,
+          "mode": "exact_integer"
+        }
+      },
+      "host_observed_transaction_ms": 0.0114
+    },
+    {
+      "id": "wraparound",
+      "passed": true,
+      "outputs": {
+        "sum": {
+          "passed": true,
+          "actual": 0,
+          "expected": 0,
+          "absolute_error": 0,
+          "mode": "exact_integer"
+        }
+      },
+      "host_observed_transaction_ms": 0.0095
+    },
+    {
+      "id": "near_max",
+      "passed": true,
+      "outputs": {
+        "sum": {
+          "passed": true,
+          "actual": 4294967295,
+          "expected": 4294967295,
+          "absolute_error": 0,
+          "mode": "exact_integer"
+        }
+      },
+      "host_observed_transaction_ms": 0.0088
+    }
+  ],
+  "timing_scope": "Host wall time includes register I/O and polling; not accelerator cycles or speedup.",
+  "contract_sha256": "af12731d34481c237451419f7410805ada3185f1fc14ea3f1cc65a1f2d8dd75b",
+  "contract_name": "unsigned_adder_example",
+  "cases_sha256": "24d37ad3a8ab7bedaebd72680f0dfaf5b4a7ebde5d15d7f8ce8325b615a11161",
+  "artifacts": {},
+  "ip_metadata": {
+    "accel_add_0": {
+      "phys_addr": 1073741824,
+      "addr_range": 4096,
+      "type": "mock:mock:arithmetic:1.0",
+      "registers": {
+        "CTRL": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "fields": {
+            "AP_START": {
+              "bit_offset": 0,
+              "bit_width": 1
+            },
+            "AP_DONE": {
+              "bit_offset": 1,
+              "bit_width": 1
+            },
+            "AP_IDLE": {
+              "bit_offset": 2,
+              "bit_width": 1
+            },
+            "AUTO_RESTART": {
+              "bit_offset": 7,
+              "bit_width": 1
+            }
+          }
+        },
+        "a": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "write-only"
+        },
+        "b": {
+          "address_offset": 24,
+          "size": 32,
+          "access": "write-only"
+        },
+        "result": {
+          "address_offset": 32,
+          "size": 32,
+          "access": "read-only"
+        }
+      }
+    }
+  },
+  "contract_ip": {
+    "phys_addr": 1073741824,
+    "addr_range": 4096,
+    "type": "mock:mock:arithmetic:1.0",
+    "registers": {
+      "CTRL": {
+        "address_offset": 0,
+        "size": 32,
+        "access": "read-write",
+        "fields": {
+          "AP_START": {
+            "bit_offset": 0,
+            "bit_width": 1
+          },
+          "AP_DONE": {
+            "bit_offset": 1,
+            "bit_width": 1
+          },
+          "AP_IDLE": {
+            "bit_offset": 2,
+            "bit_width": 1
+          },
+          "AUTO_RESTART": {
+            "bit_offset": 7,
+            "bit_width": 1
+          }
+        }
+      },
+      "a": {
+        "address_offset": 16,
+        "size": 32,
+        "access": "write-only"
+      },
+      "b": {
+        "address_offset": 24,
+        "size": 32,
+        "access": "write-only"
+      },
+      "result": {
+        "address_offset": 32,
+        "size": 32,
+        "access": "read-only"
+      }
+    }
+  },
+  "overlay_programmed": false,
+  "active_case": "near_max"
+}

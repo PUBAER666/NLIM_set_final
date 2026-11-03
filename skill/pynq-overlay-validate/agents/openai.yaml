@@ -1,0 +1,4 @@
+interface:
+  display_name: "PYNQ Overlay 验证"
+  short_description: "按可配置接口契约验证 PYNQ 标量加速器、比对黄金结果并生成报告"
+  default_prompt: "使用 $pynq-overlay-validate 核对 Overlay 的寄存器契约，运行黄金样例并区分模拟与板测证据。"

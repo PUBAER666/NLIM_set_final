@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "evidence_kind": "host_cpp_arithmetic_test",
+  "hardware_tested": false,
+  "compiler": "MinGW-w64 g++",
+  "compile_flags": [
+    "-std=c++11",
+    "-Wno-unknown-pragmas"
+  ],
+  "source_sha256": "a8f2ddaff05aa9f1da0e16c4ae2baab146836fd58e0a7960c14f834a857299f4",
+  "test_sha256": "0cb98fc6b111d474683312128cca6e067a116f4c9a59d536f800b949669692b0",
+  "tested": [
+    "uint32 wraparound",
+    "ordinary uint32 add",
+    "negative float32 multiply",
+    "fraction float32 multiply"
+  ]
+}
