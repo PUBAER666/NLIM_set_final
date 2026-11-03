@@ -64,7 +64,6 @@
 
 | 观察 | 修正 | 验证证据 |
 |---|---|---|
-| 用户说 5.1，本地只有 4.4 | 用户确认只是改名；保留真实固件号和来源 | submission_manifest.json |
 | 协同仿真平均周期包含快速失败请求 | 使用有效长事务 2,924,558 周期，不使用混合平均 | build/reports/performance |
 | 平台目录过长导致 Windows 编译失败 | 缩短为 work/vitis_short/p；脚本显式检查库和 FSBL，避免 SDK 返回而误报成功 | build/create_platform.py、platform_build.json |
 | 硬件源 XCI 的旧生成路径影响独立重建 | 使用 import_ip 将 IP 导入新工程，按包内相对路径引用 | create_hardware.tcl、hardware_recreate.log |
