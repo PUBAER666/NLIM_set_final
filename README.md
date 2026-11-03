@@ -1,13 +1,13 @@
-# NLIM_set_fianl
+# NLIM_set_final
 
 基于 Zynq PS–PL 协同的电器识别与用电监测系统。
 
-仓库采用展开式工程目录，可直接查看源码、仿真、构建脚本、运行文件与报告。平台为 EES331（XC7Z020CLG484-1），配套 V2 PCB 模拟前端；固件标识为 `NLIM_set_fianl`。
+仓库采用展开式工程目录，可直接查看源码、仿真、构建脚本、运行文件与报告。平台为 EES331（XC7Z020CLG484-1），配套 V2 PCB 模拟前端；固件标识为 `NLIM_set_final`。
 
 ## 目录结构
 
 ```text
-NLIM_set_fianl/
+NLIM_set_final/
 ├── README.md                 # 项目简介与复现步骤
 ├── src/                      # RTL、HLS、PS 固件、硬件 IP 与网页源码
 ├── sim/                      # 仿真、回归脚本和结果
@@ -41,8 +41,8 @@ PL 负责 XADC 连续采集、跨时钟传递、四缓存组织及 CNN 推理；
 建议完整克隆仓库，确保启动文件、接收工具和配置成套：
 
 ```powershell
-git clone https://github.com/PUBAER666/NLIM_set_fianl.git
-cd NLIM_set_fianl
+git clone https://github.com/PUBAER666/NLIM_set_final.git
+cd NLIM_set_final
 ```
 
 1. 开发板断电，将 `board/release/sd_card/BOOT.BIN` 复制到 SD 根目录；保留已有 `NILM430.BIN`、`NILM431.BIN` 登记文件。
@@ -69,6 +69,6 @@ python skill/ps-pl-release-validation/scripts/verify_delivery.py .
 
 ## 命名与归档约定
 
-自主整理的目录与图纸文件使用英文，图纸名称采用小写字母和下划线；说明正文使用中文。`README.md`、`SKILL.md`、`CMakeLists.txt`、`BOOT.BIN` 及厂商工具生成的 IP 文件保留工具约定名称。配套 EXE / ELF 保留统一交付名称 `NLIM_set_fianl`。
+自主整理的目录与图纸文件使用英文，图纸名称采用小写字母和下划线；说明正文使用中文。`README.md`、`SKILL.md`、`CMakeLists.txt`、`BOOT.BIN` 及厂商工具生成的 IP 文件保留工具约定名称。配套 EXE / ELF 保留统一交付名称 `NLIM_set_final`。
 
 验证与实现报告归档在 `build/reports/`。历史测试记录保留原版本、日期和来源路径；当前目录与原交付包的对应关系见 [layout_map.json](build/layout_map.json)。厂商 IP 的导出归档作为硬件工程配套文件保留，源码同时展开于 `src/hardware/cnn_ip/`。

@@ -85,5 +85,5 @@
 <text x="50" y="1031.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">物理量换算在 PS 完成；图中“低通”是现有一阶网络，不表示已证明满足所有频段的抗混叠要求。</text>
 <polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
 <text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 H02：传感器与 AFE 为板外电路；XADC 为 Zynq 片上硬核。此图仅表达模块关系与实际信号归属。</text>
-<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_final · 固件 NLIM_set_final · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
 </svg>

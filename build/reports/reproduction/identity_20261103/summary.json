@@ -1,7 +1,7 @@
 {
-  "package": "NLIM_set_fianl",
-  "firmware": "NLIM_set_fianl",
-  "firmware_revision": "NLIM_set_fianl",
+  "package": "NLIM_set_final",
+  "firmware": "NLIM_set_final",
+  "firmware_revision": "NLIM_set_final",
   "ps_build": true,
   "bootgen_build": true,
   "bootgen_read": true,
@@ -29,17 +29,17 @@
     {
       "path": "board/release/sd_card/BOOT.BIN",
       "bytes": 10362424,
-      "sha256": "3c3a8ae3bd28d1e2c5af583baeb86cfd79ca7ca720cef7309d28e4d5052c831f"
+      "sha256": "a42e79b9c5b6c1a00872e61f06a5e2e806dc9814b49f377b96f3413d4183fb38"
     },
     {
-      "path": "board/release/NLIM_set_fianl.elf",
+      "path": "board/release/NLIM_set_final.elf",
       "bytes": 7555016,
-      "sha256": "82f7e5b86c88a0dbac81627dcd5dd6c20bcf49bf82ddec97a691ea3a2ebb27fe"
+      "sha256": "d5471275a8736c55571df7127b812c7d696735ebc3dc1b5307707a0fde693bed"
     },
     {
-      "path": "board/release/NLIM_set_fianl.exe",
-      "bytes": 9318422,
-      "sha256": "bea93e47472083f049b1d70e8c66d6028600d4f4e21586a99a04d18c65783b37"
+      "path": "board/release/NLIM_set_final.exe",
+      "bytes": 9317612,
+      "sha256": "e4337453e5d81edafc43bfa416f028ba597f41e398c296710fc6f5cac3625e81"
     }
   ],
   "historical_evidence": "Previous test records retain their original identities and dates."

@@ -43,12 +43,12 @@
     total_partitions (0x0c) : 0x00000001
                 name (0x10) : system_wrapper.bit
 --------------------------------------------------------------------------------
-   IMAGE HEADER (NLIM_set_fianl.elf)
+   IMAGE HEADER (NLIM_set_final.elf)
 --------------------------------------------------------------------------------
           next_ih(W) (0x00) : 0x00000000
          next_pht(W) (0x04) : 0x00000340
     total_partitions (0x0c) : 0x00000002
-                name (0x10) : NLIM_set_fianl.elf
+                name (0x10) : NLIM_set_final.elf
 --------------------------------------------------------------------------------
    PARTITION HEADER TABLE (fsbl.elf.0)
 --------------------------------------------------------------------------------
@@ -76,7 +76,7 @@
               exec_state [el-0]         dest_device [none]         
               encryption [no]                  core [none]         
 --------------------------------------------------------------------------------
-   PARTITION HEADER TABLE (NLIM_set_fianl.elf.0)
+   PARTITION HEADER TABLE (NLIM_set_final.elf.0)
 --------------------------------------------------------------------------------
     encrypted_length (0x00) : 0x00179772  unencrypted_length (0x04) : 0x00179772
         total_length (0x08) : 0x00179772           load_addr (0x0c) : 0x00100000
@@ -89,7 +89,7 @@
               exec_state [aarch-32]     dest_device [none]         
               encryption [no]                  core [none]         
 --------------------------------------------------------------------------------
-   PARTITION HEADER TABLE (NLIM_set_fianl.elf.1)
+   PARTITION HEADER TABLE (NLIM_set_final.elf.1)
 --------------------------------------------------------------------------------
     encrypted_length (0x00) : 0x000011de  unencrypted_length (0x04) : 0x000011de
         total_length (0x08) : 0x000011de           load_addr (0x0c) : 0x006e8000

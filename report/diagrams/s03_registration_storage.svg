@@ -73,5 +73,5 @@
 <text x="50" y="1096.46" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">页面“命令已接收”与“保存成功”分别表示；未确认事件不能绕过质量检查直接作为有效参考。</text>
 <polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
 <text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 S03：此处“学习”指参考库增量登记；没有反向传播、神经网络在线训练或新增类别权重重训练。</text>
-<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_final · 固件 NLIM_set_final · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
 </svg>

@@ -8,7 +8,7 @@ try {
   if(!(Test-Path -LiteralPath $target -PathType Leaf)){throw "Missing: $($row.path)"}
   if((Get-FileHash -LiteralPath $target).Hash -ne $row.sha256){throw "Changed: $($row.path)"}
  }
- Write-Host 'PASS: NLIM_set_fianl package matches SHA256 checksums; firmware NLIM_set_fianl.' -ForegroundColor Green
- Write-Host 'Use included sd_card/BOOT.BIN. Final design package: NLIM_set_fianl.'
+ Write-Host 'PASS: NLIM_set_final package matches SHA256 checksums; firmware NLIM_set_final.' -ForegroundColor Green
+ Write-Host 'Use included sd_card/BOOT.BIN. Final design package: NLIM_set_final.'
  exit 0
 }catch{Write-Host ("FAILED: "+$_.Exception.Message) -ForegroundColor Red;exit 1}

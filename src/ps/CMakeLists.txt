@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 cmake_minimum_required(VERSION 3.15)
 include(${CMAKE_CURRENT_SOURCE_DIR}/Lwip_echo_serverExample.cmake)
-set(APP_NAME NLIM_set_fianl)
+set(APP_NAME NLIM_set_final)
 project(${APP_NAME})
 
 find_package(common)

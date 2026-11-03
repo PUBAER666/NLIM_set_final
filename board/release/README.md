@@ -1,8 +1,8 @@
-> 最终方案与交付名称：NLIM_set_fianl；设计确认日期：2026-11-03。固件显示 NLIM_set_fianl 为正确配套版本。
+> 最终方案与交付名称：NLIM_set_final；设计确认日期：2026-11-03。固件显示 NLIM_set_final 为正确配套版本。
 
-# NLIM_set_fianl 配套运行包使用说明
+# NLIM_set_final 配套运行包使用说明
 
-固件版本：`NLIM_set_fianl`。适用于 EES331 / XC7Z020CLG484-1 与现有 V2 PCB。
+固件版本：`NLIM_set_final`。适用于 EES331 / XC7Z020CLG484-1 与现有 V2 PCB。
 
 本版改进开关事件取样、登记匹配及计量恢复，新增单个删除和清空全部登记。已通过本地编译、回归和模拟通信验证。
 
@@ -11,7 +11,7 @@
 1. 断电后取出 SD 卡，备份卡内文件。
 2. 将本包 `sd_card/BOOT.BIN` 替换到 SD 根目录。**不要格式化，不要删除 `NILM430.BIN`、`NILM431.BIN`**，这两个文件保存登记与设置。
 3. 插回卡并重新上电。电脑沿用此前已连通的网卡配置；直连板卡默认地址为 `192.168.1.10`。
-4. 解压整个包，运行 `check_connection.cmd`，再运行 `start_capture.cmd`。无需安装 Vitis 或 Python。自检中版本应为 `NLIM_set_fianl`。
+4. 解压整个包，运行 `check_connection.cmd`，再运行 `start_capture.cmd`。无需安装 Vitis 或 Python。自检中版本应为 `NLIM_set_final`。
 5. 页面仍只负责展示和操作；采样、CNN 推理、登记匹配、计量、规则判断均由板端完成。日志生成在本包的 `recordings/时间_编号/` 中。
 
 ## 登记和删除

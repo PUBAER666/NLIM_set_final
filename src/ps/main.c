@@ -153,9 +153,9 @@ int main()
 #endif
 
 	init_platform();
-	xil_printf("NLIM_set_fianl: PHY fresh-status check\r\n");
+	xil_printf("NLIM_set_final: PHY fresh-status check\r\n");
 	xil_printf("NILM firmware mode: " NILM_FIRMWARE_VERSION " (IRQ VFP protected)\r\n");
-	xil_printf("NILM firmware revision: NLIM_set_fianl\r\n");
+	xil_printf("NILM firmware revision: NLIM_set_final\r\n");
 
 #if LWIP_IPV6==0
 #if LWIP_DHCP==1

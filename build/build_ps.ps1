@@ -18,16 +18,16 @@ if(Test-Path "$llvm/llvm-size.exe"){
 & $cmake --build "$root/work/ps" -j 4
 if($LASTEXITCODE){throw 'PS build failed'}
 if(Test-Path "$llvm/llvm-objdump.exe"){
- $all=& "$llvm/llvm-objdump.exe" -d "$root/work/ps/NLIM_set_fianl.elf"
+ $all=& "$llvm/llvm-objdump.exe" -d "$root/work/ps/NLIM_set_final.elf"
  if($LASTEXITCODE){throw 'ELF disassembly failed'}
  $irq=([regex]::Match(($all -join "`n"),'(?ms)^IRQHandler:.*?(?=^\S[^\n]*:\s*$)')).Value
 }else{
- $irq=& arm-none-eabi-objdump.exe -d --disassemble=IRQHandler "$root/work/ps/NLIM_set_fianl.elf"
+ $irq=& arm-none-eabi-objdump.exe -d --disassemble=IRQHandler "$root/work/ps/NLIM_set_final.elf"
  if($LASTEXITCODE){throw 'ELF disassembly failed'}
 }
 foreach($pat in @('vpush.*d0(?:-d7|, d1, d2, d3, d4, d5, d6, d7)','vpush.*d16(?:-d31|, d17.*d31)','vpop.*d16(?:-d31|, d17.*d31)','vpop.*d0(?:-d7|, d1, d2, d3, d4, d5, d6, d7)')){
  if(($irq -join "`n") -notmatch $pat){throw "Missing interrupt FPU preservation: $pat"}
 }
 $irq | Set-Content "$root/work/ps/irq_disassembly.txt" -Encoding utf8
-Write-Output 'PASS_PS_BUILD: NLIM_set_fianl firmware; NLIM_set_fianl final design package'
+Write-Output 'PASS_PS_BUILD: NLIM_set_final firmware; NLIM_set_final final design package'
 

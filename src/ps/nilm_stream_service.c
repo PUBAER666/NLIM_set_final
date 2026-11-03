@@ -101,7 +101,7 @@ int nilm_device_json(char *out,size_t size)
 #endif
     static char computation[16384],dorm[49152];nb_json(&board,computation,sizeof(computation));dorm_json(&board,dorm,sizeof(dorm),milliseconds64());
     return snprintf(out,size,
-        "{\"schema\":1,\"board\":\"EES331\",\"firmware\":\"" NILM_FIRMWARE_VERSION "\",\"firmware_revision\":\"NLIM_set_fianl\","
+        "{\"schema\":1,\"board\":\"EES331\",\"firmware\":\"" NILM_FIRMWARE_VERSION "\",\"firmware_revision\":\"NLIM_set_final\","
         "\"wire_version\":1,\"boot_serial\":%u,\"uptime_ms\":%llu,\"pl_magic\":%u,\"pl_abi\":%u,\"pl_samples\":%u,"
         "\"ps_pl_compatible\":%s,\"stream_active\":%s,\"stream_error\":%u,\"hardware_faults\":%u,"
         "\"blocks\":%llu,\"gaps\":%llu,\"epoch\":%u,\"data_service\":%s,\"data_client\":%s,"

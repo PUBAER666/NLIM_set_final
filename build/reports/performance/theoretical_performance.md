@@ -1,6 +1,6 @@
 # NILM：FPGA 理论性能与工具报告结果
 
-适用方案：NLIM_set_fianl；固件 NLIM_set_fianl；板卡 EES331 / XC7Z020CLG484-1；工具 Vivado/Vitis 2025.2。
+适用方案：NLIM_set_final；固件 NLIM_set_final；板卡 EES331 / XC7Z020CLG484-1；工具 Vivado/Vitis 2025.2。
 
 ## 计算结构与理论吞吐
 

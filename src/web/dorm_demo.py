@@ -40,7 +40,7 @@ def main():
     if args.check:
         try:
             value=exchange(args.ip,9001)
-            if (value.get('firmware')!='NLIM_set_fianl' or value.get('firmware_revision')!='NLIM_set_fianl'):raise ValueError('请使用本包 SD_CARD 中的 BOOT.BIN，并重新断电上电')
+            if (value.get('firmware')!='NLIM_set_final' or value.get('firmware_revision')!='NLIM_set_final'):raise ValueError('请使用本包 SD_CARD 中的 BOOT.BIN，并重新断电上电')
             if not value.get('pl_inference_available') or not value.get('inference',{}).get('selftest_passed'):raise ValueError('板端 CNN 自检未通过，请检查配套 BOOT 与串口日志')
             print('连接成功：'+value['firmware_revision']+'；PL 推理自检通过；SD：'+value.get('dorm',{}).get('store','未知'))
             return
@@ -85,7 +85,7 @@ def main():
             if self.headers.get('X-Nilm-Token')!=token:return self.send(403,{'error':'TOKEN'})
             try:
                 with LINK_LOCK:value=exchange(args.ip,9001)
-                if (value.get('firmware')!='NLIM_set_fianl' or value.get('firmware_revision')!='NLIM_set_fianl') or 'board_compute' not in value:
+                if (value.get('firmware')!='NLIM_set_final' or value.get('firmware_revision')!='NLIM_set_final') or 'board_compute' not in value:
                     raise ValueError('固件不支持板端计算协议；请勿配用旧演示版 BOOT')
                 record(value)
                 self.send(200,value)

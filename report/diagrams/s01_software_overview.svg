@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
-<title>S01  NLIM_set_fianl 系统软件总体框图</title>
+<title>S01  NLIM_set_final 系统软件总体框图</title>
 <rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
-<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">S01  NLIM_set_fianl 系统软件总体框图</text>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">S01  NLIM_set_final 系统软件总体框图</text>
 <text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">PS 裸机主循环协作调度；PL 执行 CNN 运算；电脑端展示与记录，不承担现场推理</text>
 <polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
 <polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
@@ -103,5 +103,5 @@
 <text x="660" y="1022.48" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="middle" fill="#64748B">采集、识别、通信共享主循环调度；候选结果与正式运行状态分离。</text>
 <polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
 <text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 S01：功能模块按软件职责分组；并排布局不表示独立线程、双核任务或 RTOS 并行执行。</text>
-<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_final · 固件 NLIM_set_final · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
 </svg>

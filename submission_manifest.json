@@ -1,12 +1,12 @@
 {
-  "package": "NLIM_set_fianl",
-  "target_release": "NLIM_set_fianl",
+  "package": "NLIM_set_final",
+  "target_release": "NLIM_set_final",
   "target_artifacts_received": true,
   "reference_boot": "board/release/sd_card/BOOT.BIN",
   "publication_status": "github_repository",
   "model_weight_training": false,
-  "delivery_release": "NLIM_set_fianl",
-  "firmware_revision": "NLIM_set_fianl",
+  "delivery_release": "NLIM_set_final",
+  "firmware_revision": "NLIM_set_final",
   "release_status": "final_design_confirmed",
   "final_design_confirmed_by_user": true,
   "design_confirmation_date": "2026-11-03",
@@ -20,7 +20,7 @@
     "implementation_timing_and_resources"
   ],
   "identity_update_date": "2026-11-03",
-  "repository_url": "https://github.com/PUBAER666/NLIM_set_fianl",
+  "repository_url": "https://github.com/PUBAER666/NLIM_set_final",
   "layout": "expanded_source_tree",
   "reports_root": "build/reports"
 }

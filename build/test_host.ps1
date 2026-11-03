@@ -21,7 +21,7 @@ if($LASTEXITCODE){throw 'Status compile failed'}
 & "$out/test_status.exe" | Set-Content "$out/status_test.log" -Encoding utf8
 if($LASTEXITCODE){throw 'Status test failed'}
 $rows=@(Get-Content "$out/status_test.log" | Where-Object {$_ -like '{*'} | ForEach-Object {$_|ConvertFrom-Json})
-if($rows[0].firmware_revision -ne 'NLIM_set_fianl' -or $rows[0].inference.unknown_method -ne 'EMBEDDING64_AUX_FOREST_V3'){throw 'New model status mismatch'}
+if($rows[0].firmware_revision -ne 'NLIM_set_final' -or $rows[0].inference.unknown_method -ne 'EMBEDDING64_AUX_FOREST_V3'){throw 'New model status mismatch'}
 'PASS new model status, registration, maximum status size' | Set-Content "$out/status_summary.log"
 & $gcc -O2 -ffp-contract=off -shared -I $src "$root/sim/tests/integration_wrapper.c" "$root/sim/tests/host_store.c" "$src/nilm_infer.c" "$src/nilm_dynamic.c" @model -lm -o "$out/integrated.dll"
 if($LASTEXITCODE){throw 'Integrated numeric build failed'}

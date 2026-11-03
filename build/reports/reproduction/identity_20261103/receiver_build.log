@@ -1,9 +1,9 @@
-454 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.8
-455 INFO: Python: 3.12.14
-793 INFO: Platform: Windows-11-10.0.26200-SP0
-793 INFO: Python environment: C:\Users\ASUS\.cache\codex-runtimes\codex-primary-runtime\dependencies\python
-794 INFO: wrote C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl/work/receiver_build\NLIM_set_fianl.spec
-806 INFO: Module search paths (PYTHONPATH):
+402 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.8
+402 INFO: Python: 3.12.14
+744 INFO: Platform: Windows-11-10.0.26200-SP0
+744 INFO: Python environment: C:\Users\ASUS\.cache\codex-runtimes\codex-primary-runtime\dependencies\python
+745 INFO: wrote C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final/work/receiver_build\NLIM_set_final.spec
+758 INFO: Module search paths (PYTHONPATH):
 ['C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo',
  'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager',
  'C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip',
@@ -11,52 +11,52 @@
  'C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib',
  'C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python',
  'C:\\Users\\ASUS\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\site-packages',
- 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\NLIM_set_fianl\\src\\web']
-2591 INFO: Appending 'datas' from .spec
-2591 INFO: checking Analysis
-2592 INFO: Building Analysis because Analysis-00.toc is non existent
-2592 INFO: Looking for Python shared library...
-2592 INFO: Using Python shared library: C:\Users\ASUS\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python312.dll
-2592 INFO: Running Analysis Analysis-00.toc
-2592 INFO: Target bytecode optimization level: 0
-2592 INFO: Initializing module dependency graph...
-2595 INFO: Initializing module graph hook caches...
-2635 INFO: Analyzing modules for base_library.zip ...
-5047 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
-6152 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
-7487 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
-8986 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
-10884 INFO: Caching module dependency graph...
-10920 INFO: Analyzing C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl\src\web\dorm_demo.py
-11346 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
-11365 INFO: Processing module hooks (post-graph stage)...
-11368 INFO: Performing binary vs. data reclassification (2 entries)
-11429 INFO: Looking for ctypes DLLs
-11435 INFO: Analyzing run-time hooks ...
-11435 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks\\rthooks'
-11453 INFO: Creating base_library.zip...
-11464 INFO: Looking for dynamic libraries
-11625 INFO: Extra DLL search directories (AddDllDirectory): []
-11625 INFO: Extra DLL search directories (PATH): []
-11942 INFO: Warnings written to C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl\work\receiver_build\NLIM_set_fianl\warn-NLIM_set_fianl.txt
-11950 INFO: Graph cross-reference written to C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl\work\receiver_build\NLIM_set_fianl\xref-NLIM_set_fianl.html
-12025 INFO: checking PYZ
-12025 INFO: Building PYZ because PYZ-00.toc is non existent
-12025 INFO: Building PYZ (ZlibArchive) C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl\work\receiver_build\NLIM_set_fianl\PYZ-00.pyz
-12158 INFO: Building PYZ (ZlibArchive) C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl\work\receiver_build\NLIM_set_fianl\PYZ-00.pyz completed successfully.
-12163 INFO: checking PKG
-12163 INFO: Building PKG because PKG-00.toc is non existent
-12163 INFO: Building PKG (CArchive) NLIM_set_fianl.pkg
-14522 INFO: Building PKG (CArchive) NLIM_set_fianl.pkg completed successfully.
-14525 INFO: Bootloader C:\Users\ASUS\Desktop\project\nilm_eth_demo\.build\receiver-packager\PyInstaller\bootloader\Windows-64bit-intel\run.exe
-14525 INFO: checking EXE
-14525 INFO: Building EXE because EXE-00.toc is non existent
-14525 INFO: Building EXE from EXE-00.toc
-14526 INFO: Copying bootloader EXE to C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl\work\receiver\NLIM_set_fianl.exe
-14660 INFO: Copying icon to EXE
-14742 INFO: Copying 0 resources to EXE
-14743 INFO: Embedding manifest in EXE
-14790 INFO: Appending PKG archive to EXE
-14829 INFO: Fixing EXE headers
-15169 INFO: Building EXE from EXE-00.toc completed successfully.
-15171 INFO: Build complete! The results are available in: C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_fianl\work\receiver
+ 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\outputs\\NLIM_set_final\\src\\web']
+1668 INFO: Appending 'datas' from .spec
+1668 INFO: checking Analysis
+1668 INFO: Building Analysis because Analysis-00.toc is non existent
+1668 INFO: Looking for Python shared library...
+1669 INFO: Using Python shared library: C:\Users\ASUS\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python312.dll
+1669 INFO: Running Analysis Analysis-00.toc
+1669 INFO: Target bytecode optimization level: 0
+1669 INFO: Initializing module dependency graph...
+1671 INFO: Initializing module graph hook caches...
+1682 INFO: Analyzing modules for base_library.zip ...
+4384 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
+5504 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
+6295 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
+7514 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
+7884 INFO: Caching module dependency graph...
+7924 INFO: Analyzing C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final\src\web\dorm_demo.py
+8162 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks'
+8176 INFO: Processing module hooks (post-graph stage)...
+8182 INFO: Performing binary vs. data reclassification (2 entries)
+8242 INFO: Looking for ctypes DLLs
+8246 INFO: Analyzing run-time hooks ...
+8246 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\ASUS\\Desktop\\project\\nilm_eth_demo\\.build\\receiver-packager\\PyInstaller\\hooks\\rthooks'
+8249 INFO: Creating base_library.zip...
+8266 INFO: Looking for dynamic libraries
+8456 INFO: Extra DLL search directories (AddDllDirectory): []
+8456 INFO: Extra DLL search directories (PATH): []
+8780 INFO: Warnings written to C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final\work\receiver_build\NLIM_set_final\warn-NLIM_set_final.txt
+8796 INFO: Graph cross-reference written to C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final\work\receiver_build\NLIM_set_final\xref-NLIM_set_final.html
+8809 INFO: checking PYZ
+8809 INFO: Building PYZ because PYZ-00.toc is non existent
+8809 INFO: Building PYZ (ZlibArchive) C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final\work\receiver_build\NLIM_set_final\PYZ-00.pyz
+8956 INFO: Building PYZ (ZlibArchive) C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final\work\receiver_build\NLIM_set_final\PYZ-00.pyz completed successfully.
+8963 INFO: checking PKG
+8963 INFO: Building PKG because PKG-00.toc is non existent
+8963 INFO: Building PKG (CArchive) NLIM_set_final.pkg
+11573 INFO: Building PKG (CArchive) NLIM_set_final.pkg completed successfully.
+11575 INFO: Bootloader C:\Users\ASUS\Desktop\project\nilm_eth_demo\.build\receiver-packager\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+11575 INFO: checking EXE
+11575 INFO: Building EXE because EXE-00.toc is non existent
+11575 INFO: Building EXE from EXE-00.toc
+11575 INFO: Copying bootloader EXE to C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final\work\receiver\NLIM_set_final.exe
+11656 INFO: Copying icon to EXE
+11737 INFO: Copying 0 resources to EXE
+11737 INFO: Embedding manifest in EXE
+11801 INFO: Appending PKG archive to EXE
+11897 INFO: Fixing EXE headers
+12257 INFO: Building EXE from EXE-00.toc completed successfully.
+12261 INFO: Build complete! The results are available in: C:\Users\ASUS\Desktop\project\nilm_eth_demo\outputs\NLIM_set_final\work\receiver

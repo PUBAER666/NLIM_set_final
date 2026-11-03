@@ -1,6 +1,6 @@
 @echo off
 chcp 65001 >nul
 pushd "%~dp0"
-NLIM_set_fianl.exe --check %*
+NLIM_set_final.exe --check %*
 pause
 popd

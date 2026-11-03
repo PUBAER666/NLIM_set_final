@@ -110,5 +110,5 @@
 <polygon points="80,515 69.0,510.5 69.0,519.5" fill="#1676AD"/>
 <polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
 <text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 H04：层间张量尺寸来自 HLS 源码；BN 使用推理仿射参数。图中没有训练、反向传播或在线更新权重电路。</text>
-<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_final · 固件 NLIM_set_final · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
 </svg>

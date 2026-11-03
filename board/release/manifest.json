@@ -7,7 +7,7 @@
   "diagnostics_revision": "event-registry-recovery-r3",
   "artifacts": [
     {
-      "sha256": "3c3a8ae3bd28d1e2c5af583baeb86cfd79ca7ca720cef7309d28e4d5052c831f",
+      "sha256": "a42e79b9c5b6c1a00872e61f06a5e2e806dc9814b49f377b96f3413d4183fb38",
       "name": "BOOT.BIN",
       "bytes": 10362424
     },
@@ -17,8 +17,8 @@
       "bytes": 4045690
     },
     {
-      "sha256": "82f7e5b86c88a0dbac81627dcd5dd6c20bcf49bf82ddec97a691ea3a2ebb27fe",
-      "name": "NLIM_set_fianl.elf",
+      "sha256": "d5471275a8736c55571df7127b812c7d696735ebc3dc1b5307707a0fde693bed",
+      "name": "NLIM_set_final.elf",
       "bytes": 7555016
     },
     {
@@ -28,7 +28,7 @@
     }
   ],
   "cnn_abi": 2,
-  "firmware": "NLIM_set_fianl",
+  "firmware": "NLIM_set_final",
   "ps_compute": "event extraction, KNN/gate, 64D support, auxiliary forest, paired registration, energy and rules",
   "pl_compute": "frozen CNN convolution, pooling, embedding and logits",
   "registry_policy": "base-unknown-absolute-support-distinct-class-margin",
@@ -38,7 +38,7 @@
   "source_stability_thresholds_unchanged": true,
   "unknown_method": "EMBEDDING64_AUX_FOREST_V3",
   "registration": "user-confirmed valid ON or OFF event; merge/extend; up to 12 representatives",
-  "release": "NLIM_set_fianl",
+  "release": "NLIM_set_final",
   "thresholds_unchanged": false,
   "frontend": "V2 PCB",
   "registration_delete": "revision-guarded single or all; durable dual-slot commit; invalidate cached IDs",
@@ -49,12 +49,12 @@
     "NILM431.BIN"
   ],
   "cnn_model": "37ded17f8e17881f",
-  "firmware_revision": "NLIM_set_fianl",
-  "product": "NLIM_set_fianl",
-  "ui_version": "NLIM_set_fianl",
+  "firmware_revision": "NLIM_set_final",
+  "product": "NLIM_set_final",
+  "ui_version": "NLIM_set_final",
   "delivery": "final_design_package",
-  "pc_exe_sha256": "bea93e47472083f049b1d70e8c66d6028600d4f4e21586a99a04d18c65783b37",
-  "delivery_alias": "NLIM_set_fianl",
+  "pc_exe_sha256": "e4337453e5d81edafc43bfa416f028ba597f41e398c296710fc6f5cac3625e81",
+  "delivery_alias": "NLIM_set_final",
   "design_confirmation_date": "2026-11-03",
   "design_confirmed_by_user": true,
   "validation_materials": [

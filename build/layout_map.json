@@ -1,5 +1,5 @@
 {
-  "source_package": "NLIM_set_fianl",
+  "source_package": "NLIM_set_final",
   "paths": {
     ".gitignore": ".gitignore",
     "board/hardware/nilm_board.xsa": "board/hardware/nilm_board.xsa",
@@ -9,8 +9,8 @@
     "board/release/checksums.json": "board/release/checksums.json",
     "board/release/fsbl.elf": "board/release/fsbl.elf",
     "board/release/manifest.json": "board/release/manifest.json",
-    "board/release/NLIM_set_fianl.elf": "board/release/NLIM_set_fianl.elf",
-    "board/release/NLIM_set_fianl.exe": "board/release/NLIM_set_fianl.exe",
+    "board/release/NLIM_set_final.elf": "board/release/NLIM_set_final.elf",
+    "board/release/NLIM_set_final.exe": "board/release/NLIM_set_final.exe",
     "board/release/README.md": "board/release/README.md",
     "board/release/sd_card/BOOT.BIN": "board/release/sd_card/BOOT.BIN",
     "board/release/start_capture.cmd": "board/release/start_capture.cmd",
@@ -117,7 +117,7 @@
     "report/diagrams/H04_CNN加速器框图.svg": "report/diagrams/h04_cnn_accelerator.svg",
     "report/diagrams/H05_PSPL接口框图.png": "report/diagrams/h05_ps_pl_interfaces.png",
     "report/diagrams/H05_PSPL接口框图.svg": "report/diagrams/h05_ps_pl_interfaces.svg",
-    "report/diagrams/NLIM_set_fianl_硬件与软件框图集.pdf": "report/diagrams/nlim_set_fianl_diagrams.pdf",
+    "report/diagrams/NLIM_set_final_硬件与软件框图集.pdf": "report/diagrams/nlim_set_final_diagrams.pdf",
     "report/diagrams/S01_软件总框图.png": "report/diagrams/s01_software_overview.png",
     "report/diagrams/S01_软件总框图.svg": "report/diagrams/s01_software_overview.svg",
     "report/diagrams/S02_事件识别框图.png": "report/diagrams/s02_event_recognition.png",

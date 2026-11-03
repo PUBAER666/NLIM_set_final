@@ -1,11 +1,11 @@
-# NLIM_set_fianl 最终设计确认
+# NLIM_set_final 最终设计确认
 
-确认日期：2026-11-03。统一方案名称、交付目录与压缩包名称为 **NLIM_set_fianl**。
+确认日期：2026-11-03。统一方案名称、交付目录与压缩包名称为 **NLIM_set_final**。
 
 | 标识 | 最终约定 |
 |---|---|
-| 对外方案与交付名称 | NLIM_set_fianl |
-| 配套固件真实版本 | NLIM_set_fianl |
+| 对外方案与交付名称 | NLIM_set_final |
+| 配套固件真实版本 | NLIM_set_final |
 | CNN ABI / 模型 | 2 / 37ded17f8e17881f |
 | 硬件 | EES331 / XC7Z020CLG484-1；V2 PCB |
 | 图纸 | diagrams/ 下 H01–H05 与 S01–S04，共9张 |

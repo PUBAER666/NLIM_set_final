@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
-<title>H01  NLIM_set_fianl 系统顶层硬件框图</title>
+<title>H01  NLIM_set_final 系统顶层硬件框图</title>
 <rect x="0" y="0" width="1800" height="1200" fill="#FFFFFF" stroke="none" stroke-width="1.8"/>
-<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">H01  NLIM_set_fianl 系统顶层硬件框图</text>
+<text x="48" y="65.9" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="35" font-weight="700" text-anchor="start" fill="#233448">H01  NLIM_set_final 系统顶层硬件框图</text>
 <text x="50" y="97.46000000000001" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#64748B">EES-331 / XC7Z020CLG484-1 · 采集与 CNN 位于 PL，ARM 通过 GP0 控制、HP0 连接 CNN 与 DDR</text>
 <polyline points="48,114 1752,114" fill="none" stroke="#DCE3EB" stroke-width="1"/>
 <polyline points="52,145 100,145" fill="none" stroke="#1676AD" stroke-width="2.8"/>
@@ -178,5 +178,5 @@
 <polygon points="1690,520 1701.0,524.5 1701.0,515.5" fill="#1676AD"/>
 <polyline points="48,1125 1752,1125" fill="none" stroke="#DCE3EB" stroke-width="1"/>
 <text x="50" y="1156.12" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="18" font-weight="400" text-anchor="start" fill="#233448">图 H01：AXI 连线按数据、地址、控制语义拆色；采样 BRAM → DDR 由 PS 复制，未配置独立 AXI DMA / CDMA。</text>
-<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_fianl · 固件 NLIM_set_fianl · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
+<text x="50" y="1183.44" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#64748B">最终方案：NLIM_set_final · 固件 NLIM_set_final · 设计确认 2026-11-03；模块按实际实现归属绘制。</text>
 </svg>

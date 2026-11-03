@@ -6,7 +6,7 @@
 
 项目的工程重点是连续采样、板端计算、未知负载处理与用户确认登记的完整流程。PL 完成采样数据组织和 CNN 特征计算；PS 完成事件管理、识别与拒识、登记匹配、计量和规则判断。网页通过网络读取板端结果并提供操作入口，不承担模型推理或计量计算。
 
-最终设计方案及统一交付名称为 NLIM_set_fianl，设计确认日期为2026年11月3日。配套固件内部标识为 NLIM_set_fianl。本文的数值证据与源码对应这一实际版本，报告涵盖系统实现、理论分析、综合与仿真结果及本地功能回归。
+最终设计方案及统一交付名称为 NLIM_set_final，设计确认日期为2026年11月3日。配套固件内部标识为 NLIM_set_final。本文的数值证据与源码对应这一实际版本，报告涵盖系统实现、理论分析、综合与仿真结果及本地功能回归。
 
 ## 一 应用价值与设计目标
 
@@ -116,7 +116,7 @@ Skill 提炼了接口契约、黄金向量对比、分阶段故障定位、持�
 
 ## 十一 最终软硬件设计框图
 
-本套框图随 NLIM_set_fianl 最终方案归档，硬件信号统一按数据（蓝）、地址（橙）、控制（红）、时钟与复位（灰）区分。软件图按数据流与控制流区分。
+本套框图随 NLIM_set_final 最终方案归档，硬件信号统一按数据（蓝）、地址（橙）、控制（红）、时钟与复位（灰）区分。软件图按数据流与控制流区分。
 
 | 图纸 | 文件 |
 |---|---|
@@ -130,4 +130,4 @@ Skill 提炼了接口契约、黄金向量对比、分阶段故障定位、持�
 | S03  新电器登记、匹配与持久化软件框图 | [PNG](diagrams/s03_registration_storage.png) · [SVG](diagrams/s03_registration_storage.svg) |
 | S04  状态跟踪、计量、规则与通信软件框图 | [PNG](diagrams/s04_metering_communication.png) · [SVG](diagrams/s04_metering_communication.svg) |
 
-[整套PDF](diagrams/nlim_set_fianl_diagrams.pdf) · [图纸预览](diagrams/gallery.html)
+[整套PDF](diagrams/nlim_set_final_diagrams.pdf) · [图纸预览](diagrams/gallery.html)

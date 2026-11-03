@@ -1,7 +1,7 @@
 [
   {
     "id": "h01_hardware_overview",
-    "title": "H01  NLIM_set_fianl 系统顶层硬件框图",
+    "title": "H01  NLIM_set_final 系统顶层硬件框图",
     "caption": "图 H01：AXI 连线按数据、地址、控制语义拆色；采样 BRAM → DDR 由 PS 复制，未配置独立 AXI DMA / CDMA。",
     "sources": [
       "src/hardware/system_bd.tcl",
@@ -50,7 +50,7 @@
   },
   {
     "id": "s01_software_overview",
-    "title": "S01  NLIM_set_fianl 系统软件总体框图",
+    "title": "S01  NLIM_set_final 系统软件总体框图",
     "caption": "图 S01：功能模块按软件职责分组；并排布局不表示独立线程、双核任务或 RTOS 并行执行。",
     "sources": [
       "src/ps/main.c",

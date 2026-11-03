@@ -1,6 +1,6 @@
 # 构建与复现
 
-适用 Windows、Vivado/Vitis 2025.2。建议将仓库克隆或下载到较短的纯英文目录，例如 `C:/NLIM_set_fianl`，避免厂商工具的路径长度限制。以下命令均从包根目录执行，不连接开发板。
+适用 Windows、Vivado/Vitis 2025.2。建议将仓库克隆或下载到较短的纯英文目录，例如 `C:/NLIM_set_final`，避免厂商工具的路径长度限制。以下命令均从包根目录执行，不连接开发板。
 
 ## 1 本地功能与数值回归
 
@@ -46,7 +46,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File build/make_boot.ps1
 
 平台优先使用完整硬件重建得到的 XSA；若没有，则使用包内 `board/hardware/nilm_board.xsa`。XSA、bitstream 必须成套。BSP 由脚本重新生成，保留 lwIP、xilffs、定时器和 FPU 中断现场配置。运行 `create_platform.py` 需新平台目录；已有结果应移到备份目录后再重新构建，脚本不删除旧工程。
 
-新 BOOT 位于 `work/boot/BOOT.BIN`，仍为包内源码的 `NLIM_set_fianl`。
+新 BOOT 位于 `work/boot/BOOT.BIN`，仍为包内源码的 `NLIM_set_final`。
 
 ## 4 网页接收工具
 

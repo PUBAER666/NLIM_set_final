@@ -1,6 +1,6 @@
-# NLIM_set_fianl 硬件与软件框图集
+# NLIM_set_final 硬件与软件框图集
 
-本套图属于 NLIM_set_fianl 最终设计方案，确认日期为 2026-11-03。固件为 NLIM_set_fianl，模块按实际实现绘制。
+本套图属于 NLIM_set_final 最终设计方案，确认日期为 2026-11-03。固件为 NLIM_set_final，模块按实际实现绘制。
 
 - PNG：3600×2400，300 dpi，适合 Word / WPS / PPT 插图。
 - SVG：文字与线路可编辑，适合 Inkscape / Illustrator；显示需中文字体。

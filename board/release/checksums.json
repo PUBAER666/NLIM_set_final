@@ -2,7 +2,7 @@
   {
     "path": "check_connection.cmd",
     "bytes": 87,
-    "sha256": "bf349aa5389751bce077ed53b147f9030c633f951c2325dff3c800100ea6c7ed"
+    "sha256": "3d4d14834643f8e61a2c9e1b6cc98e765390563089b8d8e7793b687ddfe99287"
   },
   {
     "path": "fsbl.elf",
@@ -12,32 +12,32 @@
   {
     "path": "manifest.json",
     "bytes": 2589,
-    "sha256": "79b50e856324289c292a23d536a522c2b558e0a6f2a6e71e1d4b1fd368e0321a"
+    "sha256": "aa5b3e545a4d99e9d5c3bd9ad3578fbe2ffc83cf9a3829e8201820c78d6aff12"
   },
   {
-    "path": "NLIM_set_fianl.elf",
+    "path": "NLIM_set_final.elf",
     "bytes": 7555016,
-    "sha256": "82f7e5b86c88a0dbac81627dcd5dd6c20bcf49bf82ddec97a691ea3a2ebb27fe"
+    "sha256": "d5471275a8736c55571df7127b812c7d696735ebc3dc1b5307707a0fde693bed"
   },
   {
-    "path": "NLIM_set_fianl.exe",
-    "bytes": 9318422,
-    "sha256": "bea93e47472083f049b1d70e8c66d6028600d4f4e21586a99a04d18c65783b37"
+    "path": "NLIM_set_final.exe",
+    "bytes": 9317612,
+    "sha256": "e4337453e5d81edafc43bfa416f028ba597f41e398c296710fc6f5cac3625e81"
   },
   {
     "path": "README.md",
     "bytes": 3651,
-    "sha256": "1929de5af80740bdc765831a9a7b9f9d53e3e7a80a2229f7959817600be49142"
+    "sha256": "9e31043fadf046b4c53c1f4f69fc53050716e3dd24a5f6e383fc07b4442bb807"
   },
   {
     "path": "sd_card/BOOT.BIN",
     "bytes": 10362424,
-    "sha256": "3c3a8ae3bd28d1e2c5af583baeb86cfd79ca7ca720cef7309d28e4d5052c831f"
+    "sha256": "a42e79b9c5b6c1a00872e61f06a5e2e806dc9814b49f377b96f3413d4183fb38"
   },
   {
     "path": "start_capture.cmd",
     "bytes": 95,
-    "sha256": "ff0fe77d7c196b7fe70f43e555e4828b927f88573d621c779b97e69c49906dfa"
+    "sha256": "e55377c2b41f0d4d22ba71efb588a36b35a057009b5e080ba1f51944c4b9df0a"
   },
   {
     "path": "verify_package.cmd",
@@ -47,6 +47,6 @@
   {
     "path": "verify_package.ps1",
     "bytes": 898,
-    "sha256": "0837a1a4ced5fef4c0c9249fae280ddd9672810a5c5f049d1f2f89bd7dca01cb"
+    "sha256": "aa3c78eed7498053360336db4a40ac37b411668d5b590ea057ba17e972feefb6"
   }
 ]
