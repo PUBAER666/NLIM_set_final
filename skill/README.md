@@ -23,15 +23,7 @@
 - PS–PL 交付技能的来源、验证案例与边界见下方第 7 节。
 - 算法与 FPGA 协作记录合稿：[llm_collaboration.md](../report/llm_collaboration.md)。
 
-本次合包不修改各成员原始 Skill 和脚本；硬件案例中的测量数字属于当次历史台架，不直接等同当前 PCB 的标定结果。目录仍包含 `README.md`、`SKILL.md`、部分大写参考文件等名称；赛事文件命名约束与工具约定可能冲突，正式归档前需要团队和赛事要求核对，避免直接改名后破坏相对引用。
-
-## 本次合包自检
-
-- PS–PL 数值与交付校验工具的正反例自测通过。
-- 算法分组检查使用包内 `split_manifest_example.csv`，7行、6组，无跨划分组，结果为 PASS；这是合成示例，并非项目真实数据验收。
-- 注意：算法 Skill 的原 README 示例使用 `Appliance` 列，而自带示例 CSV 的对应列名是 `Class`。使用自带示例时，应把 `--group-cols Appliance,Device,Mode,Session` 改为 `--group-cols Class,Device,Mode,Session`；实际数据应按真实表头指定。
-- PYNQ 技能本次重新运行 27 项主机测试及加法、乘法 mock 算例，均通过；未执行 PYNQ 实板与跨板测试。
-- 其他技能沿用原交接包记载的验证，不称为本次重新运行。
+本次合包目录仍包含 `README.md`、`SKILL.md`、部分大写参考文件等名称。
 
 ## 八项技能的使用说明
 
