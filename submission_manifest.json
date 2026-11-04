@@ -44,9 +44,12 @@
   "report_alignment": {
     "date": "2026-11-03",
     "source_firmware_baseline": "9615c762113b7c5bb53fd206d7e8e56d784056bc",
-    "technical_document": "report/technical_document.docx",
+    "technical_document": "report/technical_document.pdf",
     "scope": "report/validation_scope.md",
     "comparison": "build/reports/cnn_parallel_comparison/results/comparison_metrics.json",
-    "firmware_changed": false
+    "firmware_changed": false,
+    "technical_document_replaced_date": "2026-11-04",
+    "technical_document_source": "user_supplied_final_pdf",
+    "technical_document_sha256": "db3357bccfb759d02636e76c0dd8e7335402ed747e959cbd576eeb4fcf871ea6"
   }
 }

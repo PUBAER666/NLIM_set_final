@@ -11,8 +11,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 4617,
-    "sha256": "0b7d7e9bf3883d7f4ca2130cf0e9e996955b2c5674636e855daf8c997d83dcce"
+    "bytes": 4616,
+    "sha256": "2c973671c920dcdb34bc3090c36a5f71a38d6d93aaf35b8c24c99673597d10a1"
   },
   {
     "path": "board/README.md",
@@ -162,7 +162,7 @@
   {
     "path": "build/reports/cnn_parallel_comparison/checksums.json",
     "bytes": 40344,
-    "sha256": "db5888e97af7737ca4dadc323fe89286c4b123c9f27e1aabbc66397649e13794"
+    "sha256": "b0c1f262ebc4d2ffa8a9ed27576be077c3999023af093dafc7efffee75090b70"
   },
   {
     "path": "build/reports/cnn_parallel_comparison/comparison.png",
@@ -176,8 +176,8 @@
   },
   {
     "path": "build/reports/cnn_parallel_comparison/comparison_report.md",
-    "bytes": 5544,
-    "sha256": "9c0e7d44c4534f4199ba65a94b323c0c9bdadd9b78b944cf5503e7d5c1efdc2a"
+    "bytes": 5451,
+    "sha256": "d6f9f17811426d5172e281c1bb9f129804c8b717ac865daedc1b641629bd7fb7"
   },
   {
     "path": "build/reports/cnn_parallel_comparison/evidence/four_archived/cnn.cpp",
@@ -1611,23 +1611,13 @@
   },
   {
     "path": "report/README.md",
-    "bytes": 534,
-    "sha256": "bb155b5217942dcced8cffb3bd3ae78f15eade425d0f5512e91116091166e1e4"
-  },
-  {
-    "path": "report/ai_collaboration.md",
-    "bytes": 3723,
-    "sha256": "a444251a909e73f94f72c872ede7d88a36c73f32f99fd4e59a59c82cfe701749"
+    "bytes": 493,
+    "sha256": "78979b7eb7413853e2cfdcbb88ddd94bba26f412a5f9666a1a5e52705f8da5bb"
   },
   {
     "path": "report/architecture.svg",
     "bytes": 21664,
     "sha256": "a8747e08ba42c9e92ac611143d1b8f5381698472116840f5b83a439e07e25b69"
-  },
-  {
-    "path": "report/design_report.html",
-    "bytes": 18183,
-    "sha256": "fec147accbcdaf73e3aed2bc200767253b40720c2aa5b228493cfc8c6ce35eed"
   },
   {
     "path": "report/design_report.md",
@@ -1756,13 +1746,13 @@
   },
   {
     "path": "report/llm_collaboration.md",
-    "bytes": 7590,
-    "sha256": "b433dbe293c6ea708d5304aea80b5e41ff69b36287e7afdb65cc7a5cdfbaad1b"
+    "bytes": 7222,
+    "sha256": "b3213efb8d0c254853c8c76c6f89b4c010f14904b9924b48779ed696eef3ed40"
   },
   {
-    "path": "report/technical_document.docx",
-    "bytes": 3942165,
-    "sha256": "3ad10c34a97844f2bb624f4ee61eaace3de3cdc5d47ce980b63fdd46e4b802c7"
+    "path": "report/technical_document.pdf",
+    "bytes": 1551394,
+    "sha256": "db3357bccfb759d02636e76c0dd8e7335402ed747e959cbd576eeb4fcf871ea6"
   },
   {
     "path": "report/validation_scope.md",
@@ -1941,8 +1931,8 @@
   },
   {
     "path": "skill/README.md",
-    "bytes": 1614,
-    "sha256": "2043d2d0c10436ab9b65959cca06a1e54a237bf1d31dd0885dda317d8413f6ff"
+    "bytes": 15368,
+    "sha256": "23f24f061ce8603d4325069ca6ee88adf94f0131d95289e16e296425c181ee3d"
   },
   {
     "path": "skill/algorithm_bundle/FILE_LIST.txt",
@@ -2090,11 +2080,6 @@
     "sha256": "e1f7b00dac65dbd5e989d181e3223727814d5d3407b2c6e1647167d2e07ce060"
   },
   {
-    "path": "skill/hardware_source_readme.md",
-    "bytes": 7733,
-    "sha256": "c4b617963dc3dbf9dbdbb5f308c3f0a6ff8d688a6676d019a1713629d1bd38d6"
-  },
-  {
     "path": "skill/kicad-sch-codegen/SKILL.md",
     "bytes": 27086,
     "sha256": "7fbea92d4a24f7d3354759677d0da43fbf8bb9ae3b49da762788428ce1433cd8"
@@ -2203,11 +2188,6 @@
     "path": "skill/ps-pl-release-validation/scripts/verify_delivery.py",
     "bytes": 1212,
     "sha256": "ce8b8cf3f0c233df357b33c688df8daa0bd5e0e5f9df498aa347cbb491c72d83"
-  },
-  {
-    "path": "skill/ps_pl_source_readme.md",
-    "bytes": 1605,
-    "sha256": "8d486e10474e9f6c0bc818a302f6116526f4d14a0b64029c03807fe175558dd1"
   },
   {
     "path": "skill/pynq-overlay-validate/SKILL.md",
@@ -2368,11 +2348,6 @@
     "path": "skill/pynq-overlay-validate/validation/mock_multiply/report.json",
     "bytes": 4467,
     "sha256": "45ff490e34fd165c2791666c40725607edc098f720d5714dbddfe78ab3b1ee05"
-  },
-  {
-    "path": "skill/team_materials_readme.md",
-    "bytes": 11374,
-    "sha256": "73837cce618ca7577edec7d654cbdd004b7a72dc2c2236af4b69cb519a31a4b6"
   },
   {
     "path": "src/README.md",
@@ -3711,7 +3686,7 @@
   },
   {
     "path": "submission_manifest.json",
-    "bytes": 1933,
-    "sha256": "2adfd2f3c9ba3663afbd77161facaefa8dd4bf77d34e3d1bf5631a33ca4886e1"
+    "bytes": 2150,
+    "sha256": "e865aa545bc6c895755705b11dd21108451f67ec4bc5491437a435cc2b4bafe0"
   }
 ]

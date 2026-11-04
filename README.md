@@ -22,7 +22,7 @@ NLIM_set_final/
 
 | 入口 | 内容 |
 |---|---|
-| [竞赛技术文档](report/technical_document.docx) | 与最终工程对齐的完整技术文档 |
+| [竞赛技术文档](report/technical_document.pdf) | 用户确认的最终技术文档（PDF） |
 | [验证范围](report/validation_scope.md) | 离线统计、工具验证与板级验证的对应范围 |
 | [CNN 单路与四路对比](build/reports/cnn_parallel_comparison/comparison_report.md) | 同条件综合与 RTL 仿真，约 2.29 倍有效事务加速 |
 | [设计报告](report/design_report.md) | 系统架构、PS–PL 分工、识别、登记和计量流程 |
