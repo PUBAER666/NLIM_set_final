@@ -53,11 +53,7 @@
 
 **入口：** [pcb-sch-cross-audit/SKILL.md](pcb-sch-cross-audit/SKILL.md)。
 
-**适用与使用：** 检查 KiCad PCB 与原理图的焊盘网络、封装、引脚数和文字标注。准备 PCB、原理图和缓存库，在本目录执行以下命令，并将尖括号内的占位路径替换为实际文件：
-
-```powershell
-& 'D:\Dev\Python314\python.exe' .\pcb-sch-cross-audit\reference\audit_pcb.py --pcb '<pcb.kicad_pcb>' --sch '<schematic.sch>' --lib '<schematic-cache.lib>' --out '<audit_output.txt>'
-```
+**适用与使用：** 检查 KiCad PCB 与原理图的焊盘网络、封装、引脚数和文字标注。
 
 **来源与效果：** 原交接记录记载，一次双通道 AFE 审计涉及 49 个封装、101 个焊盘和 21 个网络：逐焊盘网络比较为 0 差异，但丝印 `V_VB` 对应的焊盘实际连接到 `V_OUT`，另发现占位封装需替换。文字检查的缺陷版输出 4 条警告，修复版为 0 条；警告条数不等于独立缺陷数量。这是历史板版次的检查记录。
 
@@ -67,11 +63,7 @@
 
 **入口：** [ml-experiment-integrity/SKILL.md](algorithm_bundle/ml-experiment-integrity/SKILL.md)。
 
-**适用与使用：** 检查同一设备、模式或采集会话是否跨训练集、验证集和测试集。提供含样本 ID、划分、分组字段及路径的 CSV；以下命令使用包内示例：
-
-```powershell
-& 'D:\Dev\Python314\python.exe' .\algorithm_bundle\ml-experiment-integrity\scripts\check_group_leakage.py --csv .\algorithm_bundle\ml-experiment-integrity\assets\split_manifest_example.csv --split-col Split --group-cols Class,Device,Mode,Session --sample-col Sample_ID --path-col Relative_Path
-```
+**适用与使用：** 检查同一设备、模式或采集会话是否跨训练集、验证集和测试集。
 
 **来源与效果：** 同一 Session 名在不同工作模式下可能代表不同采集过程，促使分组按真实采集语义定义。原算法包记录了合成数据测试；本次使用7行示例检查，无跨划分组。
 
@@ -101,11 +93,7 @@
 
 **入口：** [ps-pl-release-validation/SKILL.md](ps-pl-release-validation/SKILL.md)。
 
-**适用与使用：** 对 Zynq PS–PL 模型移植、识别链路及交付文件进行核验。先记录固件、模型、接口版本、数据单位与形状，再根据任务阅读 `references/` 并运行 `scripts/` 中的比较或校验工具。工具自测命令：
-
-```powershell
-& 'D:\Dev\Python314\python.exe' .\ps-pl-release-validation\scripts\test_tools.py
-```
+**适用与使用：** 对 Zynq PS–PL 模型移植、识别链路及交付文件进行核验。先记录固件、模型、接口版本、数据单位与形状，再根据任务阅读 `references/` 并运行 `scripts/` 中的比较或校验工具。
 
 **来源与效果：** 旧版 BOOT 与页面版本不匹配及中文路径编码问题促成了交付完整性检查；CNN 从 PS 迁移至 PL 时，同时比较分类输出（logits）与特征向量。数值比较工具覆盖相同值、容差内、超差、NaN 和长度错误用例，交付校验也包含篡改与路径检查的正反例。本次合包自测通过。
 
@@ -117,13 +105,7 @@
 
 **入口：** [pynq-overlay-validate/SKILL.md](pynq-overlay-validate/SKILL.md)。
 
-**适用与使用：** 检查 PYNQ Overlay 元数据、标量寄存器接口、加速器输出与黄金结果，并生成 JSON 和 HTML 报告。接口契约与具体板卡的 bitstream（可编程逻辑配置文件）和 HWH（硬件接口描述文件）分开，工具不绑定本项目的电器类别或固定地址。以下命令在技能包根目录执行，结果写入该技能的 `runs/`：
-
-```powershell
-& 'D:\Dev\Python314\python.exe' .\pynq-overlay-validate\scripts\validate_overlay.py run --backend mock --contract .\pynq-overlay-validate\assets\add_contract.json --cases .\pynq-overlay-validate\assets\add_cases.json --out .\pynq-overlay-validate\runs\add
-& 'D:\Dev\Python314\python.exe' .\pynq-overlay-validate\scripts\validate_overlay.py run --backend mock --contract .\pynq-overlay-validate\assets\multiply_contract.json --cases .\pynq-overlay-validate\assets\multiply_cases.json --out .\pynq-overlay-validate\runs\multiply
-& 'D:\Dev\Python314\python.exe' .\pynq-overlay-validate\scripts\test_validator.py --report .\pynq-overlay-validate\runs\host_tests.json
-```
+**适用与使用：** 检查 PYNQ Overlay 元数据、标量寄存器接口、加速器输出与黄金结果，并生成 JSON 和 HTML 报告。接口契约与具体板卡的 bitstream（可编程逻辑配置文件）和 HWH（硬件接口描述文件）分开，工具不绑定本项目的电器类别或固定地址。
 
 查看输出目录中的 `report.html` 或 `report.json`；重复运行时使用新的输出目录。首次实板运行前，按 [接口契约](pynq-overlay-validate/references/contract.md) 和 [板端操作说明](pynq-overlay-validate/references/board_run.md) 准备目标板对应的 `.bit`、`.hwh`、寄存器契约与黄金样例；`--download` 会编程可编程逻辑，具体命令见技能入口。
 
