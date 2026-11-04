@@ -13,7 +13,7 @@
 | [frozen-model-regression](algorithm_bundle/frozen-model-regression/SKILL.md) | 扩展功能或移植前后检查冻结模型 | 提供基准和候选资产、清单、黄金输入输出与容差 | 由资产漂移和黄金回归需求提炼；原包合成数据基本测试 | 不能以类别相同代替中间数值对照；批准重训后需更新基准 |
 | [event-pipeline-validation](algorithm_bundle/event-pipeline-validation/SKILL.md) | 事件候选及残差信号输入契约 | 提供事件/残差信号清单；运行两个 `scripts/` 工具 | 由候选重复、短暂事件和残差契约问题提炼；原包合成数据基本测试 | 脚本是清单初筛，不是完整检测器；项目参数不得直接推广 |
 | [ps-pl-release-validation](ps-pl-release-validation/SKILL.md) | PS–PL 接口、交付校验、数值对照与分阶段诊断 | 阅读入口及 `references/`；按说明运行 `scripts/`，提供交付根目录或对照数据 | 基于协议错配、无效仿真事务及旧日志；数值与交付校验工具有正反例 | 对裸机 Zynq 有项目相关假设；不是已验证通用 PYNQ Skill，也不代替板测 |
-| [pynq-overlay-validate](pynq-overlay-validate/SKILL.md) | PYNQ Overlay、标量 AXI-Lite 接口和加速器黄金样例验证 | 准备接口契约与黄金样例，运行 mock 或 PYNQ 后端并查看 JSON/HTML 报告 | 27 项主机测试、两套 mock 算例及两个 HLS 示例综合与接口核对 | 仅覆盖 32 位标量寄存器和 `ap_ctrl_hs`；不支持 DMA 与外部内存；尚无 PYNQ 实板及跨板验证 |
+| [pynq-overlay-validate](pynq-overlay-validate/SKILL.md) | PYNQ Overlay、标量 AXI-Lite 接口和加速器黄金样例验证 | 准备接口契约与黄金样例，运行 mock 或 PYNQ 后端并查看 JSON/HTML 报告 | 27 项主机测试、两套 mock 算例及两个 HLS 示例综合与接口核对 | 仅覆盖 32 位标量寄存器和 `ap_ctrl_hs`；不支持 DMA 与外部内存；尚无 PYNQ 跨板验证 |
 
 ## 运行环境及证据
 
