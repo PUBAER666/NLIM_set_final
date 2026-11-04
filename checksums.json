@@ -1746,13 +1746,13 @@
   },
   {
     "path": "report/llm_collaboration.md",
-    "bytes": 7222,
-    "sha256": "b3213efb8d0c254853c8c76c6f89b4c010f14904b9924b48779ed696eef3ed40"
+    "bytes": 7168,
+    "sha256": "ca9aa3aeaa02bbc121f06d091b6c9ef2fce9aeca09ddcc9a24faf60998831170"
   },
   {
     "path": "report/technical_document.pdf",
-    "bytes": 1551394,
-    "sha256": "db3357bccfb759d02636e76c0dd8e7335402ed747e959cbd576eeb4fcf871ea6"
+    "bytes": 1553835,
+    "sha256": "e4dfd6497bce6a2f3782dc1ab27a309414dde4272f54311ed804d0f135851ed7"
   },
   {
     "path": "report/validation_scope.md",
@@ -1931,8 +1931,8 @@
   },
   {
     "path": "skill/README.md",
-    "bytes": 15368,
-    "sha256": "23f24f061ce8603d4325069ca6ee88adf94f0131d95289e16e296425c181ee3d"
+    "bytes": 12651,
+    "sha256": "57670b87929cfd2c69b0027793327e9170357b0e9e1bb8aa2f2e38228d79ec15"
   },
   {
     "path": "skill/algorithm_bundle/FILE_LIST.txt",
@@ -3687,6 +3687,6 @@
   {
     "path": "submission_manifest.json",
     "bytes": 2150,
-    "sha256": "e865aa545bc6c895755705b11dd21108451f67ec4bc5491437a435cc2b4bafe0"
+    "sha256": "b96e6981372d950f70cab79bf0cd69fbdc14a538904cfefb676bf24a117c23c5"
   }
 ]
